@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09250B501D92269E00D172EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B4F1D92269E00D172EF /* AppDelegate.swift */; };
+		09250B521D92269E00D172EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B511D92269E00D172EF /* ViewController.swift */; };
+		09250B551D92269E00D172EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B531D92269E00D172EF /* Main.storyboard */; };
+		09250B571D92269E00D172EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09250B561D92269E00D172EF /* Assets.xcassets */; };
+		09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B581D92269E00D172EF /* LaunchScreen.storyboard */; };
+		09250B651D92269E00D172EF /* MQDouYuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B641D92269E00D172EF /* MQDouYuTVTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09250B611D92269E00D172EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09250B441D92269E00D172EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09250B4B1D92269E00D172EF;
+			remoteInfo = MQDouYuTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09250B4C1D92269E00D172EF /* MQDouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQDouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09250B4F1D92269E00D172EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09250B511D92269E00D172EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09250B541D92269E00D172EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09250B561D92269E00D172EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09250B591D92269E00D172EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09250B5B1D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQDouYuTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09250B641D92269E00D172EF /* MQDouYuTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQDouYuTVTests.swift; sourceTree = "<group>"; };
+		09250B661D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09250B491D92269E00D172EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09250B5D1D92269E00D172EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09250B431D92269E00D172EF = {
+			isa = PBXGroup;
+			children = (
+				09250B4E1D92269E00D172EF /* MQDouYuTV */,
+				09250B631D92269E00D172EF /* MQDouYuTVTests */,
+				09250B4D1D92269E00D172EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09250B4D1D92269E00D172EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09250B4C1D92269E00D172EF /* MQDouYuTV.app */,
+				09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09250B4E1D92269E00D172EF /* MQDouYuTV */ = {
+			isa = PBXGroup;
+			children = (
+				09250B4F1D92269E00D172EF /* AppDelegate.swift */,
+				09250B511D92269E00D172EF /* ViewController.swift */,
+				09250B531D92269E00D172EF /* Main.storyboard */,
+				09250B561D92269E00D172EF /* Assets.xcassets */,
+				09250B581D92269E00D172EF /* LaunchScreen.storyboard */,
+				09250B5B1D92269E00D172EF /* Info.plist */,
+			);
+			path = MQDouYuTV;
+			sourceTree = "<group>";
+		};
+		09250B631D92269E00D172EF /* MQDouYuTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				09250B641D92269E00D172EF /* MQDouYuTVTests.swift */,
+				09250B661D92269E00D172EF /* Info.plist */,
+			);
+			path = MQDouYuTVTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09250B4B1D92269E00D172EF /* MQDouYuTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09250B691D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTV" */;
+			buildPhases = (
+				09250B481D92269E00D172EF /* Sources */,
+				09250B491D92269E00D172EF /* Frameworks */,
+				09250B4A1D92269E00D172EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQDouYuTV;
+			productName = MQDouYuTV;
+			productReference = 09250B4C1D92269E00D172EF /* MQDouYuTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09250B5F1D92269E00D172EF /* MQDouYuTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09250B6C1D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTVTests" */;
+			buildPhases = (
+				09250B5C1D92269E00D172EF /* Sources */,
+				09250B5D1D92269E00D172EF /* Frameworks */,
+				09250B5E1D92269E00D172EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09250B621D92269E00D172EF /* PBXTargetDependency */,
+			);
+			name = MQDouYuTVTests;
+			productName = MQDouYuTVTests;
+			productReference = 09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09250B441D92269E00D172EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MQ;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = mengQuietly;
+				TargetAttributes = {
+					09250B4B1D92269E00D172EF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					09250B5F1D92269E00D172EF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09250B4B1D92269E00D172EF;
+					};
+				};
+			};
+			buildConfigurationList = 09250B471D92269E00D172EF /* Build configuration list for PBXProject "MQDouYuTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09250B431D92269E00D172EF;
+			productRefGroup = 09250B4D1D92269E00D172EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09250B4B1D92269E00D172EF /* MQDouYuTV */,
+				09250B5F1D92269E00D172EF /* MQDouYuTVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09250B4A1D92269E00D172EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */,
+				09250B571D92269E00D172EF /* Assets.xcassets in Resources */,
+				09250B551D92269E00D172EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09250B5E1D92269E00D172EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09250B481D92269E00D172EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09250B521D92269E00D172EF /* ViewController.swift in Sources */,
+				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09250B5C1D92269E00D172EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09250B651D92269E00D172EF /* MQDouYuTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09250B621D92269E00D172EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09250B4B1D92269E00D172EF /* MQDouYuTV */;
+			targetProxy = 09250B611D92269E00D172EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09250B531D92269E00D172EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09250B541D92269E00D172EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09250B581D92269E00D172EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09250B591D92269E00D172EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09250B671D92269E00D172EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09250B681D92269E00D172EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09250B6A1D92269E00D172EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MQDouYuTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09250B6B1D92269E00D172EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MQDouYuTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		09250B6D1D92269E00D172EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MQDouYuTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQDouYuTV.app/MQDouYuTV";
+			};
+			name = Debug;
+		};
+		09250B6E1D92269E00D172EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MQDouYuTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQDouYuTV.app/MQDouYuTV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09250B471D92269E00D172EF /* Build configuration list for PBXProject "MQDouYuTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09250B671D92269E00D172EF /* Debug */,
+				09250B681D92269E00D172EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09250B691D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09250B6A1D92269E00D172EF /* Debug */,
+				09250B6B1D92269E00D172EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09250B6C1D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09250B6D1D92269E00D172EF /* Debug */,
+				09250B6E1D92269E00D172EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09250B441D92269E00D172EF /* Project object */;
+}
