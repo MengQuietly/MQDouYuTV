@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		09250B501D92269E00D172EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B4F1D92269E00D172EF /* AppDelegate.swift */; };
-		09250B521D92269E00D172EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B511D92269E00D172EF /* ViewController.swift */; };
-		09250B551D92269E00D172EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B531D92269E00D172EF /* Main.storyboard */; };
 		09250B571D92269E00D172EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09250B561D92269E00D172EF /* Assets.xcassets */; };
 		09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B581D92269E00D172EF /* LaunchScreen.storyboard */; };
 		09250B651D92269E00D172EF /* MQDouYuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B641D92269E00D172EF /* MQDouYuTVTests.swift */; };
+		09E96F9B1D93B66D00DD50ED /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F821D93B66C00DD50ED /* Follow.storyboard */; };
+		09E96F9C1D93B66D00DD50ED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F871D93B66C00DD50ED /* Home.storyboard */; };
+		09E96F9D1D93B66D00DD50ED /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F8C1D93B66C00DD50ED /* Live.storyboard */; };
+		09E96F9E1D93B66D00DD50ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F911D93B66C00DD50ED /* Main.storyboard */; };
+		09E96FA01D93B66D00DD50ED /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F971D93B66C00DD50ED /* Profile.storyboard */; };
+		09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */; };
+		09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +33,19 @@
 /* Begin PBXFileReference section */
 		09250B4C1D92269E00D172EF /* MQDouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQDouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09250B4F1D92269E00D172EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09250B511D92269E00D172EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09250B541D92269E00D172EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09250B561D92269E00D172EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09250B591D92269E00D172EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09250B5B1D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQDouYuTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09250B641D92269E00D172EF /* MQDouYuTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQDouYuTVTests.swift; sourceTree = "<group>"; };
 		09250B661D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E96F821D93B66C00DD50ED /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
+		09E96F871D93B66C00DD50ED /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		09E96F8C1D93B66C00DD50ED /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		09E96F911D93B66C00DD50ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		09E96F971D93B66C00DD50ED /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabBarController.swift; sourceTree = "<group>"; };
+		09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +87,8 @@
 		09250B4E1D92269E00D172EF /* MQDouYuTV */ = {
 			isa = PBXGroup;
 			children = (
+				09E96F7F1D93B66C00DD50ED /* Classes */,
 				09250B4F1D92269E00D172EF /* AppDelegate.swift */,
-				09250B511D92269E00D172EF /* ViewController.swift */,
-				09250B531D92269E00D172EF /* Main.storyboard */,
 				09250B561D92269E00D172EF /* Assets.xcassets */,
 				09250B581D92269E00D172EF /* LaunchScreen.storyboard */,
 				09250B5B1D92269E00D172EF /* Info.plist */,
@@ -94,6 +103,188 @@
 				09250B661D92269E00D172EF /* Info.plist */,
 			);
 			path = MQDouYuTVTests;
+			sourceTree = "<group>";
+		};
+		09E96F7F1D93B66C00DD50ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F9A1D93B66D00DD50ED /* Tools */,
+				09E96F8F1D93B66C00DD50ED /* Main */,
+				09E96F851D93B66C00DD50ED /* Home */,
+				09E96F8A1D93B66C00DD50ED /* Live */,
+				09E96F801D93B66C00DD50ED /* Follow */,
+				09E96F951D93B66C00DD50ED /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		09E96F801D93B66C00DD50ED /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F811D93B66C00DD50ED /* Controller */,
+				09E96F831D93B66C00DD50ED /* Model */,
+				09E96F841D93B66C00DD50ED /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		09E96F811D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F821D93B66C00DD50ED /* Follow.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F831D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F841D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F851D93B66C00DD50ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F861D93B66C00DD50ED /* Controller */,
+				09E96F881D93B66C00DD50ED /* Model */,
+				09E96F891D93B66C00DD50ED /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		09E96F861D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F871D93B66C00DD50ED /* Home.storyboard */,
+				09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F881D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F891D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F8A1D93B66C00DD50ED /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F8B1D93B66C00DD50ED /* Controller */,
+				09E96F8D1D93B66C00DD50ED /* Model */,
+				09E96F8E1D93B66C00DD50ED /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		09E96F8B1D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F8C1D93B66C00DD50ED /* Live.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F8D1D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F8E1D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F8F1D93B66C00DD50ED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F901D93B66C00DD50ED /* Controller */,
+				09E96F931D93B66C00DD50ED /* Model */,
+				09E96F941D93B66C00DD50ED /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		09E96F901D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F911D93B66C00DD50ED /* Main.storyboard */,
+				09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F931D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F941D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F951D93B66C00DD50ED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F961D93B66C00DD50ED /* Controller */,
+				09E96F981D93B66D00DD50ED /* Model */,
+				09E96F991D93B66D00DD50ED /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		09E96F961D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F971D93B66C00DD50ED /* Profile.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F981D93B66D00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F991D93B66D00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F9A1D93B66D00DD50ED /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +373,11 @@
 			files = (
 				09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */,
 				09250B571D92269E00D172EF /* Assets.xcassets in Resources */,
-				09250B551D92269E00D172EF /* Main.storyboard in Resources */,
+				09E96F9C1D93B66D00DD50ED /* Home.storyboard in Resources */,
+				09E96F9B1D93B66D00DD50ED /* Follow.storyboard in Resources */,
+				09E96F9E1D93B66D00DD50ED /* Main.storyboard in Resources */,
+				09E96FA01D93B66D00DD50ED /* Profile.storyboard in Resources */,
+				09E96F9D1D93B66D00DD50ED /* Live.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09250B521D92269E00D172EF /* ViewController.swift in Sources */,
+				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
+				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
 				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +420,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		09250B531D92269E00D172EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09250B541D92269E00D172EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		09250B581D92269E00D172EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,11 +528,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MQDouYuTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,11 +542,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MQDouYuTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +599,7 @@
 				09250B6B1D92269E00D172EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09250B6C1D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTVTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +608,7 @@
 				09250B6E1D92269E00D172EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
