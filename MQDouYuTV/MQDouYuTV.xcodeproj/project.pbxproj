@@ -18,6 +18,7 @@
 		09E96FA01D93B66D00DD50ED /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F971D93B66C00DD50ED /* Profile.storyboard */; };
 		09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */; };
 		09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */; };
+		09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		09E96F971D93B66C00DD50ED /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabBarController.swift; sourceTree = "<group>"; };
 		09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeController.swift; sourceTree = "<group>"; };
+		09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,8 +285,17 @@
 		09E96F9A1D93B66D00DD50ED /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				09E96FA51D93C5B800DD50ED /* Extension */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		09E96FA51D93C5B800DD50ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */,
 				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
 				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
 				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,

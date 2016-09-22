@@ -12,10 +12,33 @@ class MQHomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.setupUI() //
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 }
 
+// MARK:- 设置 UI 界面
+extension MQHomeController {
+ 
+    // 设置 UI 界面
+    func setupUI() {
+        setupNav()
+    }
+    
+    // 设置导航栏
+    private func setupNav() {
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
+        let itemSize = CGSize(width: 40, height: 40)
+        let historyItem = UIBarButtonItem(imageName: "image_my_history", hightImageName: "Image_my_history_click", size: itemSize)
+        let searchItem = UIBarButtonItem(imageName: "btn_search", hightImageName: "btn_search_clicked", size: itemSize)
+         let scanItem = UIBarButtonItem(imageName: "Image_scan", hightImageName: "Image_scan_click", size: itemSize)
+        self.navigationItem.rightBarButtonItems = [historyItem, searchItem, scanItem]
+    }
+    
+}
