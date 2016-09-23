@@ -8,12 +8,26 @@
 
 import UIKit
 
+// PageTitleView-height
+private let kPageTitleViewH: CGFloat = 50
+
+/** HomeController  */
 class MQHomeController: UIViewController {
+    
+    // 懒加载属性
+    lazy var pageTitleViews: MQPageTitleView = {
+
+        let pageTitleViewF = CGRect(x: 0, y: kStatusBarH + kNaviagtionBarH, width: kScreenW, height: kPageTitleViewH)
+        let pageTitleViewWithTitle = ["推荐", "游戏", "娱乐", "趣玩"]
+        let pageTitleView = MQPageTitleView(frame: pageTitleViewF, title: pageTitleViewWithTitle)
+        return pageTitleView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupUI() //
+        // 设置 UI 界面
+        self.setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +41,12 @@ extension MQHomeController {
  
     // 设置 UI 界面
     func setupUI() {
+        // 不需要调整 UIScrollView 的内边距
+        self.automaticallyAdjustsScrollViewInsets = false
+        // 设置导航栏
         setupNav()
+        // 添加 PageTitleView
+        self.view.addSubview(pageTitleViews)
     }
     
     // 设置导航栏

@@ -19,6 +19,8 @@
 		09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */; };
 		09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */; };
 		09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */; };
+		09E96FA91D93DA5500DD50ED /* MQPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */; };
+		09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FAA1D93DC9E00DD50ED /* MQCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabBarController.swift; sourceTree = "<group>"; };
 		09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeController.swift; sourceTree = "<group>"; };
 		09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQPageTitleView.swift; sourceTree = "<group>"; };
+		09E96FAA1D93DC9E00DD50ED /* MQCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQCommon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +250,7 @@
 		09E96F941D93B66C00DD50ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				09E96FA51D93C5B800DD50ED /* Extension */,
+				09E96FAA1D93DC9E00DD50ED /* MQCommon.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -408,7 +414,9 @@
 			files = (
 				09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */,
 				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
+				09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */,
 				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
+				09E96FA91D93DA5500DD50ED /* MQPageTitleView.swift in Sources */,
 				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
