@@ -16,5 +16,9 @@ let kScreenH: CGFloat = kScreenS.height
 // statusBar-height、NaviagtionBar-height
 let kStatusBarH: CGFloat = 20
 let kNaviagtionBarH: CGFloat = 44
+let kTabBarH: CGFloat = 49
+
+// 随即色
+let kRandomColor: UIColor = UIColor(displayP3Red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
 
 

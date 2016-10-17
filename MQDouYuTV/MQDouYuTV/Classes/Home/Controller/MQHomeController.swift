@@ -22,6 +22,24 @@ class MQHomeController: UIViewController {
         let pageTitleView = MQPageTitleView(frame: pageTitleViewF, title: pageTitleViewWithTitle)
         return pageTitleView
     }()
+    
+    lazy var pageContentViews: MQPageContentView = {
+        
+        let pageContentViewY = kStatusBarH + kNaviagtionBarH + kPageTitleViewH
+        let pageContentViewH = kScreenH - kStatusBarH - kNaviagtionBarH - kPageTitleViewH - kTabBarH
+        let pageContentViewF = CGRect(x: 0, y: pageContentViewY, width: kScreenW, height: pageContentViewH)
+        
+        var pageContentWithVC = [UIViewController]()
+        
+        for _ in 0..<4 {
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(displayP3Red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
+            pageContentWithVC.append(vc)
+        }
+        
+        let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: pageContentWithVC, parentVC: self)
+        return pageContentView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +63,12 @@ extension MQHomeController {
         self.automaticallyAdjustsScrollViewInsets = false
         // 设置导航栏
         setupNav()
+        
         // 添加 PageTitleView
         self.view.addSubview(pageTitleViews)
+        
+        // 添加 PageContentView
+        self.view.addSubview(pageContentViews)
     }
     
     // 设置导航栏
