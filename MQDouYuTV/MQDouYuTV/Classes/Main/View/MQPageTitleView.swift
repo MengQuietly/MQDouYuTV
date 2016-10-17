@@ -4,7 +4,7 @@
 //
 //  Created by mengmeng on 16/9/22.
 //  Copyright © 2016年 mengQuietly. All rights reserved.
-//
+//  Home MQPageTitleView
 
 import UIKit
 
@@ -47,7 +47,6 @@ class MQPageTitleView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }
 
 // MARK:- 设置 MQPageTitleView－UI
@@ -64,9 +63,9 @@ extension MQPageTitleView {
         
         // 设置 TitleScrollViewWithBottomLineView
         setTitleScrollViewWithBottomLineView()
-        
     }
     
+    // set title label Arr
     func setTitleLabels() {
         
         let titleLabelY: CGFloat = 0
@@ -95,6 +94,7 @@ extension MQPageTitleView {
         }
     }
     
+    // set title scrollView Bottom line
     func setTitleScrollViewWithBottomLineView() {
         
         // 添加 TitleScrollViewWithBottomLineView

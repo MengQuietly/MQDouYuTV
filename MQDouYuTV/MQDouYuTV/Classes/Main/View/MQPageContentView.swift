@@ -4,7 +4,7 @@
 //
 //  Created by mengmeng on 16/9/23.
 //  Copyright © 2016年 mengQuietly. All rights reserved.
-//
+//  Home PageContentView
 
 import UIKit
 
@@ -15,16 +15,16 @@ class MQPageContentView: UIView {
     
     // MARK:- 定义属性
     var childVCList:[UIViewController] = [UIViewController]()
-    var parentVC: UIViewController = UIViewController()
+    weak var parentVC: UIViewController? // weak 修饰可选链
 
     // MARK:- 懒加载数据
-    lazy var contentCollectionViews: UICollectionView = {
+    lazy var contentCollectionViews: UICollectionView = {[weak self] in
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
-        layout.itemSize = self.bounds.size
+        layout.itemSize = (self?.bounds.size)!
         
         let contentCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         contentCollectionView.showsHorizontalScrollIndicator = false
@@ -35,7 +35,7 @@ class MQPageContentView: UIView {
         return contentCollectionView
     }()
     
-    init(frame: CGRect,childVCList: [UIViewController], parentVC: UIViewController) {
+    init(frame: CGRect,childVCList: [UIViewController], parentVC: UIViewController?) {
         self.childVCList = childVCList
         self.parentVC = parentVC
         super.init(frame: frame)
@@ -54,11 +54,10 @@ extension MQPageContentView {
     
     func setupUI() {
         for child in childVCList {
-            parentVC.addChildViewController(child)
+            parentVC?.addChildViewController(child)
         }
         contentCollectionViews.frame = bounds
         addSubview(contentCollectionViews)
-        
     }
 }
 

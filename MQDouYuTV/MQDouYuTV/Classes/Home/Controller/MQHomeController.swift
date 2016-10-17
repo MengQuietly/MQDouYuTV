@@ -4,7 +4,7 @@
 //
 //  Created by mengmeng on 16/9/22.
 //  Copyright © 2016年 mengQuietly. All rights reserved.
-//
+//  HomeController
 
 import UIKit
 
@@ -23,7 +23,7 @@ class MQHomeController: UIViewController {
         return pageTitleView
     }()
     
-    lazy var pageContentViews: MQPageContentView = {
+    lazy var pageContentViews: MQPageContentView = {[weak self] in
         
         let pageContentViewY = kStatusBarH + kNaviagtionBarH + kPageTitleViewH
         let pageContentViewH = kScreenH - kStatusBarH - kNaviagtionBarH - kPageTitleViewH - kTabBarH
