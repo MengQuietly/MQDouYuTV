@@ -135,6 +135,12 @@ extension MQPageTitleView{
         currentTitleLabel.textColor = UIColor.orange
         
         currentSelectLabelIndex = currentTitleLabel.tag
+        
+        let titleLabelWithBottomLineViewX = CGFloat(currentSelectLabelIndex) * currentTitleLabel.frame.width
+        
+        UIView.animate(withDuration: 0.25) { [weak self] in
+            self?.titleLabelWithBottomLineViews.frame.origin.x = titleLabelWithBottomLineViewX
+        }
 
     }
 }
