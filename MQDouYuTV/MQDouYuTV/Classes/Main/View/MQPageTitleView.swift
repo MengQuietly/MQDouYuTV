@@ -16,11 +16,15 @@ private let kTitleScrollViewWithBottomLineViewH: CGFloat = 1
 // MARK:- MQPageTitleView
 class MQPageTitleView: UIView {
 
-    // 定义属性
+    // 当前label Index
+    var currentSelectLabelIndex : Int = 0
+    /// 定义属性
     var title = [String]()
     
-    // 懒加载属性
+    /// 懒加载属性
+    // titleLabel Array
     lazy var titleLabelList:[UILabel] = [UILabel]()
+    // title ScrollView
     lazy var titleScrollViews: UIScrollView = {
         let titleScrollView = UIScrollView()
         titleScrollView.showsHorizontalScrollIndicator = false
@@ -28,14 +32,14 @@ class MQPageTitleView: UIView {
         titleScrollView.bounces = false
         return titleScrollView
     }()
-    
+    // titleLabel BottomLine
     lazy var titleLabelWithBottomLineViews: UIView = {
         let titleLabelWithBottomLineView = UIView()
         titleLabelWithBottomLineView.backgroundColor = UIColor.orange
         return titleLabelWithBottomLineView
     }()
     
-    // MARK:- 自定义构造函数
+    /// MARK:- 自定义构造函数
     init(frame: CGRect, title:[String]) {
         self.title = title
         super.init(frame: frame)
@@ -91,6 +95,10 @@ extension MQPageTitleView {
             
             titleScrollViews.addSubview(titleLabel)
             titleLabelList.append(titleLabel)
+            // 添加手势
+            titleLabel.isUserInteractionEnabled = true
+            let tap = UITapGestureRecognizer(target: self, action: #selector(pageTitleLabelClick(tap:)))
+            titleLabel.addGestureRecognizer(tap)
         }
     }
     
@@ -110,6 +118,23 @@ extension MQPageTitleView {
         let titleLabelWithBottomLineViewY: CGFloat = currentLabelF.size.height - kTitleLabelWithBottomLineViewH
         titleLabelWithBottomLineViews.frame = CGRect(x: currentLabelF.origin.x, y: titleLabelWithBottomLineViewY, width: currentLabelF.size.width, height: kTitleLabelWithBottomLineViewH)
         titleScrollViews.addSubview(titleLabelWithBottomLineViews)
+
+    }
+}
+
+// MARK:- 监听titleLabel点击(注：事件方法前最好添加 “@objc”)
+extension MQPageTitleView{
+    @objc func pageTitleLabelClick(tap:UITapGestureRecognizer){
+        
+        guard let currentTitleLabel = tap.view as? UILabel else {
+            return
+        }
+        
+        let beforeTitleLabel = titleLabelList[currentSelectLabelIndex]
+        beforeTitleLabel.textColor = UIColor.darkGray
+        currentTitleLabel.textColor = UIColor.orange
+        
+        currentSelectLabelIndex = currentTitleLabel.tag
 
     }
 }
