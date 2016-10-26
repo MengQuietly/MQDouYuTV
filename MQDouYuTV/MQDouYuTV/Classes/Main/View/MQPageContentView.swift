@@ -79,3 +79,12 @@ extension MQPageContentView: UICollectionViewDataSource {
         return cell
     }
 }
+
+// MARK: - 对外暴露的方法
+extension MQPageContentView{
+    func setCurrentIndex(currentIndex: Int){
+        let offsetX = CGFloat(currentIndex) * contentCollectionViews.frame.width
+        contentCollectionViews.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+    }
+    
+}

@@ -20,6 +20,7 @@ class MQHomeController: UIViewController {
         let pageTitleViewF = CGRect(x: 0, y: kStatusBarH + kNaviagtionBarH, width: kScreenW, height: kPageTitleViewH)
         let pageTitleViewWithTitle = ["推荐", "游戏", "娱乐", "趣玩"]
         let pageTitleView = MQPageTitleView(frame: pageTitleViewF, title: pageTitleViewWithTitle)
+        pageTitleView.delegate = self
         return pageTitleView
     }()
     
@@ -82,4 +83,11 @@ extension MQHomeController {
         self.navigationItem.rightBarButtonItems = [historyItem, searchItem, scanItem]
     }
     
+}
+
+// MARK:-实现 MQPageTitleViewDelegate
+extension MQHomeController: MQPageTitleViewDelegate{
+    func pageTitleView(titleView: MQPageTitleView, currentSelIndex selIndex: Int) {
+        pageContentViews.setCurrentIndex(currentIndex: selIndex)
+    }
 }

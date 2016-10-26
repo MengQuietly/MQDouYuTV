@@ -13,13 +13,21 @@ private let kTitleLabelWithBottomLineViewH: CGFloat = 2
 private let kTitleScrollViewWithBottomLineViewH: CGFloat = 1
 //private let kTitleScrollViewWithBottomLineViewY: CGFloat =
 
+// MARK: 设置 Delegate，“:class” 表此协议只能被类遵守
+protocol MQPageTitleViewDelegate: class {
+    func pageTitleView(titleView:MQPageTitleView,currentSelIndex selIndex:Int)
+}
+
 // MARK:- MQPageTitleView
 class MQPageTitleView: UIView {
 
     // 当前label Index
     var currentSelectLabelIndex : Int = 0
+    
     /// 定义属性
     var title = [String]()
+    // 定义代理
+    var delegate:MQPageTitleViewDelegate?
     
     /// 懒加载属性
     // titleLabel Array
@@ -141,6 +149,8 @@ extension MQPageTitleView{
         UIView.animate(withDuration: 0.25) { [weak self] in
             self?.titleLabelWithBottomLineViews.frame.origin.x = titleLabelWithBottomLineViewX
         }
+        // 通知代理
+        delegate?.pageTitleView(titleView: self, currentSelIndex: currentSelectLabelIndex)
 
     }
 }
