@@ -11,7 +11,8 @@ import UIKit
 // TitleBottomLabelWithLineView-height、TitleScrollViewWithBottomLineView-height
 private let kTitleLabelWithBottomLineViewH: CGFloat = 2
 private let kTitleScrollViewWithBottomLineViewH: CGFloat = 1
-//private let kTitleScrollViewWithBottomLineViewY: CGFloat =
+private let kTitleLabelWithNormalColor : (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
+private let kTitleLabelWithSelectColor : (CGFloat, CGFloat, CGFloat) = (255, 128, 0)
 
 // MARK: 设置 Delegate，“:class” 表此协议只能被类遵守
 protocol MQPageTitleViewDelegate: class {
@@ -89,13 +90,10 @@ extension MQPageTitleView {
             titleLabel.tag = index
             titleLabel.text = labelTitle
             titleLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
-            titleLabel.adjustsFontForContentSizeCategory = true
-            if index == 1 || index == 3 {
-                titleLabel.backgroundColor = UIColor.blue
-            } else {
-                titleLabel.backgroundColor = UIColor.yellow
+            if #available(iOS 10.0, *) {
+                titleLabel.adjustsFontForContentSizeCategory = true
             }
-            titleLabel.textColor = UIColor.black
+            titleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
             titleLabel.textAlignment = .center
             let titleLabelX: CGFloat = titleLabelW * CGFloat(index)
             
@@ -121,7 +119,8 @@ extension MQPageTitleView {
 
         // 添加 TitleLabelWithBottomLineView
         guard let currentLabel = titleLabelList.first else { return }
-        currentLabel.textColor = UIColor.orange
+        currentLabel.textColor = UIColor(displayP3Red: kTitleLabelWithSelectColor.0, green: kTitleLabelWithSelectColor.1, blue: kTitleLabelWithSelectColor.2)
+
         let currentLabelF = currentLabel.frame
         let titleLabelWithBottomLineViewY: CGFloat = currentLabelF.size.height - kTitleLabelWithBottomLineViewH
         titleLabelWithBottomLineViews.frame = CGRect(x: currentLabelF.origin.x, y: titleLabelWithBottomLineViewY, width: currentLabelF.size.width, height: kTitleLabelWithBottomLineViewH)
@@ -139,8 +138,9 @@ extension MQPageTitleView{
         }
         
         let beforeTitleLabel = titleLabelList[currentSelectLabelIndex]
-        beforeTitleLabel.textColor = UIColor.darkGray
-        currentTitleLabel.textColor = UIColor.orange
+        beforeTitleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
+
+        currentTitleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithSelectColor.0, green: kTitleLabelWithSelectColor.1, blue: kTitleLabelWithSelectColor.2)
         
         currentSelectLabelIndex = currentTitleLabel.tag
         
@@ -152,5 +152,26 @@ extension MQPageTitleView{
         // 通知代理
         delegate?.pageTitleView(titleView: self, currentSelIndex: currentSelectLabelIndex)
 
+    }
+}
+
+// MARK: - 设置滚动信息（对外暴露方法，进行设值）
+extension MQPageTitleView{
+    func setPageTitleViewWithScroll(progress: CGFloat,startIndex: Int,endIndex: Int) {
+     
+        let startLabel = titleLabelList[startIndex]
+        let endLabel = titleLabelList[endIndex]
+        
+        let moveTotalX = endLabel.frame.origin.x - startLabel.frame.origin.x
+        let moveX = moveTotalX * progress
+        titleLabelWithBottomLineViews.frame.origin.x = startLabel.frame.origin.x + moveX
+        
+        let colorDelta = (kTitleLabelWithSelectColor.0 - kTitleLabelWithNormalColor.0,kTitleLabelWithSelectColor.1 - kTitleLabelWithNormalColor.1,kTitleLabelWithSelectColor.2 - kTitleLabelWithNormalColor.2)
+        
+        startLabel.textColor = UIColor(displayP3Red: kTitleLabelWithSelectColor.0-colorDelta.0 * progress, green: kTitleLabelWithSelectColor.1-colorDelta.1 * progress, blue: kTitleLabelWithSelectColor.2-colorDelta.2 * progress)
+        endLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0+colorDelta.0 * progress, green: kTitleLabelWithNormalColor.1+colorDelta.1 * progress, blue: kTitleLabelWithNormalColor.2+colorDelta.2 * progress)
+        
+        // 记录最新的Index
+        currentSelectLabelIndex = endIndex
     }
 }

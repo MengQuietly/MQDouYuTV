@@ -10,9 +10,14 @@ import UIKit
 
 extension UIColor {
     
+    
     convenience init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat) {
         
-       self.init(displayP3Red: displayP3Red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+        if #available(iOS 10.0, *) {
+            self.init(displayP3Red: displayP3Red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+        } else {
+            self.init(red: displayP3Red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+        }
     }
     
 }

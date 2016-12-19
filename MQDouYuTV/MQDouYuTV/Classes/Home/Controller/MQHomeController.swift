@@ -39,6 +39,7 @@ class MQHomeController: UIViewController {
         }
         
         let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: pageContentWithVC, parentVC: self)
+        pageContentView.pageContentViewDelegate = self
         return pageContentView
     }()
 
@@ -89,5 +90,12 @@ extension MQHomeController {
 extension MQHomeController: MQPageTitleViewDelegate{
     func pageTitleView(titleView: MQPageTitleView, currentSelIndex selIndex: Int) {
         pageContentViews.setCurrentIndex(currentIndex: selIndex)
+    }
+}
+
+// MARK:-实现 MQPageContentViewDelegate(设置contentView滚动信息)
+extension MQHomeController: MQPageContentViewDelegate{
+    func pageContentViewWithSetScroll(contentView: MQPageContentView, progress: CGFloat, startIndex: Int, endIndex: Int) {
+        pageTitleViews.setPageTitleViewWithScroll(progress: progress, startIndex: startIndex, endIndex: endIndex)
     }
 }
