@@ -44,9 +44,9 @@ class MQPageContentView: UIView {
     }()
     
     init(frame: CGRect,childVCList: [UIViewController], parentVC: UIViewController?) {
+        super.init(frame: frame)
         self.childVCList = childVCList
         self.parentVC = parentVC
-        super.init(frame: frame)
         
         // 设置 UI
         setupUI()
@@ -62,6 +62,7 @@ extension MQPageContentView {
     
     func setupUI() {
         for child in childVCList {
+            child.view.frame = bounds
             parentVC?.addChildViewController(child)
         }
         contentCollectionViews.frame = bounds
@@ -119,17 +120,17 @@ extension MQPageContentView: UICollectionViewDelegate{
                 progress = 1
                 endIndex = startIndex
             }
-            print("左滑 startIndex=\(startIndex),endIndex=\(endIndex)")
+//            print("左滑 startIndex=\(startIndex),endIndex=\(endIndex)")
             
         } else {
             progress = 1 - (currentContentOfSetX / scrollViewW - floor(currentContentOfSetX / scrollViewW))
             endIndex = (Int)(currentContentOfSetX/scrollViewW)
             startIndex = endIndex + 1
-            print("右滑 startIndex=\(startIndex),endIndex=\(endIndex)")
+//            print("右滑 startIndex=\(startIndex),endIndex=\(endIndex)")
         }
         
         // 传递滚动信息
-        print("progress=\(progress)，StartIndex=\(startIndex),endIndex=\(endIndex)")
+//        print("progress=\(progress)，StartIndex=\(startIndex),endIndex=\(endIndex)")
         pageContentViewDelegate?.pageContentViewWithSetScroll(contentView: self, progress: progress, startIndex: startIndex, endIndex: endIndex)
     }
 }

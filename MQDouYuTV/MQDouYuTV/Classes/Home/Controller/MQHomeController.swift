@@ -4,7 +4,7 @@
 //
 //  Created by mengmeng on 16/9/22.
 //  Copyright © 2016年 mengQuietly. All rights reserved.
-//  HomeController
+//  HomeController 首页主布局
 
 import UIKit
 
@@ -31,14 +31,17 @@ class MQHomeController: UIViewController {
         let pageContentViewF = CGRect(x: 0, y: pageContentViewY, width: kScreenW, height: pageContentViewH)
         
         var pageContentWithVC = [UIViewController]()
-        
-        for _ in 0..<4 {
+        // 添加推荐界面
+        pageContentWithVC.append(MQRecommendController())
+        // 添加其它界面
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(displayP3Red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
             pageContentWithVC.append(vc)
         }
         
         let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: pageContentWithVC, parentVC: self)
+        
         pageContentView.pageContentViewDelegate = self
         return pageContentView
     }()
