@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MQRecommendNormalCell" customModule="MQDouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="E33-Nm-ex3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="i0C-Yv-Kb1"/>
+                            <constraint firstAttribute="width" constant="14" id="yMY-O1-SKT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌萌直播中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-Sj-fQZ">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="Cw3-Gz-Qfb">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.con">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌萌的房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-L6-oHF">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-Io-dyS">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="66666人在线" image="Img_user"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Cw3-Gz-Qfb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7om-9e-8Qi"/>
+                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="top" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="5" id="EfY-x8-3Rv"/>
+                <constraint firstAttribute="trailing" secondItem="RIS-Sj-fQZ" secondAttribute="trailing" constant="5" id="LPl-lb-hjz"/>
+                <constraint firstItem="lgv-Io-dyS" firstAttribute="trailing" secondItem="Cw3-Gz-Qfb" secondAttribute="trailing" constant="-5" id="XNx-SG-g5g"/>
+                <constraint firstAttribute="trailing" secondItem="Cw3-Gz-Qfb" secondAttribute="trailing" id="aZ4-EJ-APf"/>
+                <constraint firstItem="lgv-Io-dyS" firstAttribute="bottom" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="-5" id="fWR-K0-r6T"/>
+                <constraint firstItem="nIe-L6-oHF" firstAttribute="leading" secondItem="Cw3-Gz-Qfb" secondAttribute="leading" constant="5" id="gpp-ZS-daz"/>
+                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="leading" secondItem="E33-Nm-ex3" secondAttribute="trailing" constant="5" id="k5p-cY-B81"/>
+                <constraint firstItem="E33-Nm-ex3" firstAttribute="centerY" secondItem="RIS-Sj-fQZ" secondAttribute="centerY" id="oMD-NC-GZY"/>
+                <constraint firstItem="Cw3-Gz-Qfb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oXY-gb-twd"/>
+                <constraint firstItem="nIe-L6-oHF" firstAttribute="bottom" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="-5" id="pWI-lt-YTV"/>
+                <constraint firstAttribute="bottom" secondItem="E33-Nm-ex3" secondAttribute="bottom" constant="10" id="rIb-Te-PIE"/>
+                <constraint firstItem="E33-Nm-ex3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uXU-xP-NQc"/>
+            </constraints>
+            <size key="customSize" width="295" height="225"/>
+            <point key="canvasLocation" x="-48.5" y="70.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="Img_user" width="16" height="16"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>

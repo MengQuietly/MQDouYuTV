@@ -31,13 +31,17 @@ class MQRecommendController: UIViewController {
         layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
         
         let collectionViews = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionViews.backgroundColor = UIColor.green
+        collectionViews.backgroundColor = UIColor.white
         collectionViews.dataSource = self
         // 相对于父控件宽高不变
         collectionViews.autoresizingMask = [UIViewAutoresizing.flexibleHeight,UIViewAutoresizing.flexibleWidth]
         // 注册cell
-        collectionViews.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
-        collectionViews.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
+//        collectionViews.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionViews.register(UINib(nibName: "MQRecommendHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionViews.register(UINib(nibName: "MQRecommendNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
+//        collectionViews.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
+        
+        
         
         return collectionViews
     }()
@@ -45,7 +49,6 @@ class MQRecommendController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
     }
 }
 
@@ -53,6 +56,8 @@ class MQRecommendController: UIViewController {
 extension MQRecommendController{
     func setupUI(){
         view.addSubview(collectionViews)
+        
+        
     }
 }
 
@@ -71,14 +76,14 @@ extension MQRecommendController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
-        cell.backgroundColor = kRandomColor
+        cell.backgroundColor = UIColor.white
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         let headerViews = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
-        headerViews.backgroundColor = UIColor.brown
+        headerViews.backgroundColor = UIColor.white
         return headerViews
     }
 }

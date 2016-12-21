@@ -14,6 +14,10 @@
 		094B304C1E07C07B008B53B0 /* MQRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B304B1E07C07B008B53B0 /* MQRecommendController.swift */; };
 		09AE95E81D9509D40025802D /* MQPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE95E71D9509D40025802D /* MQPageContentView.swift */; };
 		09AE95EA1D950DA60025802D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE95E91D950DA60025802D /* UIColor+Extension.swift */; };
+		09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */; };
+		09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */; };
+		09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */; };
+		09D25C8D1E093CD500BE1402 /* MQRecommendNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */; };
 		09E96F9B1D93B66D00DD50ED /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F821D93B66C00DD50ED /* Follow.storyboard */; };
 		09E96F9C1D93B66D00DD50ED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F871D93B66C00DD50ED /* Home.storyboard */; };
 		09E96F9D1D93B66D00DD50ED /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F8C1D93B66C00DD50ED /* Live.storyboard */; };
@@ -48,6 +52,10 @@
 		094B304B1E07C07B008B53B0 /* MQRecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendController.swift; sourceTree = "<group>"; };
 		09AE95E71D9509D40025802D /* MQPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQPageContentView.swift; sourceTree = "<group>"; };
 		09AE95E91D950DA60025802D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendHeadView.swift; sourceTree = "<group>"; };
+		09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendHeadView.xib; sourceTree = "<group>"; };
+		09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendNormalCell.swift; sourceTree = "<group>"; };
+		09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendNormalCell.xib; sourceTree = "<group>"; };
 		09E96F821D93B66C00DD50ED /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		09E96F871D93B66C00DD50ED /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		09E96F8C1D93B66C00DD50ED /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
@@ -192,6 +200,8 @@
 		09E96F891D93B66C00DD50ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */,
+				09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +269,8 @@
 			children = (
 				09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */,
 				09AE95E71D9509D40025802D /* MQPageContentView.swift */,
+				09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */,
+				09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -398,6 +410,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */,
+				09D25C8D1E093CD500BE1402 /* MQRecommendNormalCell.xib in Resources */,
 				09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */,
 				09250B571D92269E00D172EF /* Assets.xcassets in Resources */,
 				09E96F9C1D93B66D00DD50ED /* Home.storyboard in Resources */,
@@ -426,6 +440,8 @@
 				09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */,
 				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
 				09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */,
+				09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */,
+				09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */,
 				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
 				09E96FA91D93DA5500DD50ED /* MQPageTitleView.swift in Sources */,
 				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,
