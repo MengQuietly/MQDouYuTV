@@ -51,6 +51,7 @@ class MQRecommendController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        getRecommentListData()
     }
 }
 
@@ -99,5 +100,23 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
             return CGSize(width: kItemW, height: kPrettyScoreItemH)
         }
         return CGSize(width: kItemW, height: kItemH)
+    }
+}
+
+// MARK:- 网络请求
+extension MQRecommendController{
+    func getRecommentListData(){
+        let url = "https://httpbin.org/post"
+
+        MQNetworkingTool.requestData(type: MQMethodType.POST, url: url) { (responseObject:AnyObject) in
+            print("MG responseObject = \(responseObject)")
+        }
+        
+        MQNetworkingTool.sendRequest(type: MQMethodType.POST, url: url, succeed: { (responseObject:[String : AnyObject]?, badNet:Bool) -> ()? in
+            print("responseObject=\(responseObject),badNet=\(badNet)")
+            
+        }) { (error:NSError?, badNet:Bool) -> ()? in
+                print("error=\(error),badNet=\(badNet)")
+        }
     }
 }
