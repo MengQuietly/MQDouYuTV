@@ -41,14 +41,13 @@ class MQNetworkingTool {
 //        Alamofire.request(urlRequest).responseJSON { (response) in
     
         Alamofire.request(url).validate(contentType: ["application/json"]).responseJSON { response in
-            print(response.timeline)
+            MQLog(response.timeline)
     
             if #available(iOS 10.0, *) {
-                print(response.metrics)
+                MQLog(response.metrics)
             }
             
-            print("请求时间＝\(response.timeline)\n请求数据＝\(response.data)")
-            print("请求URL＝\(response.request!)\n请求返回值＝\(response.result.value)")
+            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request!)\n请求返回值＝\(response.result.value)")
             if response.result.isSuccess{
                 if let dict = response.result.value as? [String: AnyObject]{
                     succeed(dict, false)
@@ -67,15 +66,14 @@ class MQNetworkingTool {
     class func sendGetRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) {
         
         Alamofire.request(url).validate(contentType: ["application/json"]).responseJSON { response in
-            print(response.timeline)
+            MQLog(response.timeline)
             
             
             if #available(iOS 10.0, *) {
-                print(response.metrics)
+                MQLog(response.metrics)
             }
             
-            print("请求时间＝\(response.timeline)\n请求数据＝\(response.data)")
-            print("请求URL＝\(response.request!)\n请求返回值＝\(response.result.value)")
+            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request!)\n返回值＝\(response.result.value)")
             if response.result.isSuccess{
                 if let dict = response.result.value as? [String: AnyObject]{
                     succeed(dict, false)
@@ -96,8 +94,7 @@ class MQNetworkingTool {
         let headers: HTTPHeaders = ["Accept": "application/json"]
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse) in
             
-            print("请求时间＝\(response.timeline)/\n请求数据＝\(response.data)")
-            print("请求URL＝\(response.request)/\n请求返回值＝\(response.result.value)")
+            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)\n返回值＝\(response.result.value)")
             
             if response.result.isSuccess{
                 if let dict = response.result.value as? [String: AnyObject]{
@@ -154,15 +151,15 @@ class MQNetworkingTool {
 ////        //根据config创建manager
 ////        manger = SessionManager(configuration: config)
 //        Alamofire.request(url).validate(contentType: ["application/json"]).responseJSON { response in
-//            print(response.timeline)
+//            MQLog(response.timeline)
 ////        }
 ////        
 ////        Alamofire.request(url, method: methods, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse) in
 //            
-//            print("请求：\(response.request!),\(response.result.value)")
+//            MQLog("请求：\(response.request!),\(response.result.value)")
 //            
 //            guard let result = response.result.value else{
-//                print("MG 请求失败：\(response.result.error)")
+//                MQLog("MG 请求失败：\(response.result.error)")
 //                return
 //            }
 //            finishCallBack(result as AnyObject)
@@ -178,29 +175,18 @@ class MQNetworkingTool {
 //            methods = HTTPMethod.post
 //        }
 //        Alamofire.request(url, method: methods, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse) in
-//            
-//            if response.result.isSuccess{
-//                if let dict = response.result.value as? [String: AnyObject]{
-//                    succeed(dict, false)
-//                }else{//没有数据.网络错误
-//                    let error = response.result.error as NSError?
-//                    failure(error, true)
-//                }
-//            }else{//网络错误
-//                let error = response.result.error as NSError?
-//                failure(error, true)
-//            }
+//
 //            
 ////            switch(response.result) {
 ////            case .success(_):
 ////                if let data = response.result.value{
-////                    print(data)
+////                    MQLog(data)
 ////                    finish(data as AnyObject, false)
 ////                }
 ////                break
 ////                
 ////            case .failure(_):
-////                print(response.result.error)
+////                MQLog(response.result.error)
 ////                finish(response.result.error as AnyObject, true)
 ////                break
 ////            }

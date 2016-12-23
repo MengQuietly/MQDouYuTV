@@ -120,17 +120,17 @@ extension MQPageContentView: UICollectionViewDelegate{
                 progress = 1
                 endIndex = startIndex
             }
-//            print("左滑 startIndex=\(startIndex),endIndex=\(endIndex)")
+//            MQLog("左滑 startIndex=\(startIndex),endIndex=\(endIndex)")
             
         } else {
             progress = 1 - (currentContentOfSetX / scrollViewW - floor(currentContentOfSetX / scrollViewW))
             endIndex = (Int)(currentContentOfSetX/scrollViewW)
             startIndex = endIndex + 1
-//            print("右滑 startIndex=\(startIndex),endIndex=\(endIndex)")
+//            MQLog("右滑 startIndex=\(startIndex),endIndex=\(endIndex)")
         }
         
         // 传递滚动信息
-//        print("progress=\(progress)，StartIndex=\(startIndex),endIndex=\(endIndex)")
+//        MQLog("progress=\(progress)，StartIndex=\(startIndex),endIndex=\(endIndex)")
         pageContentViewDelegate?.pageContentViewWithSetScroll(contentView: self, progress: progress, startIndex: startIndex, endIndex: endIndex)
     }
 }

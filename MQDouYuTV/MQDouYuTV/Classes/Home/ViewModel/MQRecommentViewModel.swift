@@ -27,13 +27,13 @@ extension MQRecommentViewModel{
 
 //        "http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&time=1482461305&offset=0"
         let time = NSDate.getCurrentDateNumber()
-        print("date=\(time)")
+        MQLog("date=\(time)")
         let parameters = ["time":"\(time)","limit":"4","offset":"0"]
         MQNetworkingTool.sendGetRequest(url: hotUrl, parameters: parameters, succeed: { (responseObject:[String : AnyObject]?, isBadNet:Bool) -> ()? in
-            print("responseObject=\(responseObject),isBadNet=\(isBadNet)")
-            
+            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
+
         }) { (error:NSError?, isBadNet:Bool) -> ()? in
-            print("error=\(error),isBadNet=\(isBadNet)")
+            MQLog("error=\(error),isBadNet=\(isBadNet)")
         }
     }
 }
