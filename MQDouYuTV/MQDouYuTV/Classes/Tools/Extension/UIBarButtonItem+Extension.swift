@@ -30,6 +30,7 @@ extension UIBarButtonItem {
         return UIBarButtonItem(customView: navBtnItem)
     }*/
     
+    //MARK:-barBtnItem：默认图、高亮图、Size
     convenience init(imageName: String, hightImageName: String = "", size: CGSize = CGSize.zero) {
         let navBtnItem = UIButton(type: .custom)
         navBtnItem.setImage(UIImage(named: imageName), for: .normal)

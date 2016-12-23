@@ -20,6 +20,7 @@ private let kPrettyScoreCellID = "kPrettyScoreCellID"
 
 class MQRecommendController: UIViewController {
 
+    lazy var recommentViewModel = MQRecommentViewModel()
     // MARK: 懒加载 collectionView
     lazy var collectionViews: UICollectionView = { [unowned self] in
 
@@ -106,17 +107,6 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
 // MARK:- 网络请求
 extension MQRecommendController{
     func getRecommentListData(){
-        let url = "https://httpbin.org/post"
-
-        MQNetworkingTool.requestData(type: MQMethodType.POST, url: url) { (responseObject:AnyObject) in
-            print("MG responseObject = \(responseObject)")
-        }
-        
-        MQNetworkingTool.sendRequest(type: MQMethodType.POST, url: url, succeed: { (responseObject:[String : AnyObject]?, badNet:Bool) -> ()? in
-            print("responseObject=\(responseObject),badNet=\(badNet)")
-            
-        }) { (error:NSError?, badNet:Bool) -> ()? in
-                print("error=\(error),badNet=\(badNet)")
-        }
+        recommentViewModel.getData()
     }
 }

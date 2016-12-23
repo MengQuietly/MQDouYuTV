@@ -1,1673 +1,778 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01E6CFD373B2F2296B1E0391</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>09250B431D92269E00D172EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09250B4E1D92269E00D172EF</string>
-				<string>09250B631D92269E00D172EF</string>
-				<string>09250B4D1D92269E00D172EF</string>
-				<string>0B8F57D51A050A00EB2F9D24</string>
-				<string>F2CF7E706C0F09FA70924236</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B441D92269E00D172EF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>MQ</string>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0800</string>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>mengQuietly</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>09250B4B1D92269E00D172EF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>84485MBE34</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>09250B5F1D92269E00D172EF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>09250B4B1D92269E00D172EF</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>09250B471D92269E00D172EF</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>09250B431D92269E00D172EF</string>
-			<key>productRefGroup</key>
-			<string>09250B4D1D92269E00D172EF</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>09250B4B1D92269E00D172EF</string>
-				<string>09250B5F1D92269E00D172EF</string>
-			</array>
-		</dict>
-		<key>09250B471D92269E00D172EF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>09250B671D92269E00D172EF</string>
-				<string>09250B681D92269E00D172EF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>09250B481D92269E00D172EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>09D25C901E0A1CA700BE1402</string>
-				<string>094B304C1E07C07B008B53B0</string>
-				<string>09E96FA71D93C5D300DD50ED</string>
-				<string>0945C6931E0BC88100A9BCFC</string>
-				<string>0945C6911E0BC85600A9BCFC</string>
-				<string>09E96FA21D93B92A00DD50ED</string>
-				<string>09E96FAB1D93DC9E00DD50ED</string>
-				<string>09D25C881E093C4800BE1402</string>
-				<string>09D25C8C1E093CD500BE1402</string>
-				<string>09E96FA41D93BDBA00DD50ED</string>
-				<string>09E96FA91D93DA5500DD50ED</string>
-				<string>09250B501D92269E00D172EF</string>
-				<string>09AE95E81D9509D40025802D</string>
-				<string>09AE95EA1D950DA60025802D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09250B491D92269E00D172EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BFE0BF8A3FCA7108EBAA366D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09250B4A1D92269E00D172EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>09D25C891E093C4800BE1402</string>
-				<string>09D25C8D1E093CD500BE1402</string>
-				<string>09D25C911E0A1CA700BE1402</string>
-				<string>09250B5A1D92269E00D172EF</string>
-				<string>09250B571D92269E00D172EF</string>
-				<string>09E96F9C1D93B66D00DD50ED</string>
-				<string>09E96F9B1D93B66D00DD50ED</string>
-				<string>09E96F9E1D93B66D00DD50ED</string>
-				<string>09E96FA01D93B66D00DD50ED</string>
-				<string>09E96F9D1D93B66D00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09250B4B1D92269E00D172EF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>09250B691D92269E00D172EF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F69266C9489864D4AF7319AC</string>
-				<string>09250B481D92269E00D172EF</string>
-				<string>09250B491D92269E00D172EF</string>
-				<string>09250B4A1D92269E00D172EF</string>
-				<string>1B2D00EC740127ED5DADF608</string>
-				<string>01E6CFD373B2F2296B1E0391</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MQDouYuTV</string>
-			<key>productName</key>
-			<string>MQDouYuTV</string>
-			<key>productReference</key>
-			<string>09250B4C1D92269E00D172EF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>09250B4C1D92269E00D172EF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MQDouYuTV.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>09250B4D1D92269E00D172EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09250B4C1D92269E00D172EF</string>
-				<string>09250B601D92269E00D172EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B4E1D92269E00D172EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F7F1D93B66C00DD50ED</string>
-				<string>09250B4F1D92269E00D172EF</string>
-				<string>09250B561D92269E00D172EF</string>
-				<string>09250B581D92269E00D172EF</string>
-				<string>09250B5B1D92269E00D172EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MQDouYuTV</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B4F1D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B501D92269E00D172EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09250B4F1D92269E00D172EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09250B561D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B571D92269E00D172EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09250B561D92269E00D172EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09250B581D92269E00D172EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09250B591D92269E00D172EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B591D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B5A1D92269E00D172EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09250B581D92269E00D172EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09250B5B1D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B5C1D92269E00D172EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>09250B651D92269E00D172EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09250B5D1D92269E00D172EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09250B5E1D92269E00D172EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09250B5F1D92269E00D172EF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>09250B6C1D92269E00D172EF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>09250B5C1D92269E00D172EF</string>
-				<string>09250B5D1D92269E00D172EF</string>
-				<string>09250B5E1D92269E00D172EF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>09250B621D92269E00D172EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MQDouYuTVTests</string>
-			<key>productName</key>
-			<string>MQDouYuTVTests</string>
-			<key>productReference</key>
-			<string>09250B601D92269E00D172EF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>09250B601D92269E00D172EF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MQDouYuTVTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>09250B611D92269E00D172EF</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>09250B441D92269E00D172EF</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>09250B4B1D92269E00D172EF</string>
-			<key>remoteInfo</key>
-			<string>MQDouYuTV</string>
-		</dict>
-		<key>09250B621D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>09250B4B1D92269E00D172EF</string>
-			<key>targetProxy</key>
-			<string>09250B611D92269E00D172EF</string>
-		</dict>
-		<key>09250B631D92269E00D172EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09250B641D92269E00D172EF</string>
-				<string>09250B661D92269E00D172EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MQDouYuTVTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B641D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQDouYuTVTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B651D92269E00D172EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09250B641D92269E00D172EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09250B661D92269E00D172EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09250B671D92269E00D172EF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>09250B681D92269E00D172EF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>09250B691D92269E00D172EF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>09250B6A1D92269E00D172EF</string>
-				<string>09250B6B1D92269E00D172EF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>09250B6A1D92269E00D172EF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8B839E82259038047E40BDB1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>84485MBE34</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MQDouYuTV/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.mengQuietly.MQDouYuTV</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>09250B6B1D92269E00D172EF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AF8FB5B425BFBA40FE1475FA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>84485MBE34</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MQDouYuTV/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.mengQuietly.MQDouYuTV</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>09250B6C1D92269E00D172EF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>09250B6D1D92269E00D172EF</string>
-				<string>09250B6E1D92269E00D172EF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>09250B6D1D92269E00D172EF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MQDouYuTVTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.mengQuietly.MQDouYuTVTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MQDouYuTV.app/MQDouYuTV</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>09250B6E1D92269E00D172EF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MQDouYuTVTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.mengQuietly.MQDouYuTVTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MQDouYuTV.app/MQDouYuTV</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0945C6901E0BC85600A9BCFC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQNetworkingURL.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0945C6911E0BC85600A9BCFC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0945C6901E0BC85600A9BCFC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0945C6921E0BC88100A9BCFC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQNetworkingTool.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0945C6931E0BC88100A9BCFC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0945C6921E0BC88100A9BCFC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>094B304B1E07C07B008B53B0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQRecommendController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>094B304C1E07C07B008B53B0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>094B304B1E07C07B008B53B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09AE95E71D9509D40025802D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQPageContentView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09AE95E81D9509D40025802D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09AE95E71D9509D40025802D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09AE95E91D950DA60025802D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIColor+Extension.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09AE95EA1D950DA60025802D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09AE95E91D950DA60025802D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09D25C861E093C4800BE1402</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQRecommendHeadView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09D25C871E093C4800BE1402</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>MQRecommendHeadView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09D25C881E093C4800BE1402</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09D25C861E093C4800BE1402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09D25C891E093C4800BE1402</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09D25C871E093C4800BE1402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09D25C8A1E093CD500BE1402</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQRecommendNormalCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09D25C8B1E093CD500BE1402</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>MQRecommendNormalCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09D25C8C1E093CD500BE1402</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09D25C8A1E093CD500BE1402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09D25C8D1E093CD500BE1402</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09D25C8B1E093CD500BE1402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09D25C8E1E0A1CA700BE1402</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQPrettyScoreCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09D25C8F1E0A1CA700BE1402</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>MQPrettyScoreCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09D25C901E0A1CA700BE1402</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09D25C8E1E0A1CA700BE1402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09D25C911E0A1CA700BE1402</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09D25C8F1E0A1CA700BE1402</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96F7F1D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F9A1D93B66D00DD50ED</string>
-				<string>09E96F8F1D93B66C00DD50ED</string>
-				<string>09E96F851D93B66C00DD50ED</string>
-				<string>09E96F8A1D93B66C00DD50ED</string>
-				<string>09E96F801D93B66C00DD50ED</string>
-				<string>09E96F951D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F801D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F811D93B66C00DD50ED</string>
-				<string>09E96F831D93B66C00DD50ED</string>
-				<string>09E96F841D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Follow</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F811D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F821D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F821D93B66C00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Follow.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F831D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F841D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F851D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F861D93B66C00DD50ED</string>
-				<string>09E96F881D93B66C00DD50ED</string>
-				<string>09E96F891D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Home</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F861D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F871D93B66C00DD50ED</string>
-				<string>09E96FA31D93BDBA00DD50ED</string>
-				<string>094B304B1E07C07B008B53B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F871D93B66C00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Home.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F881D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F891D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09D25C861E093C4800BE1402</string>
-				<string>09D25C871E093C4800BE1402</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F8A1D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F8B1D93B66C00DD50ED</string>
-				<string>09E96F8D1D93B66C00DD50ED</string>
-				<string>09E96F8E1D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Live</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F8B1D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F8C1D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F8C1D93B66C00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Live.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F8D1D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F8E1D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F8F1D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F901D93B66C00DD50ED</string>
-				<string>09E96F931D93B66C00DD50ED</string>
-				<string>09E96F941D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Main</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F901D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F911D93B66C00DD50ED</string>
-				<string>09E96FA11D93B92A00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F911D93B66C00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F931D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F941D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96FA81D93DA5500DD50ED</string>
-				<string>09AE95E71D9509D40025802D</string>
-				<string>09D25C8A1E093CD500BE1402</string>
-				<string>09D25C8B1E093CD500BE1402</string>
-				<string>09D25C8E1E0A1CA700BE1402</string>
-				<string>09D25C8F1E0A1CA700BE1402</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F951D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F961D93B66C00DD50ED</string>
-				<string>09E96F981D93B66D00DD50ED</string>
-				<string>09E96F991D93B66D00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Profile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F961D93B66C00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96F971D93B66C00DD50ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F971D93B66C00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Profile.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F981D93B66D00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F991D93B66D00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F9A1D93B66D00DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96FA51D93C5B800DD50ED</string>
-				<string>09E96FAA1D93DC9E00DD50ED</string>
-				<string>0945C6901E0BC85600A9BCFC</string>
-				<string>0945C6921E0BC88100A9BCFC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Tools</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96F9B1D93B66D00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96F821D93B66C00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96F9C1D93B66D00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96F871D93B66C00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96F9D1D93B66D00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96F8C1D93B66C00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96F9E1D93B66D00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96F911D93B66C00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96FA01D93B66D00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96F971D93B66C00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96FA11D93B92A00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQTabBarController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96FA21D93B92A00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96FA11D93B92A00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96FA31D93BDBA00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQHomeController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96FA41D93BDBA00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96FA31D93BDBA00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96FA51D93C5B800DD50ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09E96FA61D93C5D300DD50ED</string>
-				<string>09AE95E91D950DA60025802D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Extension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96FA61D93C5D300DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIBarButtonItem+Extension.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96FA71D93C5D300DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96FA61D93C5D300DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96FA81D93DA5500DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQPageTitleView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96FA91D93DA5500DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96FA81D93DA5500DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09E96FAA1D93DC9E00DD50ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MQCommon.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09E96FAB1D93DC9E00DD50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>09E96FAA1D93DC9E00DD50ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0B8F57D51A050A00EB2F9D24</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8B839E82259038047E40BDB1</string>
-				<string>AF8FB5B425BFBA40FE1475FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B2D00EC740127ED5DADF608</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8B839E82259038047E40BDB1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MQDouYuTV.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF8FB5B425BFBA40FE1475FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MQDouYuTV.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BFE0BF8A3FCA7108EBAA366D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D69241BF6EB4968D671E3D16</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D69241BF6EB4968D671E3D16</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_MQDouYuTV.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F2CF7E706C0F09FA70924236</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D69241BF6EB4968D671E3D16</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F69266C9489864D4AF7319AC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>09250B441D92269E00D172EF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09250B501D92269E00D172EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B4F1D92269E00D172EF /* AppDelegate.swift */; };
+		09250B571D92269E00D172EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09250B561D92269E00D172EF /* Assets.xcassets */; };
+		09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B581D92269E00D172EF /* LaunchScreen.storyboard */; };
+		09250B651D92269E00D172EF /* MQDouYuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B641D92269E00D172EF /* MQDouYuTVTests.swift */; };
+		0936C4A51E0BD04200E2B446 /* MQRecommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */; };
+		0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */; };
+		0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */; };
+		094B304C1E07C07B008B53B0 /* MQRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094B304B1E07C07B008B53B0 /* MQRecommendController.swift */; };
+		09A0118E1E0BDAC400CD76CE /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A0118D1E0BDAC400CD76CE /* NSDate+Extension.swift */; };
+		09AE95E81D9509D40025802D /* MQPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE95E71D9509D40025802D /* MQPageContentView.swift */; };
+		09AE95EA1D950DA60025802D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE95E91D950DA60025802D /* UIColor+Extension.swift */; };
+		09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */; };
+		09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */; };
+		09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */; };
+		09D25C8D1E093CD500BE1402 /* MQRecommendNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */; };
+		09D25C901E0A1CA700BE1402 /* MQPrettyScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C8E1E0A1CA700BE1402 /* MQPrettyScoreCell.swift */; };
+		09D25C911E0A1CA700BE1402 /* MQPrettyScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C8F1E0A1CA700BE1402 /* MQPrettyScoreCell.xib */; };
+		09E96F9B1D93B66D00DD50ED /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F821D93B66C00DD50ED /* Follow.storyboard */; };
+		09E96F9C1D93B66D00DD50ED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F871D93B66C00DD50ED /* Home.storyboard */; };
+		09E96F9D1D93B66D00DD50ED /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F8C1D93B66C00DD50ED /* Live.storyboard */; };
+		09E96F9E1D93B66D00DD50ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F911D93B66C00DD50ED /* Main.storyboard */; };
+		09E96FA01D93B66D00DD50ED /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E96F971D93B66C00DD50ED /* Profile.storyboard */; };
+		09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */; };
+		09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */; };
+		09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */; };
+		09E96FA91D93DA5500DD50ED /* MQPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */; };
+		09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E96FAA1D93DC9E00DD50ED /* MQCommon.swift */; };
+		BFE0BF8A3FCA7108EBAA366D /* Pods_MQDouYuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69241BF6EB4968D671E3D16 /* Pods_MQDouYuTV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09250B611D92269E00D172EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09250B441D92269E00D172EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09250B4B1D92269E00D172EF;
+			remoteInfo = MQDouYuTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09250B4C1D92269E00D172EF /* MQDouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQDouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09250B4F1D92269E00D172EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09250B561D92269E00D172EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09250B591D92269E00D172EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09250B5B1D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQDouYuTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09250B641D92269E00D172EF /* MQDouYuTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQDouYuTVTests.swift; sourceTree = "<group>"; };
+		09250B661D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommentViewModel.swift; sourceTree = "<group>"; };
+		0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingURL.swift; sourceTree = "<group>"; };
+		0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingTool.swift; sourceTree = "<group>"; };
+		094B304B1E07C07B008B53B0 /* MQRecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendController.swift; sourceTree = "<group>"; };
+		09A0118D1E0BDAC400CD76CE /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		09AE95E71D9509D40025802D /* MQPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQPageContentView.swift; sourceTree = "<group>"; };
+		09AE95E91D950DA60025802D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendHeadView.swift; sourceTree = "<group>"; };
+		09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendHeadView.xib; sourceTree = "<group>"; };
+		09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendNormalCell.swift; sourceTree = "<group>"; };
+		09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendNormalCell.xib; sourceTree = "<group>"; };
+		09D25C8E1E0A1CA700BE1402 /* MQPrettyScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQPrettyScoreCell.swift; sourceTree = "<group>"; };
+		09D25C8F1E0A1CA700BE1402 /* MQPrettyScoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQPrettyScoreCell.xib; sourceTree = "<group>"; };
+		09E96F821D93B66C00DD50ED /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
+		09E96F871D93B66C00DD50ED /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		09E96F8C1D93B66C00DD50ED /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		09E96F911D93B66C00DD50ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		09E96F971D93B66C00DD50ED /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTabBarController.swift; sourceTree = "<group>"; };
+		09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeController.swift; sourceTree = "<group>"; };
+		09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQPageTitleView.swift; sourceTree = "<group>"; };
+		09E96FAA1D93DC9E00DD50ED /* MQCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQCommon.swift; sourceTree = "<group>"; };
+		8B839E82259038047E40BDB1 /* Pods-MQDouYuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQDouYuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV.debug.xcconfig"; sourceTree = "<group>"; };
+		AF8FB5B425BFBA40FE1475FA /* Pods-MQDouYuTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQDouYuTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV.release.xcconfig"; sourceTree = "<group>"; };
+		D69241BF6EB4968D671E3D16 /* Pods_MQDouYuTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQDouYuTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09250B491D92269E00D172EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE0BF8A3FCA7108EBAA366D /* Pods_MQDouYuTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09250B5D1D92269E00D172EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09250B431D92269E00D172EF = {
+			isa = PBXGroup;
+			children = (
+				09250B4E1D92269E00D172EF /* MQDouYuTV */,
+				09250B631D92269E00D172EF /* MQDouYuTVTests */,
+				09250B4D1D92269E00D172EF /* Products */,
+				0B8F57D51A050A00EB2F9D24 /* Pods */,
+				F2CF7E706C0F09FA70924236 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09250B4D1D92269E00D172EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09250B4C1D92269E00D172EF /* MQDouYuTV.app */,
+				09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09250B4E1D92269E00D172EF /* MQDouYuTV */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F7F1D93B66C00DD50ED /* Classes */,
+				09250B4F1D92269E00D172EF /* AppDelegate.swift */,
+				09250B561D92269E00D172EF /* Assets.xcassets */,
+				09250B581D92269E00D172EF /* LaunchScreen.storyboard */,
+				09250B5B1D92269E00D172EF /* Info.plist */,
+			);
+			path = MQDouYuTV;
+			sourceTree = "<group>";
+		};
+		09250B631D92269E00D172EF /* MQDouYuTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				09250B641D92269E00D172EF /* MQDouYuTVTests.swift */,
+				09250B661D92269E00D172EF /* Info.plist */,
+			);
+			path = MQDouYuTVTests;
+			sourceTree = "<group>";
+		};
+		0936C4A31E0BD01C00E2B446 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		09E96F7F1D93B66C00DD50ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F9A1D93B66D00DD50ED /* Tools */,
+				09E96F8F1D93B66C00DD50ED /* Main */,
+				09E96F851D93B66C00DD50ED /* Home */,
+				09E96F8A1D93B66C00DD50ED /* Live */,
+				09E96F801D93B66C00DD50ED /* Follow */,
+				09E96F951D93B66C00DD50ED /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		09E96F801D93B66C00DD50ED /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F811D93B66C00DD50ED /* Controller */,
+				09E96F831D93B66C00DD50ED /* Model */,
+				09E96F841D93B66C00DD50ED /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		09E96F811D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F821D93B66C00DD50ED /* Follow.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F831D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F841D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F851D93B66C00DD50ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0936C4A31E0BD01C00E2B446 /* ViewModel */,
+				09E96F861D93B66C00DD50ED /* Controller */,
+				09E96F881D93B66C00DD50ED /* Model */,
+				09E96F891D93B66C00DD50ED /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		09E96F861D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F871D93B66C00DD50ED /* Home.storyboard */,
+				09E96FA31D93BDBA00DD50ED /* MQHomeController.swift */,
+				094B304B1E07C07B008B53B0 /* MQRecommendController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F881D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F891D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */,
+				09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F8A1D93B66C00DD50ED /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F8B1D93B66C00DD50ED /* Controller */,
+				09E96F8D1D93B66C00DD50ED /* Model */,
+				09E96F8E1D93B66C00DD50ED /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		09E96F8B1D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F8C1D93B66C00DD50ED /* Live.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F8D1D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F8E1D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F8F1D93B66C00DD50ED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F901D93B66C00DD50ED /* Controller */,
+				09E96F931D93B66C00DD50ED /* Model */,
+				09E96F941D93B66C00DD50ED /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		09E96F901D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F911D93B66C00DD50ED /* Main.storyboard */,
+				09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F931D93B66C00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F941D93B66C00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */,
+				09AE95E71D9509D40025802D /* MQPageContentView.swift */,
+				09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */,
+				09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */,
+				09D25C8E1E0A1CA700BE1402 /* MQPrettyScoreCell.swift */,
+				09D25C8F1E0A1CA700BE1402 /* MQPrettyScoreCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F951D93B66C00DD50ED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F961D93B66C00DD50ED /* Controller */,
+				09E96F981D93B66D00DD50ED /* Model */,
+				09E96F991D93B66D00DD50ED /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		09E96F961D93B66C00DD50ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09E96F971D93B66C00DD50ED /* Profile.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09E96F981D93B66D00DD50ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09E96F991D93B66D00DD50ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09E96F9A1D93B66D00DD50ED /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				09E96FA51D93C5B800DD50ED /* Extension */,
+				09E96FAA1D93DC9E00DD50ED /* MQCommon.swift */,
+				0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */,
+				0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		09E96FA51D93C5B800DD50ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				09E96FA61D93C5D300DD50ED /* UIBarButtonItem+Extension.swift */,
+				09AE95E91D950DA60025802D /* UIColor+Extension.swift */,
+				09A0118D1E0BDAC400CD76CE /* NSDate+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0B8F57D51A050A00EB2F9D24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B839E82259038047E40BDB1 /* Pods-MQDouYuTV.debug.xcconfig */,
+				AF8FB5B425BFBA40FE1475FA /* Pods-MQDouYuTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2CF7E706C0F09FA70924236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D69241BF6EB4968D671E3D16 /* Pods_MQDouYuTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09250B4B1D92269E00D172EF /* MQDouYuTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09250B691D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTV" */;
+			buildPhases = (
+				F69266C9489864D4AF7319AC /* 📦 Check Pods Manifest.lock */,
+				09250B481D92269E00D172EF /* Sources */,
+				09250B491D92269E00D172EF /* Frameworks */,
+				09250B4A1D92269E00D172EF /* Resources */,
+				1B2D00EC740127ED5DADF608 /* 📦 Embed Pods Frameworks */,
+				01E6CFD373B2F2296B1E0391 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQDouYuTV;
+			productName = MQDouYuTV;
+			productReference = 09250B4C1D92269E00D172EF /* MQDouYuTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09250B5F1D92269E00D172EF /* MQDouYuTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09250B6C1D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTVTests" */;
+			buildPhases = (
+				09250B5C1D92269E00D172EF /* Sources */,
+				09250B5D1D92269E00D172EF /* Frameworks */,
+				09250B5E1D92269E00D172EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09250B621D92269E00D172EF /* PBXTargetDependency */,
+			);
+			name = MQDouYuTVTests;
+			productName = MQDouYuTVTests;
+			productReference = 09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09250B441D92269E00D172EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MQ;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = mengQuietly;
+				TargetAttributes = {
+					09250B4B1D92269E00D172EF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 84485MBE34;
+						ProvisioningStyle = Automatic;
+					};
+					09250B5F1D92269E00D172EF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09250B4B1D92269E00D172EF;
+					};
+				};
+			};
+			buildConfigurationList = 09250B471D92269E00D172EF /* Build configuration list for PBXProject "MQDouYuTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09250B431D92269E00D172EF;
+			productRefGroup = 09250B4D1D92269E00D172EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09250B4B1D92269E00D172EF /* MQDouYuTV */,
+				09250B5F1D92269E00D172EF /* MQDouYuTVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09250B4A1D92269E00D172EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */,
+				09D25C8D1E093CD500BE1402 /* MQRecommendNormalCell.xib in Resources */,
+				09D25C911E0A1CA700BE1402 /* MQPrettyScoreCell.xib in Resources */,
+				09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */,
+				09250B571D92269E00D172EF /* Assets.xcassets in Resources */,
+				09E96F9C1D93B66D00DD50ED /* Home.storyboard in Resources */,
+				09E96F9B1D93B66D00DD50ED /* Follow.storyboard in Resources */,
+				09E96F9E1D93B66D00DD50ED /* Main.storyboard in Resources */,
+				09E96FA01D93B66D00DD50ED /* Profile.storyboard in Resources */,
+				09E96F9D1D93B66D00DD50ED /* Live.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09250B5E1D92269E00D172EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E6CFD373B2F2296B1E0391 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B2D00EC740127ED5DADF608 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQDouYuTV/Pods-MQDouYuTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F69266C9489864D4AF7319AC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09250B481D92269E00D172EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0936C4A51E0BD04200E2B446 /* MQRecommentViewModel.swift in Sources */,
+				09D25C901E0A1CA700BE1402 /* MQPrettyScoreCell.swift in Sources */,
+				094B304C1E07C07B008B53B0 /* MQRecommendController.swift in Sources */,
+				09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */,
+				0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */,
+				0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */,
+				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
+				09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */,
+				09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */,
+				09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */,
+				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
+				09A0118E1E0BDAC400CD76CE /* NSDate+Extension.swift in Sources */,
+				09E96FA91D93DA5500DD50ED /* MQPageTitleView.swift in Sources */,
+				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,
+				09AE95E81D9509D40025802D /* MQPageContentView.swift in Sources */,
+				09AE95EA1D950DA60025802D /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09250B5C1D92269E00D172EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09250B651D92269E00D172EF /* MQDouYuTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09250B621D92269E00D172EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09250B4B1D92269E00D172EF /* MQDouYuTV */;
+			targetProxy = 09250B611D92269E00D172EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09250B581D92269E00D172EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09250B591D92269E00D172EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09250B671D92269E00D172EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09250B681D92269E00D172EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09250B6A1D92269E00D172EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B839E82259038047E40BDB1 /* Pods-MQDouYuTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 84485MBE34;
+				INFOPLIST_FILE = MQDouYuTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		09250B6B1D92269E00D172EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8FB5B425BFBA40FE1475FA /* Pods-MQDouYuTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 84485MBE34;
+				INFOPLIST_FILE = MQDouYuTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		09250B6D1D92269E00D172EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MQDouYuTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQDouYuTV.app/MQDouYuTV";
+			};
+			name = Debug;
+		};
+		09250B6E1D92269E00D172EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MQDouYuTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQDouYuTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQDouYuTV.app/MQDouYuTV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09250B471D92269E00D172EF /* Build configuration list for PBXProject "MQDouYuTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09250B671D92269E00D172EF /* Debug */,
+				09250B681D92269E00D172EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09250B691D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09250B6A1D92269E00D172EF /* Debug */,
+				09250B6B1D92269E00D172EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09250B6C1D92269E00D172EF /* Build configuration list for PBXNativeTarget "MQDouYuTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09250B6D1D92269E00D172EF /* Debug */,
+				09250B6E1D92269E00D172EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09250B441D92269E00D172EF /* Project object */;
+}
