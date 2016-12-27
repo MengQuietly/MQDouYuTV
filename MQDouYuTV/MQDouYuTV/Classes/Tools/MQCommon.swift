@@ -4,7 +4,7 @@
 //
 //  Created by mengmeng on 16/9/22.
 //  Copyright © 2016年 mengQuietly. All rights reserved.
-//
+//  常用属性、方法定义
 
 import UIKit
 

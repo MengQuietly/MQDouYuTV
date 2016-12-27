@@ -16,54 +16,54 @@ enum MQMethodType {
 
 typealias Finished = (_ responseObject:[String: AnyObject]?, _ error: NSError?, _ badNetwork: Bool) -> ()?
 
-typealias succeed = (_ objc:[String: AnyObject]?, _ badNetwork: Bool)->()?
-typealias failture = (_ error: NSError?, _ badNetwork: Bool)->()?
+typealias succeed = (_ objc:Any?, _ badNetwork: Bool)->()
+typealias failture = (_ error: NSError?, _ badNetwork: Bool)->()
 
 class MQNetworkingTool {
     
-    // 测试
-    class func sendGetRequest2(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) {
-        
-//        let configuration = URLSessionConfiguration.default
-//        configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
-//        let manager = SessionManager(configuration: configuration)
-        
-//        var urlRequest = URLRequest(url: URL(string: url)!)
-//        urlRequest.httpMethod = "GET"
-//        let parameters2 = //["foo": "bar"]
-//        do {
-//            urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-//        } catch {
-//            // No-op
-//        }
-//        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//    // 测试
+//    class func sendGetRequest2(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) {
 //        
-//        Alamofire.request(urlRequest).responseJSON { (response) in
-    
-        Alamofire.request(url).validate(contentType: ["application/json"]).responseJSON { response in
-            MQLog(response.timeline)
-    
-            if #available(iOS 10.0, *) {
-                MQLog(response.metrics)
-            }
-            
-            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request!)\n请求返回值＝\(response.result.value)")
-            if response.result.isSuccess{
-                if let dict = response.result.value as? [String: AnyObject]{
-                    succeed(dict, false)
-                }else{//没有数据.网络错误
-                    let error = response.result.error as NSError?
-                    failure(error, true)
-                }
-            }else{//网络错误
-                let error = response.result.error as NSError?
-                failure(error, true)
-            }
-        }
-    }
+////        let configuration = URLSessionConfiguration.default
+////        configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+////        let manager = SessionManager(configuration: configuration)
+//        
+////        var urlRequest = URLRequest(url: URL(string: url)!)
+////        urlRequest.httpMethod = "GET"
+////        let parameters2 = //["foo": "bar"]
+////        do {
+////            urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+////        } catch {
+////            // No-op
+////        }
+////        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+////        
+////        Alamofire.request(urlRequest).responseJSON { (response) in
+//    
+//        Alamofire.request(url).validate(contentType: ["application/json"]).responseJSON { response in
+//            MQLog(response.timeline)
+//    
+//            if #available(iOS 10.0, *) {
+//                MQLog(response.metrics)
+//            }
+//            
+//            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request!)\n请求返回值＝\(response.result.value)")
+//            if response.result.isSuccess{
+//                if let dict = response.result.value as? [String: AnyObject]{
+//                    succeed(dict, false)
+//                }else{//没有数据.网络错误
+//                    let error = response.result.error as NSError?
+//                    failure(error, true)
+//                }
+//            }else{//网络错误
+//                let error = response.result.error as NSError?
+//                failure(error, true)
+//            }
+//        }
+//    }
     
     // MARK:- GET
-    class func sendGetRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) {
+    class func sendGetRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture)->Void {
         
         Alamofire.request(url).validate(contentType: ["application/json"]).responseJSON { response in
             MQLog(response.timeline)
@@ -78,18 +78,18 @@ class MQNetworkingTool {
                 if let dict = response.result.value as? [String: AnyObject]{
                     succeed(dict, false)
                 }else{//没有数据.网络错误
-                    let error = response.result.error as NSError?
+                    let error = response.result.error as! NSError
                     failure(error, true)
                 }
             }else{//网络错误
-                let error = response.result.error as NSError?
+                let error = response.result.error as! NSError
                 failure(error, true)
             }
         }
     }
     
     // MARK:- POST
-    class func sendPostRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) {
+    class func sendPostRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) -> Void {
         
         let headers: HTTPHeaders = ["Accept": "application/json"]
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse) in
@@ -97,14 +97,16 @@ class MQNetworkingTool {
             MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)\n返回值＝\(response.result.value)")
             
             if response.result.isSuccess{
+//                guard let result = response.result.value as? [String:NSObject] else {return}
+               
                 if let dict = response.result.value as? [String: AnyObject]{
                     succeed(dict, false)
                 }else{//没有数据.网络错误
-                    let error = response.result.error as NSError?
+                    let error = response.result.error as! NSError
                     failure(error, true)
                 }
             }else{//网络错误
-                let error = response.result.error as NSError?
+                let error = response.result.error as! NSError
                 failure(error, true)
             }
         }
