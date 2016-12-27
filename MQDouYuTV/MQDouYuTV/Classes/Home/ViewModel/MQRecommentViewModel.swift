@@ -7,7 +7,6 @@
 //  推荐界面 ViewModel
 
 import UIKit
-import Alamofire
 
 class MQRecommentViewModel {
     // MARK：－ 懒加载
@@ -23,7 +22,7 @@ class MQRecommentViewModel {
 extension MQRecommentViewModel{
     
     // MARK: 获取热门组数据 (1-热门，2-颜值，3-剩余其它2-12组热门)
-    func getHotGroupData(finishCallBack:@escaping ()->()) {
+    func getHotGroupData(_ finishCallBack:@escaping ()->()) {
         // 创建group
         let netGroup = DispatchGroup() //dispatch_group_create()
         
@@ -32,7 +31,7 @@ extension MQRecommentViewModel{
         
         // MARK:获取最热排行数据
         let hotUrl = HOST_URL.appending(RECOMMEND_POST_HOT_ROMM_LIST)
-        MQNetworkingTool.sendPostRequest(url: hotUrl, succeed: { (responseObject, isBadNet) in
+        MQNetworkingTool.sendPostRequest(hotUrl, succeed: { (responseObject, isBadNet) in
             MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             
             guard let resultDict = responseObject as? [String:NSObject] else {return}
@@ -43,7 +42,6 @@ extension MQRecommentViewModel{
             self.hotGroup.icon_url = "home_header_hot"
             for dict in dataArray{
                 let anchor = MQAnchorModel(dict: dict)
-                print("nickName=\(anchor.nickname)")
                 self.hotGroup.anchorList.append(anchor)
             }
 
@@ -61,7 +59,7 @@ extension MQRecommentViewModel{
         let perttyUrl = HOST_URL.appending(RECOMMEND_GET_PERTTY_ROMM_LIST)
         let perttyDict = ["limit":"4","offset":"0"]
         
-        MQNetworkingTool.sendGetRequest(url: perttyUrl, parameters: perttyDict, succeed: { (responseObject, isBadNet) in
+        MQNetworkingTool.sendGetRequest(perttyUrl, parameters: perttyDict, succeed: { (responseObject, isBadNet) in
 //            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             
             guard let resultDict = responseObject as? [String:NSObject] else {return}
@@ -75,7 +73,6 @@ extension MQRecommentViewModel{
                 self.perttyGroup.anchorList.append(anchor)
             }
             
-            
             // 离开组
             netGroup.leave()
             
@@ -88,13 +85,13 @@ extension MQRecommentViewModel{
         // MARK:获取2-12其它热门排行数据
         let otherHotUrl = HOST_URL.appending(RECOMMEND_GET_HOT_ROMM_LIST)
         
-        let time = NSDate.getCurrentDateNumber()
+        let time = Date.getCurrentDateNumber()
 //        MQLog("date=\(time)")
         
 //        let otherHotDict = ["time":"\(time)","limit":"4","offset":"0"] // Post
         let otherHotDict = ["aid":"ios","time":"\(time)","auth":"ddc8cda0a77453f40bf3b26926a15aba"]
         
-        MQNetworkingTool.sendGetRequest(url: otherHotUrl, parameters: otherHotDict, succeed: { (responseObject, isBadNet) in
+        MQNetworkingTool.sendGetRequest(otherHotUrl, parameters: otherHotDict, succeed: { (responseObject, isBadNet) in
             
 //            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             
@@ -102,6 +99,7 @@ extension MQRecommentViewModel{
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
             for dict in dataArray{
                 let groupModel = MQAnchorGroupModel(dict: dict)
+                guard (groupModel.anchorList.count > 0) else {continue}
                 self.anchorGroupList.append(groupModel)
             }
 
@@ -116,15 +114,8 @@ extension MQRecommentViewModel{
 //        dispatch_group_notify(netGroup, dispatch_get_main_queue()) { () -> Void in}
         netGroup.notify(queue: DispatchQueue.main) { 
             // 插入热门、颜值到group
+            self.anchorGroupList.insert(self.perttyGroup, at: 0)
             self.anchorGroupList.insert(self.hotGroup, at: 0)
-            self.anchorGroupList.insert(self.perttyGroup, at: 1)
-            
-            for dict in self.anchorGroupList{
-                print("groupName=\(dict.tag_name)")
-                for model in dict.anchorList {
-                    print("nickName=\(model.nickname)")
-                }
-            }
             finishCallBack()
         }
     }

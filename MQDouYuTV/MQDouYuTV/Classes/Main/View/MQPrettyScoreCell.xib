@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="225" height="140"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zND-fH-ETh">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zND-fH-ETh">
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="ZO7-BR-XPS"/>
                         </constraints>
@@ -73,6 +73,12 @@
                 <constraint firstItem="slj-Gz-exs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x5R-Ed-Z23"/>
             </constraints>
             <size key="customSize" width="225" height="140"/>
+            <connections>
+                <outlet property="anchorNickName" destination="dGQ-qX-wHl" id="FTw-Kr-0dn"/>
+                <outlet property="anchorRoomCity" destination="zND-fH-ETh" id="cgG-6n-k9D"/>
+                <outlet property="anchorRoomImg" destination="slj-Gz-exs" id="EmM-vB-R8R"/>
+                <outlet property="anchorRoomOnLine" destination="RIm-4J-WiA" id="Bsd-RQ-bNI"/>
+            </connections>
             <point key="canvasLocation" x="-170.5" y="41"/>
         </collectionViewCell>
     </objects>

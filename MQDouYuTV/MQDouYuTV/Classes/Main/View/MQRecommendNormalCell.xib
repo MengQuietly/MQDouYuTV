@@ -39,7 +39,7 @@
                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-Io-dyS">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-Io-dyS">
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <state key="normal" title="66666人在线" image="Img_user"/>
                     </button>
@@ -61,6 +61,12 @@
                 <constraint firstItem="E33-Nm-ex3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uXU-xP-NQc"/>
             </constraints>
             <size key="customSize" width="295" height="225"/>
+            <connections>
+                <outlet property="anchorNickName" destination="nIe-L6-oHF" id="phi-TZ-xNK"/>
+                <outlet property="anchorRoomImg" destination="Cw3-Gz-Qfb" id="FBK-xB-dhC"/>
+                <outlet property="anchorRoomName" destination="RIS-Sj-fQZ" id="p0G-Wc-lez"/>
+                <outlet property="anchorRoomOnLineNum" destination="lgv-Io-dyS" id="dI9-a6-GWE"/>
+            </connections>
             <point key="canvasLocation" x="-48.5" y="70.5"/>
         </collectionViewCell>
     </objects>

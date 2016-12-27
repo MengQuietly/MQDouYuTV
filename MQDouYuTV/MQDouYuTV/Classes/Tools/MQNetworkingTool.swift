@@ -10,8 +10,8 @@ import UIKit
 import Alamofire
 
 enum MQMethodType {
-    case GET
-    case POST
+    case get
+    case post
 }
 
 typealias Finished = (_ responseObject:[String: AnyObject]?, _ error: NSError?, _ badNetwork: Bool) -> ()?
@@ -22,7 +22,7 @@ typealias failture = (_ error: NSError?, _ badNetwork: Bool)->()
 class MQNetworkingTool {
     
     // MARK:- GET
-    class func sendGetRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture)->Void {
+    class func sendGetRequest(_ url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture)->Void {
         
         let headers: HTTPHeaders = ["Accept": "application/json","client_sys":"ios"]
         Alamofire.request(url, method: .get, parameters: parameters,headers: headers).responseJSON { response in
@@ -51,7 +51,7 @@ class MQNetworkingTool {
     }
     
     // MARK:- POST
-    class func sendPostRequest(url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) -> Void {
+    class func sendPostRequest(_ url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) -> Void {
         
         let headers: HTTPHeaders = ["Accept": "application/json","client_sys":"ios"]
         // encoding: JSONEncoding.default,

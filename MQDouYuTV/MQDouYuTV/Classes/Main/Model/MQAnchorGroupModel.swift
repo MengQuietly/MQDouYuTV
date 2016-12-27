@@ -26,9 +26,7 @@ class MQAnchorGroupModel: NSObject {
     lazy var anchorList:[MQAnchorModel] = [MQAnchorModel]()
     
     // MARK：构造函数－ 快速创建模型
-    override init() {
-        
-    }
+    override init() {}
     
     init(dict:[String:Any]) {
         super.init()

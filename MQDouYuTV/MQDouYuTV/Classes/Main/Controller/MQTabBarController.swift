@@ -13,15 +13,15 @@ class MQTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addChildVC(storyboardName: "Home")
-        addChildVC(storyboardName: "Live")
-        addChildVC(storyboardName: "Follow")
-        addChildVC(storyboardName: "Profile")
+        addChildVC("Home")
+        addChildVC("Live")
+        addChildVC("Follow")
+        addChildVC("Profile")
         
     }
     
     /// 添加 StoryBoard 控制器
-    private func addChildVC(storyboardName: String) {
+    private func addChildVC(_ storyboardName: String) {
         let vc:UIViewController = UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()!
         self.addChildViewController(vc)
     }

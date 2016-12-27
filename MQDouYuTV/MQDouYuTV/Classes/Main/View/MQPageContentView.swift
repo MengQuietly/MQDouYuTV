@@ -11,7 +11,7 @@ import UIKit
 private let kPageContentCollectionCellID = "PageContentCollectionCellID"
 // MARK:- 定义代理，传递滚动信息(“:class” 表此协议只能被类遵守)
 protocol MQPageContentViewDelegate: class {
-    func pageContentViewWithSetScroll(contentView:MQPageContentView,progress: CGFloat,startIndex: Int,endIndex: Int)
+    func pageContentViewWithSetScroll(_ contentView:MQPageContentView,progress: CGFloat,startIndex: Int,endIndex: Int)
 }
 
 // MARK:- MQPageContentView
@@ -131,13 +131,13 @@ extension MQPageContentView: UICollectionViewDelegate{
         
         // 传递滚动信息
 //        MQLog("progress=\(progress)，StartIndex=\(startIndex),endIndex=\(endIndex)")
-        pageContentViewDelegate?.pageContentViewWithSetScroll(contentView: self, progress: progress, startIndex: startIndex, endIndex: endIndex)
+        pageContentViewDelegate?.pageContentViewWithSetScroll(self, progress: progress, startIndex: startIndex, endIndex: endIndex)
     }
 }
 
 // MARK: - 对外暴露的方法
 extension MQPageContentView{
-    func setCurrentIndex(currentIndex: Int){
+    func setCurrentIndex(_ currentIndex: Int){
         // 记录需禁止执行代理方法
         isForbidScrollDelegate = true
         let offsetX = CGFloat(currentIndex) * contentCollectionViews.frame.width

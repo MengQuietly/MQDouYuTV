@@ -75,15 +75,22 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var identifierID: String = String()
+        
+        let sectionNum = self.recommentViewModel.anchorGroupList[indexPath.section]
+        let anchor = sectionNum.anchorList[indexPath.item]
         if indexPath.section == 1 {
-            identifierID = kPrettyScoreCellID
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyScoreCellID, for: indexPath) as! MQPrettyScoreCell
+            cell.anchorModel = anchor
+            return cell
+            
         } else {
-            identifierID = kNormalCellID
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! MQRecommendNormalCell
+            
+            cell.anchorModel = anchor
+            return cell
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifierID, for: indexPath)
-        cell.backgroundColor = UIColor.white
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

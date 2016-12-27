@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension NSDate{
+extension Date{
     //MARK:- 获取当前时间豪秒数
-    class func getCurrentDateNumber() -> String{
-        let currentDateNumber = Int(NSDate().timeIntervalSince1970)
+    static func getCurrentDateNumber() -> String{
+        let currentDateNumber = Int(Date().timeIntervalSince1970)
         return "\(currentDateNumber)"
     }
 }
