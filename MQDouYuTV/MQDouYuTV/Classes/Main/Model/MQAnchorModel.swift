@@ -29,6 +29,8 @@ class MQAnchorModel: NSObject {
     var show_time:Int = 0
     // 房间图片Url
     var vertical_src:String = ""
+    // 所在城市
+    var anchor_city:String = ""
     
     init(dict:[String:Any]) {
         super.init()

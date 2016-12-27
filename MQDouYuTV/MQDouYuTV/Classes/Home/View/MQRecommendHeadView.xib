@@ -54,6 +54,11 @@
                 <constraint firstItem="Qw3-Cg-4HD" firstAttribute="leading" secondItem="7ip-HO-oFQ" secondAttribute="trailing" constant="5" id="hFK-b0-Hho"/>
                 <constraint firstAttribute="trailing" secondItem="3TD-cl-ZSJ" secondAttribute="trailing" constant="10" id="udL-gd-Xuo"/>
             </constraints>
+            <connections>
+                <outlet property="groupHeadIcon" destination="7ip-HO-oFQ" id="trC-yI-j8m"/>
+                <outlet property="groupHeadMore" destination="3TD-cl-ZSJ" id="0lQ-er-30L"/>
+                <outlet property="groupHeadTitle" destination="Qw3-Cg-4HD" id="J8M-do-Dt7"/>
+            </connections>
             <point key="canvasLocation" x="-756" y="-147"/>
         </collectionReusableView>
     </objects>

@@ -60,21 +60,18 @@ class MQRecommendController: UIViewController {
 extension MQRecommendController{
     func setupUI(){
         view.addSubview(collectionViews)
-//        collectionViews.register(UINib(nibName:"MQPrettyScoreCell", bundle: nil), forCellWithReuseIdentifier: kPrettyScoreCellID)
     }
 }
 
 // MARK: - 实现代理方法
 extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return self.recommentViewModel.anchorGroupList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        let groupSection = self.recommentViewModel.anchorGroupList[section]
+        return groupSection.anchorList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -91,8 +88,8 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        let headerViews = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
-        headerViews.backgroundColor = UIColor.white
+        let headerViews = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! MQRecommendHeadView
+        headerViews.anchorGroupModel = self.recommentViewModel.anchorGroupList[indexPath.section]
         return headerViews
     }
     
@@ -107,6 +104,8 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
 // MARK:- 网络请求
 extension MQRecommendController{
     func getRecommentListData(){
-        recommentViewModel.getData()
+        recommentViewModel.getHotGroupData { [unowned self] in
+            self.collectionViews.reloadData()
+        }
     }
 }
