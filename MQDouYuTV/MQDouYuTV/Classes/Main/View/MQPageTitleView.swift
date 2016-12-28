@@ -133,9 +133,10 @@ extension MQPageTitleView {
 extension MQPageTitleView{
     @objc func pageTitleLabelClick(tap:UITapGestureRecognizer){
         
-        guard let currentTitleLabel = tap.view as? UILabel else {
-            return
-        }
+        guard let currentTitleLabel = tap.view as? UILabel else { return }
+    
+        // 判定当前是否选中了已选择的按钮
+        if currentTitleLabel.tag == self.currentSelectLabelIndex {return}
         
         let beforeTitleLabel = titleLabelList[currentSelectLabelIndex]
         beforeTitleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
