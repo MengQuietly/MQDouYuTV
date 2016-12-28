@@ -16,6 +16,15 @@ class MQRecommendBannerView: UIView {
     @IBOutlet weak var bannerCollectionView: UICollectionView!
     @IBOutlet weak var bannerPageView: UIPageControl!
     
+    // MARK:-定义模型数组属性
+    var bannerModelList:[MQBannerModel]?{
+        didSet {
+            bannerCollectionView.reloadData()
+            bannerPageView.numberOfPages = bannerModelList?.count ?? 0
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // 设置该控件不随着父控件拉伸而拉伸（bannerView.y = -height无法展示问题）
@@ -31,7 +40,9 @@ class MQRecommendBannerView: UIView {
         layout.minimumInteritemSpacing = 0
         layout.itemSize = bannerCollectionView.bounds.size
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        
         bannerCollectionView.isPagingEnabled = true
+        bannerCollectionView.showsHorizontalScrollIndicator = false
     }
 }
 
@@ -45,7 +56,7 @@ extension MQRecommendBannerView {
 // MARK：－ UICollectionViewDataSource
 extension MQRecommendBannerView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return self.bannerModelList?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

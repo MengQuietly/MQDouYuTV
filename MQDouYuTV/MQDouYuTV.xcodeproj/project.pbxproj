@@ -14,6 +14,7 @@
 		092C9F5C1E134F620071AF2D /* MQRecommendBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F5B1E134F620071AF2D /* MQRecommendBaseCell.swift */; };
 		092C9F5E1E13A1C50071AF2D /* MQRecommendBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F5D1E13A1C50071AF2D /* MQRecommendBannerView.swift */; };
 		092C9F601E13A1DC0071AF2D /* MQRecommendBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092C9F5F1E13A1DC0071AF2D /* MQRecommendBannerView.xib */; };
+		092C9F641E13B8B20071AF2D /* MQBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F631E13B8B20071AF2D /* MQBannerModel.swift */; };
 		0936C4A51E0BD04200E2B446 /* MQRecommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */; };
 		0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */; };
 		0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */; };
@@ -64,6 +65,7 @@
 		092C9F5B1E134F620071AF2D /* MQRecommendBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendBaseCell.swift; sourceTree = "<group>"; };
 		092C9F5D1E13A1C50071AF2D /* MQRecommendBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendBannerView.swift; sourceTree = "<group>"; };
 		092C9F5F1E13A1DC0071AF2D /* MQRecommendBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendBannerView.xib; sourceTree = "<group>"; };
+		092C9F631E13B8B20071AF2D /* MQBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQBannerModel.swift; sourceTree = "<group>"; };
 		0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommentViewModel.swift; sourceTree = "<group>"; };
 		0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingURL.swift; sourceTree = "<group>"; };
 		0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingTool.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		09E96F881D93B66C00DD50ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				092C9F631E13B8B20071AF2D /* MQBannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */,
 				0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */,
 				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
+				092C9F641E13B8B20071AF2D /* MQBannerModel.swift in Sources */,
 				09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */,
 				09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */,
 				09A011901E11264D00CD76CE /* MQAnchorGroupModel.swift in Sources */,

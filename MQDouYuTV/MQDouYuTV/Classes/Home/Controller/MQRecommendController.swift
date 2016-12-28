@@ -53,10 +53,7 @@ class MQRecommendController: UIViewController {
     // banner
     lazy var bannerViews: MQRecommendBannerView = {
         let bannerViews = MQRecommendBannerView.recommendBannerView()
-        print("wind:\(kRecommendBannerViewH)")
         bannerViews.frame = CGRect(x: 0, y: (-kRecommendBannerViewH), width: kScreenW, height: kRecommendBannerViewH)
-        bannerViews.backgroundColor = UIColor.green
-        
         return bannerViews
     }()
     
@@ -72,7 +69,6 @@ extension MQRecommendController{
     func setupUI(){
         view.addSubview(collectionViews)
         collectionViews.addSubview(bannerViews)
-        print("wind222:\(kRecommendBannerViewH)")
         collectionViews.contentInset = UIEdgeInsets(top: kRecommendBannerViewH, left: 0, bottom: 0, right: 0)
     }
 }
@@ -119,10 +115,17 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
     }
 }
 
-// MARK:- 网络请求
+// MARK:- 推荐首页：网络请求
 extension MQRecommendController{
     func getRecommentListData(){
-        recommentViewModel.getHotGroupData { [unowned self] in
+        
+        // 获取banner列表数据
+        recommentViewModel.getBannerListData { [unowned self] in
+            self.bannerViews.bannerModelList = self.recommentViewModel.bannerLists
+        }
+        
+        // 获取热门房间列表数据
+        recommentViewModel.getRoomGroupListData { [unowned self] in
             self.collectionViews.reloadData()
         }
     }

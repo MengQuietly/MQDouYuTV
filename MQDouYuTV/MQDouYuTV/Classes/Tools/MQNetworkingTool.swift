@@ -27,15 +27,13 @@ class MQNetworkingTool {
         let headers: HTTPHeaders = ["Accept": "application/json","client_sys":"ios"]
         Alamofire.request(url, method: .get, parameters: parameters,headers: headers).responseJSON { response in
             
-            MQLog(response.timeline)
-    
-            if #available(iOS 10.0, *) {
-                MQLog(response.metrics)
-            }
-            
+//            if #available(iOS 10.0, *) {
+//                MQLog(response.metrics)
+//            }
 //            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)")
 //            MQLog("返回值＝\(response.result.value)")
             
+            print("请求URL＝\(response.request)")
             if response.result.isSuccess{
                 if let dict = response.result.value as? [String: AnyObject]{
                     succeed(dict, false)
@@ -59,7 +57,7 @@ class MQNetworkingTool {
             
 //            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)")
 //            MQLog("返回值＝\(response.result.value)")
-            
+            print("请求URL＝\(response.request)")
             if response.result.isSuccess{
                
                 if let dict = response.result.value as? [String: AnyObject]{

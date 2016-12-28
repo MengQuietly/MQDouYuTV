@@ -24,7 +24,7 @@
                         <outlet property="dataSource" destination="iN0-l3-epB" id="ZLM-ax-QTm"/>
                     </connections>
                 </collectionView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="11" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-Vb-lDe">
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-Vb-lDe">
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="1O2-id-yl5"/>
                     </constraints>
@@ -32,7 +32,6 @@
                     <color key="currentPageIndicatorTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.48068956961708453" blue="0.54759702053688275" alpha="1" colorSpace="calibratedRGB"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="l5R-Vb-lDe" secondAttribute="bottom" constant="8" id="ACp-ZQ-F3n"/>
