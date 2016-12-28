@@ -32,7 +32,7 @@ extension MQRecommentViewModel{
         // MARK:获取最热排行数据
         let hotUrl = HOST_URL.appending(RECOMMEND_POST_HOT_ROMM_LIST)
         MQNetworkingTool.sendPostRequest(hotUrl, succeed: { (responseObject, isBadNet) in
-            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
+//            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             
             guard let resultDict = responseObject as? [String:NSObject] else {return}
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}

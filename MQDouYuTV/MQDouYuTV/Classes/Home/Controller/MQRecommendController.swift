@@ -13,6 +13,7 @@ private let kItemW : CGFloat = (kScreenW - kItemMarginW * 3) * 0.5
 private let kItemH : CGFloat = kItemW * 3 / 4
 private let kPrettyScoreItemH : CGFloat = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
+private let kRecommendBannerViewH : CGFloat = kScreenW * 3 / 8
 
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -49,6 +50,16 @@ class MQRecommendController: UIViewController {
         return collectionViews
     }()
     
+    // banner
+    lazy var bannerViews: MQRecommendBannerView = {
+        let bannerViews = MQRecommendBannerView.recommendBannerView()
+        print("wind:\(kRecommendBannerViewH)")
+        bannerViews.frame = CGRect(x: 0, y: (-kRecommendBannerViewH), width: kScreenW, height: kRecommendBannerViewH)
+        bannerViews.backgroundColor = UIColor.green
+        
+        return bannerViews
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -60,6 +71,9 @@ class MQRecommendController: UIViewController {
 extension MQRecommendController{
     func setupUI(){
         view.addSubview(collectionViews)
+        collectionViews.addSubview(bannerViews)
+        print("wind222:\(kRecommendBannerViewH)")
+        collectionViews.contentInset = UIEdgeInsets(top: kRecommendBannerViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
