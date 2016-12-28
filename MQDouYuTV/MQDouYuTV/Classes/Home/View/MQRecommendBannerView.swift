@@ -29,8 +29,8 @@ class MQRecommendBannerView: UIView {
         super.awakeFromNib()
         // 设置该控件不随着父控件拉伸而拉伸（bannerView.y = -height无法展示问题）
         autoresizingMask = UIViewAutoresizing(rawValue: 0)
-        
-        bannerCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kRecommendBannerViewID)
+    
+        bannerCollectionView.register(UINib(nibName: "MQRecommendBannerCell", bundle: nil), forCellWithReuseIdentifier: kRecommendBannerViewID)
     }
     
     override func layoutSubviews() {
@@ -60,8 +60,18 @@ extension MQRecommendBannerView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommendBannerViewID, for: indexPath)
-        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.red : UIColor.blue
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommendBannerViewID, for: indexPath) as! MQRecommendBannerCell
+        
+        cell.bannerModel = self.bannerModelList?[indexPath.item]
         return cell
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+extension MQRecommendBannerView: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetX = Int(scrollView.contentOffset.x / self.bannerCollectionView.bounds.size.width)
+        
+        self.bannerPageView.currentPage = offsetX
     }
 }
