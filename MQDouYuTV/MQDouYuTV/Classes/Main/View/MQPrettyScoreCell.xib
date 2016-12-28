@@ -15,23 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="225" height="140"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zND-fH-ETh">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="14" id="ZO7-BR-XPS"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="重庆市" image="ico_location">
-                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        </state>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会哭的鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-qX-wHl">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="16" id="bsD-gt-DVz"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="slj-Gz-exs">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -40,50 +23,71 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66666人在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIm-4J-WiA">
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71Y-eD-gqZ">
+                        <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="2dD-CK-AeN"/>
-                            <constraint firstAttribute="width" constant="100" id="g8w-XG-E40"/>
+                            <constraint firstAttribute="width" constant="80" id="HQc-QK-u99"/>
+                            <constraint firstAttribute="height" constant="20" id="tD2-g3-afl"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="10000人在线" image="img_online_white">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="3"/>
+                                <integer key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mb-jj-rZx">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="48L-Uk-PWo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="会哭的鱼" image="img_user_gray">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zND-fH-ETh">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0Jh-OP-zmY"/>
+                            <constraint firstAttribute="width" constant="65" id="Dcq-RO-ymr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="重庆市" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="dGQ-qX-wHl" firstAttribute="top" secondItem="slj-Gz-exs" secondAttribute="bottom" constant="5" id="5Vc-LS-UMZ"/>
+                <constraint firstItem="1Mb-jj-rZx" firstAttribute="bottom" secondItem="zND-fH-ETh" secondAttribute="bottom" id="076-93-kr3"/>
                 <constraint firstItem="slj-Gz-exs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="73O-yn-Yp0"/>
-                <constraint firstAttribute="trailing" secondItem="zND-fH-ETh" secondAttribute="trailing" id="Rus-sG-0Iz"/>
-                <constraint firstItem="RIm-4J-WiA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Ss6-DO-C56"/>
-                <constraint firstAttribute="trailing" secondItem="RIm-4J-WiA" secondAttribute="trailing" constant="5" id="WMe-fo-PIy"/>
-                <constraint firstItem="dGQ-qX-wHl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bgX-pw-IBv"/>
-                <constraint firstItem="zND-fH-ETh" firstAttribute="top" secondItem="dGQ-qX-wHl" secondAttribute="bottom" constant="5" id="cjY-gm-QIe"/>
-                <constraint firstAttribute="bottom" secondItem="zND-fH-ETh" secondAttribute="bottom" constant="10" id="haZ-Er-Exf"/>
-                <constraint firstAttribute="trailing" secondItem="dGQ-qX-wHl" secondAttribute="trailing" id="jHt-9H-TPm"/>
+                <constraint firstAttribute="trailing" secondItem="zND-fH-ETh" secondAttribute="trailing" id="KH9-8U-g2O"/>
+                <constraint firstAttribute="trailing" secondItem="71Y-eD-gqZ" secondAttribute="trailing" constant="8" id="KuP-tR-DZU"/>
+                <constraint firstItem="71Y-eD-gqZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Oj2-OJ-zrd"/>
+                <constraint firstItem="1Mb-jj-rZx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S1Q-7T-IEt"/>
                 <constraint firstAttribute="trailing" secondItem="slj-Gz-exs" secondAttribute="trailing" id="jKC-Nh-5jC"/>
-                <constraint firstItem="zND-fH-ETh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uup-l6-zAP"/>
+                <constraint firstItem="zND-fH-ETh" firstAttribute="leading" secondItem="1Mb-jj-rZx" secondAttribute="trailing" id="kXY-gC-U30"/>
+                <constraint firstItem="1Mb-jj-rZx" firstAttribute="top" secondItem="slj-Gz-exs" secondAttribute="bottom" constant="5" id="wup-03-U10"/>
                 <constraint firstItem="slj-Gz-exs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x5R-Ed-Z23"/>
+                <constraint firstAttribute="bottom" secondItem="zND-fH-ETh" secondAttribute="bottom" constant="10" id="yF3-t5-cn3"/>
             </constraints>
             <size key="customSize" width="225" height="140"/>
             <connections>
-                <outlet property="anchorNickName" destination="dGQ-qX-wHl" id="FTw-Kr-0dn"/>
+                <outlet property="anchorNickName" destination="1Mb-jj-rZx" id="CvN-aQ-Osz"/>
                 <outlet property="anchorRoomCity" destination="zND-fH-ETh" id="cgG-6n-k9D"/>
                 <outlet property="anchorRoomImg" destination="slj-Gz-exs" id="EmM-vB-R8R"/>
-                <outlet property="anchorRoomOnLine" destination="RIm-4J-WiA" id="Bsd-RQ-bNI"/>
+                <outlet property="anchorRoomOnLine" destination="71Y-eD-gqZ" id="zxY-I9-35J"/>
             </connections>
             <point key="canvasLocation" x="-170.5" y="41"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="ico_location" width="12" height="12"/>
+        <image name="img_online_white" width="10" height="8"/>
+        <image name="img_user_gray" width="12" height="12"/>
         <image name="live_cell_default_phone" width="103" height="103"/>
     </resources>
 </document>

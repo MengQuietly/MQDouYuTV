@@ -11,6 +11,7 @@
 		09250B571D92269E00D172EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09250B561D92269E00D172EF /* Assets.xcassets */; };
 		09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B581D92269E00D172EF /* LaunchScreen.storyboard */; };
 		09250B651D92269E00D172EF /* MQDouYuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B641D92269E00D172EF /* MQDouYuTVTests.swift */; };
+		092C9F5C1E134F620071AF2D /* MQRecommendBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F5B1E134F620071AF2D /* MQRecommendBaseCell.swift */; };
 		0936C4A51E0BD04200E2B446 /* MQRecommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */; };
 		0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */; };
 		0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */; };
@@ -58,6 +59,7 @@
 		09250B601D92269E00D172EF /* MQDouYuTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQDouYuTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09250B641D92269E00D172EF /* MQDouYuTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQDouYuTVTests.swift; sourceTree = "<group>"; };
 		09250B661D92269E00D172EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092C9F5B1E134F620071AF2D /* MQRecommendBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendBaseCell.swift; sourceTree = "<group>"; };
 		0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommentViewModel.swift; sourceTree = "<group>"; };
 		0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingURL.swift; sourceTree = "<group>"; };
 		0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingTool.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 			children = (
 				09E96FA81D93DA5500DD50ED /* MQPageTitleView.swift */,
 				09AE95E71D9509D40025802D /* MQPageContentView.swift */,
+				092C9F5B1E134F620071AF2D /* MQRecommendBaseCell.swift */,
 				09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */,
 				09D25C8B1E093CD500BE1402 /* MQRecommendNormalCell.xib */,
 				09D25C8E1E0A1CA700BE1402 /* MQPrettyScoreCell.swift */,
@@ -563,6 +566,7 @@
 				09250B501D92269E00D172EF /* AppDelegate.swift in Sources */,
 				09AE95E81D9509D40025802D /* MQPageContentView.swift in Sources */,
 				09AE95EA1D950DA60025802D /* UIColor+Extension.swift in Sources */,
+				092C9F5C1E134F620071AF2D /* MQRecommendBaseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

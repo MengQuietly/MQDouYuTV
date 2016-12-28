@@ -17,7 +17,6 @@ class MQRecommendHeadView: UICollectionReusableView {
     // MARK:-定义模型属性
     var anchorGroupModel:MQAnchorGroupModel?{
         didSet {
-            print("url=\(anchorGroupModel?.tag_name,anchorGroupModel?.icon_url)")
             groupHeadIcon.image = UIImage(named: anchorGroupModel?.icon_url ?? "home_header_normal")
             groupHeadTitle.text = anchorGroupModel?.tag_name
         }

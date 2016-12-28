@@ -66,7 +66,7 @@ extension MQRecommentViewModel{
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
         
             self.perttyGroup.tag_name = "颜值"
-            self.perttyGroup.icon_url = "home_header_phone"
+            self.perttyGroup.icon_url = "home_header_pretty"
             for dict in dataArray{
                 let anchor = MQAnchorModel(dict: dict)
 //                print("nickName=\(anchor.nickname)")
@@ -99,6 +99,7 @@ extension MQRecommentViewModel{
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
             for dict in dataArray{
                 let groupModel = MQAnchorGroupModel(dict: dict)
+                groupModel.icon_url = "home_header_normal"
                 guard (groupModel.anchorList.count > 0) else {continue}
                 self.anchorGroupList.append(groupModel)
             }

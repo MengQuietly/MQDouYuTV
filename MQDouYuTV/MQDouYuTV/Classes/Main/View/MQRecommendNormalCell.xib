@@ -15,13 +15,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="295" height="225"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="E33-Nm-ex3">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌萌的房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-Sj-fQZ">
                         <constraints>
-                            <constraint firstAttribute="height" constant="14" id="i0C-Yv-Kb1"/>
-                            <constraint firstAttribute="width" constant="14" id="yMY-O1-SKT"/>
+                            <constraint firstAttribute="height" constant="20" id="G1O-wl-iZw"/>
                         </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌萌直播中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-Sj-fQZ">
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
@@ -34,45 +31,76 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌萌的房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-L6-oHF">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-Io-dyS">
+                        <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9pZ-EK-zKT"/>
+                            <constraint firstAttribute="width" constant="83" id="e7N-Qs-EKd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="10000人在线" image="img_online_white"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-AX-A6n">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="al1-9Z-cre"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgv-Io-dyS">
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <state key="normal" title="66666人在线" image="Img_user"/>
+                        <state key="normal" title="萌萌" image="img_user_white">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eN-4x-eVh">
+                        <color key="backgroundColor" red="0.072619546979865765" green="0.51392093120805371" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="6cO-5n-9dB"/>
+                            <constraint firstAttribute="height" constant="20" id="xEx-5X-syn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="手机直播" image="home_header_phone"/>
                     </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="lgv-Io-dyS" secondAttribute="trailing" id="2nK-1A-igc"/>
+                <constraint firstItem="1eN-4x-eVh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3n1-6Q-PeX"/>
                 <constraint firstItem="Cw3-Gz-Qfb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7om-9e-8Qi"/>
-                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="top" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="5" id="EfY-x8-3Rv"/>
-                <constraint firstAttribute="trailing" secondItem="RIS-Sj-fQZ" secondAttribute="trailing" constant="5" id="LPl-lb-hjz"/>
-                <constraint firstItem="lgv-Io-dyS" firstAttribute="trailing" secondItem="Cw3-Gz-Qfb" secondAttribute="trailing" constant="-5" id="XNx-SG-g5g"/>
+                <constraint firstItem="1eN-4x-eVh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9UT-fk-h4y"/>
+                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="top" secondItem="iAw-AX-A6n" secondAttribute="bottom" constant="5" id="A1Y-3l-AZO"/>
+                <constraint firstItem="iAw-AX-A6n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="HCQ-53-6Mo"/>
+                <constraint firstAttribute="trailing" secondItem="iAw-AX-A6n" secondAttribute="trailing" constant="8" id="Sk5-iE-Pun"/>
+                <constraint firstAttribute="trailing" secondItem="RIS-Sj-fQZ" secondAttribute="trailing" id="Tam-nh-vUb"/>
+                <constraint firstAttribute="bottom" secondItem="RIS-Sj-fQZ" secondAttribute="bottom" constant="10" id="Yf0-VH-HOp"/>
+                <constraint firstItem="lgv-Io-dyS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yh6-dW-aua"/>
                 <constraint firstAttribute="trailing" secondItem="Cw3-Gz-Qfb" secondAttribute="trailing" id="aZ4-EJ-APf"/>
-                <constraint firstItem="lgv-Io-dyS" firstAttribute="bottom" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="-5" id="fWR-K0-r6T"/>
-                <constraint firstItem="nIe-L6-oHF" firstAttribute="leading" secondItem="Cw3-Gz-Qfb" secondAttribute="leading" constant="5" id="gpp-ZS-daz"/>
-                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="leading" secondItem="E33-Nm-ex3" secondAttribute="trailing" constant="5" id="k5p-cY-B81"/>
-                <constraint firstItem="E33-Nm-ex3" firstAttribute="centerY" secondItem="RIS-Sj-fQZ" secondAttribute="centerY" id="oMD-NC-GZY"/>
                 <constraint firstItem="Cw3-Gz-Qfb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oXY-gb-twd"/>
-                <constraint firstItem="nIe-L6-oHF" firstAttribute="bottom" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="-5" id="pWI-lt-YTV"/>
-                <constraint firstAttribute="bottom" secondItem="E33-Nm-ex3" secondAttribute="bottom" constant="10" id="rIb-Te-PIE"/>
-                <constraint firstItem="E33-Nm-ex3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uXU-xP-NQc"/>
+                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="top" secondItem="Cw3-Gz-Qfb" secondAttribute="bottom" constant="5" id="pFJ-HK-Wfh"/>
+                <constraint firstItem="RIS-Sj-fQZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ykw-dy-pTW"/>
             </constraints>
             <size key="customSize" width="295" height="225"/>
             <connections>
-                <outlet property="anchorNickName" destination="nIe-L6-oHF" id="phi-TZ-xNK"/>
+                <outlet property="anchorNickName" destination="iAw-AX-A6n" id="ttN-7S-sMb"/>
+                <outlet property="anchorPlayType" destination="1eN-4x-eVh" id="U8g-BN-J1t"/>
                 <outlet property="anchorRoomImg" destination="Cw3-Gz-Qfb" id="FBK-xB-dhC"/>
                 <outlet property="anchorRoomName" destination="RIS-Sj-fQZ" id="p0G-Wc-lez"/>
-                <outlet property="anchorRoomOnLineNum" destination="lgv-Io-dyS" id="dI9-a6-GWE"/>
+                <outlet property="anchorRoomOnLine" destination="lgv-Io-dyS" id="ySt-vT-ijN"/>
             </connections>
             <point key="canvasLocation" x="-48.5" y="70.5"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Img_default" width="172" height="103"/>
-        <image name="Img_user" width="16" height="16"/>
-        <image name="home_live_cate_normal" width="14" height="14"/>
+        <image name="home_header_phone" width="18" height="18"/>
+        <image name="img_online_white" width="10" height="8"/>
+        <image name="img_user_white" width="16" height="16"/>
     </resources>
 </document>

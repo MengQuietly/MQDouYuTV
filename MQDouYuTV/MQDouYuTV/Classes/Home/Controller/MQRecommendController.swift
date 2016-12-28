@@ -78,19 +78,16 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
         
         let sectionNum = self.recommentViewModel.anchorGroupList[indexPath.section]
         let anchor = sectionNum.anchorList[indexPath.item]
+        
+        var cell: MQRecommendBaseCell!
         if indexPath.section == 1 {
             
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyScoreCellID, for: indexPath) as! MQPrettyScoreCell
-            cell.anchorModel = anchor
-            return cell
-            
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyScoreCellID, for: indexPath) as! MQPrettyScoreCell
         } else {
-            
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! MQRecommendNormalCell
-            
-            cell.anchorModel = anchor
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! MQRecommendNormalCell
         }
+        cell.anchorModel = anchor
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
