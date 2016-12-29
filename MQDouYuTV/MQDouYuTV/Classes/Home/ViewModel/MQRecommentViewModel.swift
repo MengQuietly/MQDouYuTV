@@ -30,17 +30,13 @@ extension MQRecommentViewModel{
         let bannerUrl = HOST_URL.appending(RECOMMEND_GET_BANNER_LIST)
         let bannerDict = ["version":"2.421"]
         MQNetworkingTool.sendGetRequest(bannerUrl, parameters: bannerDict, succeed: { [unowned self] (responseObject, isBadNet) in
-            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
+//            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             
             guard let resultDict = responseObject as? [String:NSObject] else  {return}
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
             for dict in dataArray {
                 let bannerModel = MQBannerModel(dict: dict)
                 self.bannerLists.append(bannerModel)
-            }
-        
-            for model in self.bannerLists {
-                print("data = \(model.title)")
             }
         
             finishCallBack()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kRecommendBannerViewID = "kPrettyScoreCellID"
+private let kMQRecommendBannerCellID = "kMQRecommendBannerCellID"
 
 class MQRecommendBannerView: UIView {
 
@@ -16,11 +16,16 @@ class MQRecommendBannerView: UIView {
     @IBOutlet weak var bannerCollectionView: UICollectionView!
     @IBOutlet weak var bannerPageView: UIPageControl!
     
+    var timer : Timer?
+    
     // MARK:-定义模型数组属性
     var bannerModelList:[MQBannerModel]?{
         didSet {
             bannerCollectionView.reloadData()
             bannerPageView.numberOfPages = bannerModelList?.count ?? 0
+            // 滚动到指定位置
+            let indexPath = IndexPath(item: (bannerModelList?.count ?? 0)*10, section: 0)
+            bannerCollectionView.scrollToItem(at: indexPath, at: .left, animated: false)
         }
     }
     
@@ -30,7 +35,7 @@ class MQRecommendBannerView: UIView {
         // 设置该控件不随着父控件拉伸而拉伸（bannerView.y = -height无法展示问题）
         autoresizingMask = UIViewAutoresizing(rawValue: 0)
     
-        bannerCollectionView.register(UINib(nibName: "MQRecommendBannerCell", bundle: nil), forCellWithReuseIdentifier: kRecommendBannerViewID)
+        bannerCollectionView.register(UINib(nibName: "MQRecommendBannerCell", bundle: nil), forCellWithReuseIdentifier: kMQRecommendBannerCellID)
     }
     
     override func layoutSubviews() {
@@ -56,13 +61,14 @@ extension MQRecommendBannerView {
 // MARK：－ UICollectionViewDataSource
 extension MQRecommendBannerView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.bannerModelList?.count ?? 0
+        // 设置无线滚动
+        return (self.bannerModelList?.count ?? 0) * 10000
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommendBannerViewID, for: indexPath) as! MQRecommendBannerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kMQRecommendBannerCellID, for: indexPath) as! MQRecommendBannerCell
         
-        cell.bannerModel = self.bannerModelList?[indexPath.item]
+        cell.bannerModel = self.bannerModelList?[indexPath.item % bannerModelList!.count]
         return cell
     }
 }
@@ -70,8 +76,8 @@ extension MQRecommendBannerView: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 extension MQRecommendBannerView: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetX = Int(scrollView.contentOffset.x / self.bannerCollectionView.bounds.size.width)
-        
-        self.bannerPageView.currentPage = offsetX
+        let offsetX = scrollView.contentOffset.x + bannerCollectionView.bounds.size.width * 0.5
+        let index = Int(offsetX / self.bannerCollectionView.bounds.size.width)
+        self.bannerPageView.currentPage = index % (bannerModelList?.count ?? 0)
     }
 }
