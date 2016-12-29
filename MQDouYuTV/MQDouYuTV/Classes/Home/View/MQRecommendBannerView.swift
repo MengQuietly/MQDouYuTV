@@ -82,6 +82,15 @@ extension MQRecommendBannerView: UICollectionViewDelegate {
         let index = Int(offsetX / self.bannerCollectionView.bounds.size.width)
         self.bannerPageView.currentPage = index % (bannerModelList?.count ?? 0)
     }
+    
+    //MARK:开始手动滚动时，停止定时器
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        stopTimer()
+    }
+    //MARK:停止手动滚动时，开启定时器
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        startTimer()
+    }
 }
 
 // MARK:- 快速实现轮播图-对定时器进行操作
