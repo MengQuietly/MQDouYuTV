@@ -38,6 +38,9 @@ class MQRecommendBannerView: UIView {
         autoresizingMask = UIViewAutoresizing(rawValue: 0)
     
         bannerCollectionView.register(UINib(nibName: "MQRecommendBannerCell", bundle: nil), forCellWithReuseIdentifier: kMQRecommendBannerCellID)
+        
+        bannerCollectionView.isPagingEnabled = true
+        bannerCollectionView.showsHorizontalScrollIndicator = false
     }
     
     override func layoutSubviews() {
@@ -48,8 +51,7 @@ class MQRecommendBannerView: UIView {
         layout.itemSize = bannerCollectionView.bounds.size
         layout.scrollDirection = UICollectionViewScrollDirection.horizontal
         
-        bannerCollectionView.isPagingEnabled = true
-        bannerCollectionView.showsHorizontalScrollIndicator = false
+        
     }
 }
 

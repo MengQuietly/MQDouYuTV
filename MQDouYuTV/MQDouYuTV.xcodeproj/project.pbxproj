@@ -17,6 +17,10 @@
 		092C9F641E13B8B20071AF2D /* MQBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F631E13B8B20071AF2D /* MQBannerModel.swift */; };
 		092C9F671E13C1E30071AF2D /* MQRecommendBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F651E13C1E30071AF2D /* MQRecommendBannerCell.swift */; };
 		092C9F681E13C1E30071AF2D /* MQRecommendBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092C9F661E13C1E30071AF2D /* MQRecommendBannerCell.xib */; };
+		092C9F6A1E15000A0071AF2D /* MQRecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F691E15000A0071AF2D /* MQRecommendGameView.swift */; };
+		092C9F6C1E1500260071AF2D /* MQRecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092C9F6B1E1500260071AF2D /* MQRecommendGameView.xib */; };
+		092C9F711E1501F10071AF2D /* MQRecommendGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F6F1E1501F10071AF2D /* MQRecommendGameCell.swift */; };
+		092C9F721E1501F10071AF2D /* MQRecommendGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092C9F701E1501F10071AF2D /* MQRecommendGameCell.xib */; };
 		0936C4A51E0BD04200E2B446 /* MQRecommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */; };
 		0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */; };
 		0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */; };
@@ -70,6 +74,10 @@
 		092C9F631E13B8B20071AF2D /* MQBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQBannerModel.swift; sourceTree = "<group>"; };
 		092C9F651E13C1E30071AF2D /* MQRecommendBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendBannerCell.swift; sourceTree = "<group>"; };
 		092C9F661E13C1E30071AF2D /* MQRecommendBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendBannerCell.xib; sourceTree = "<group>"; };
+		092C9F691E15000A0071AF2D /* MQRecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendGameView.swift; sourceTree = "<group>"; };
+		092C9F6B1E1500260071AF2D /* MQRecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendGameView.xib; sourceTree = "<group>"; };
+		092C9F6F1E1501F10071AF2D /* MQRecommendGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendGameCell.swift; sourceTree = "<group>"; };
+		092C9F701E1501F10071AF2D /* MQRecommendGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendGameCell.xib; sourceTree = "<group>"; };
 		0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommentViewModel.swift; sourceTree = "<group>"; };
 		0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingURL.swift; sourceTree = "<group>"; };
 		0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingTool.swift; sourceTree = "<group>"; };
@@ -249,6 +257,10 @@
 				092C9F5F1E13A1DC0071AF2D /* MQRecommendBannerView.xib */,
 				092C9F651E13C1E30071AF2D /* MQRecommendBannerCell.swift */,
 				092C9F661E13C1E30071AF2D /* MQRecommendBannerCell.xib */,
+				092C9F691E15000A0071AF2D /* MQRecommendGameView.swift */,
+				092C9F6B1E1500260071AF2D /* MQRecommendGameView.xib */,
+				092C9F6F1E1501F10071AF2D /* MQRecommendGameCell.swift */,
+				092C9F701E1501F10071AF2D /* MQRecommendGameCell.xib */,
 				09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */,
 				09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */,
 			);
@@ -488,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092C9F721E1501F10071AF2D /* MQRecommendGameCell.xib in Resources */,
 				09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */,
 				09D25C8D1E093CD500BE1402 /* MQRecommendNormalCell.xib in Resources */,
 				09D25C911E0A1CA700BE1402 /* MQPrettyScoreCell.xib in Resources */,
@@ -500,6 +513,7 @@
 				09E96F9E1D93B66D00DD50ED /* Main.storyboard in Resources */,
 				09E96FA01D93B66D00DD50ED /* Profile.storyboard in Resources */,
 				09E96F9D1D93B66D00DD50ED /* Live.storyboard in Resources */,
+				092C9F6C1E1500260071AF2D /* MQRecommendGameView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,11 +585,13 @@
 				09E96FA71D93C5D300DD50ED /* UIBarButtonItem+Extension.swift in Sources */,
 				09A011921E1128CB00CD76CE /* MQAnchorModel.swift in Sources */,
 				0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */,
+				092C9F711E1501F10071AF2D /* MQRecommendGameCell.swift in Sources */,
 				0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */,
 				09E96FA21D93B92A00DD50ED /* MQTabBarController.swift in Sources */,
 				092C9F671E13C1E30071AF2D /* MQRecommendBannerCell.swift in Sources */,
 				092C9F641E13B8B20071AF2D /* MQBannerModel.swift in Sources */,
 				09E96FAB1D93DC9E00DD50ED /* MQCommon.swift in Sources */,
+				092C9F6A1E15000A0071AF2D /* MQRecommendGameView.swift in Sources */,
 				09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */,
 				09A011901E11264D00CD76CE /* MQAnchorGroupModel.swift in Sources */,
 				09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */,

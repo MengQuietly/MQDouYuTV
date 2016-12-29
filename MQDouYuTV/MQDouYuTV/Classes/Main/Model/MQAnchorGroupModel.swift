@@ -20,7 +20,10 @@ class MQAnchorGroupModel: NSObject {
     }
     /// 该组显示标题
     var tag_name : String = ""
-    /// 该组显示的图标
+    /// 该组显示的icon
+    var icon_name : String = "home_header_normal"
+    
+    // 该对象象征图标
     var icon_url : String = "home_header_normal"
     /// 定义主播模型对象数组
     lazy var anchorList:[MQAnchorModel] = [MQAnchorModel]()

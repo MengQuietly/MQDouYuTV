@@ -14,6 +14,8 @@ private let kItemH : CGFloat = kItemW * 3 / 4
 private let kPrettyScoreItemH : CGFloat = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 private let kRecommendBannerViewH : CGFloat = kScreenW * 3 / 8
+private let kRecommendGameViewH : CGFloat = 90
+private let kRecommendBannerViewY : CGFloat = kRecommendBannerViewH + kRecommendGameViewH
 
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -53,8 +55,14 @@ class MQRecommendController: UIViewController {
     // banner
     lazy var bannerViews: MQRecommendBannerView = {
         let bannerViews = MQRecommendBannerView.recommendBannerView()
-        bannerViews.frame = CGRect(x: 0, y: (-kRecommendBannerViewH), width: kScreenW, height: kRecommendBannerViewH)
+        bannerViews.frame = CGRect(x: 0, y: (-kRecommendBannerViewY), width: kScreenW, height: kRecommendBannerViewH)
         return bannerViews
+    }()
+    
+    lazy var gameViews: MQRecommendGameView = {
+        let gameViews = MQRecommendGameView.recommendGemeView()
+        gameViews.frame = CGRect(x: 0, y: -kRecommendGameViewH, width: kScreenW, height: kRecommendGameViewH)
+        return gameViews
     }()
     
     override func viewDidLoad() {
@@ -69,7 +77,8 @@ extension MQRecommendController{
     func setupUI(){
         view.addSubview(collectionViews)
         collectionViews.addSubview(bannerViews)
-        collectionViews.contentInset = UIEdgeInsets(top: kRecommendBannerViewH, left: 0, bottom: 0, right: 0)
+        collectionViews.addSubview(gameViews)
+        collectionViews.contentInset = UIEdgeInsets(top: kRecommendBannerViewY, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -127,6 +136,7 @@ extension MQRecommendController{
         // 获取热门房间列表数据
         recommentViewModel.getRoomGroupListData { [unowned self] in
             self.collectionViews.reloadData()
+            self.gameViews.gameList = self.recommentViewModel.anchorGroupList
         }
     }
 }

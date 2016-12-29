@@ -64,7 +64,7 @@ extension MQRecommentViewModel{
             
             // 创建颜值组
             self.hotGroup.tag_name = "热门"
-            self.hotGroup.icon_url = "home_header_hot"
+            self.hotGroup.icon_name = "home_header_hot"
             for dict in dataArray{
                 let anchor = MQAnchorModel(dict: dict)
                 self.hotGroup.anchorList.append(anchor)
@@ -91,7 +91,7 @@ extension MQRecommentViewModel{
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
         
             self.perttyGroup.tag_name = "颜值"
-            self.perttyGroup.icon_url = "home_header_pretty"
+            self.perttyGroup.icon_name = "home_header_pretty"
             for dict in dataArray{
                 let anchor = MQAnchorModel(dict: dict)
 //                print("nickName=\(anchor.nickname)")
@@ -118,13 +118,12 @@ extension MQRecommentViewModel{
         
         MQNetworkingTool.sendGetRequest(otherHotUrl, parameters: otherHotDict, succeed: { [unowned self] (responseObject, isBadNet) in
             
-//            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
+            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             
             guard let resultDict = responseObject as? [String:NSObject] else {return}
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
             for dict in dataArray{
                 let groupModel = MQAnchorGroupModel(dict: dict)
-                groupModel.icon_url = "home_header_normal"
                 guard (groupModel.anchorList.count > 0) else {continue}
                 self.anchorGroupList.append(groupModel)
             }
