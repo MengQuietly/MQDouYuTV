@@ -15,7 +15,7 @@ class MQRecommendBannerView: UIView {
     // MARK: - 控件属性
     @IBOutlet weak var bannerCollectionView: UICollectionView!
     @IBOutlet weak var bannerPageView: UIPageControl!
-    
+    // MARK：－ 定义属性
     var timer : Timer?
     
     // MARK:-定义模型数组属性
@@ -26,9 +26,11 @@ class MQRecommendBannerView: UIView {
             // 滚动到指定位置
             let indexPath = IndexPath(item: (bannerModelList?.count ?? 0)*10, section: 0)
             bannerCollectionView.scrollToItem(at: indexPath, at: .left, animated: false)
+            // 添加定时器
+            stopTimer()
+            startTimer()
         }
     }
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -80,4 +82,28 @@ extension MQRecommendBannerView: UICollectionViewDelegate {
         let index = Int(offsetX / self.bannerCollectionView.bounds.size.width)
         self.bannerPageView.currentPage = index % (bannerModelList?.count ?? 0)
     }
+}
+
+// MARK:- 快速实现轮播图-对定时器进行操作
+extension MQRecommendBannerView {
+    func startTimer() {
+        timer = Timer(timeInterval: 3.0, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
+        // 添加到运行循环中
+        RunLoop.main.add(timer!, forMode: RunLoopMode.commonModes)
+    }
+    
+    func stopTimer(){
+        // 从运行循环中移除
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    //MARK: 滚动到下一页
+    @objc func scrollToNext(){
+        
+        let offSetX = bannerCollectionView.contentOffset.x + bannerCollectionView.bounds.width
+        bannerCollectionView.setContentOffset(CGPoint(x: offSetX, y: 0), animated: true)
+    }
+    
+    
 }
