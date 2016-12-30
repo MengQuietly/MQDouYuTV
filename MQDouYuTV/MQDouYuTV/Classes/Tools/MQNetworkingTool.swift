@@ -46,58 +46,6 @@ class MQNetworkingTool {
             }
         }
     }
-    
-//    // MARK:- GET
-//    class func sendGetRequest(_ url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture)->Void {
-//        
-//        let headers: HTTPHeaders = ["Accept": "application/json","client_sys":"ios"]
-//        Alamofire.request(url, method: .get, parameters: parameters,headers: headers).responseJSON { response in
-//            
-////            if #available(iOS 10.0, *) {
-////                MQLog(response.metrics)
-////            }
-////            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)")
-////            MQLog("返回值＝\(response.result.value)")
-//            
-//            print("请求URL＝\(response.request)")
-//            if response.result.isSuccess{
-//                if let dict = response.result.value as? [String: AnyObject]{
-//                    succeed(dict, false)
-//                }else{//没有数据.网络错误
-//                    let error = response.result.error as! NSError
-//                    failure(error, true)
-//                }
-//            }else{//网络错误
-//                let error = response.result.error as! NSError
-//                failure(error, true)
-//            }
-//        }
-//    }
-//    
-//    // MARK:- POST
-//    class func sendPostRequest(_ url:String,parameters:[String:Any]?=nil,succeed: @escaping succeed, failure:@escaping failture) -> Void {
-//        
-//        let headers: HTTPHeaders = ["Accept": "application/json","client_sys":"ios"]
-//        // encoding: JSONEncoding.default,
-//        Alamofire.request(url, method: .post, parameters: parameters, headers: headers).responseJSON { (response:DataResponse) in
-//            
-////            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)")
-////            MQLog("返回值＝\(response.result.value)")
-//            print("请求URL＝\(response.request)")
-//            if response.result.isSuccess{
-//               
-//                if let dict = response.result.value as? [String: AnyObject]{
-//                    succeed(dict, false)
-//                }else{//没有数据.网络错误
-//                    let error = response.result.error as! NSError
-//                    failure(error, true)
-//                }
-//            }else{//网络错误
-//                let error = response.result.error as! NSError
-//                failure(error, true)
-//            }
-//        }
-//    }
 }
 
 

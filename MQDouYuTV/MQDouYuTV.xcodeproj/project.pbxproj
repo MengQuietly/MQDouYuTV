@@ -471,6 +471,7 @@
 					};
 					09250B5F1D92269E00D172EF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 09250B4B1D92269E00D172EF;
 					};

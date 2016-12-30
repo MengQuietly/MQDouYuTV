@@ -16,7 +16,7 @@ private let kTitleLabelWithSelectColor : (CGFloat, CGFloat, CGFloat) = (255, 128
 
 // MARK: 设置 Delegate，“:class” 表此协议只能被类遵守
 protocol MQPageTitleViewDelegate: class {
-    func pageTitleView(titleView:MQPageTitleView,currentSelIndex selIndex:Int)
+    func pageTitleView(_ titleView:MQPageTitleView,currentSelIndex selIndex:Int)
 }
 
 // MARK:- MQPageTitleView
@@ -151,14 +151,14 @@ extension MQPageTitleView{
             self?.titleLabelWithBottomLineViews.frame.origin.x = titleLabelWithBottomLineViewX
         }
         // 通知代理
-        delegate?.pageTitleView(titleView: self, currentSelIndex: currentSelectLabelIndex)
+        delegate?.pageTitleView(self, currentSelIndex: currentSelectLabelIndex)
 
     }
 }
 
 // MARK: - 设置滚动信息（对外暴露方法，进行设值）
 extension MQPageTitleView{
-    func setPageTitleViewWithScroll(progress: CGFloat,startIndex: Int,endIndex: Int) {
+    func setPageTitleViewWithScroll(_ progress: CGFloat,startIndex: Int,endIndex: Int) {
      
         let startLabel = titleLabelList[startIndex]
         let endLabel = titleLabelList[endIndex]

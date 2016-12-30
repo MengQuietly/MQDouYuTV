@@ -21,7 +21,7 @@ class MQTabBarController: UITabBarController {
     }
     
     /// 添加 StoryBoard 控制器
-    private func addChildVC(_ storyboardName: String) {
+    fileprivate func addChildVC(_ storyboardName: String) {
         let vc:UIViewController = UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()!
         self.addChildViewController(vc)
     }

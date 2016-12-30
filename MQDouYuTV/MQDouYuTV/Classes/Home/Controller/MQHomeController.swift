@@ -77,7 +77,7 @@ extension MQHomeController {
     }
     
     // 设置导航栏
-    private func setupNav() {
+    fileprivate func setupNav() {
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
         let itemSize = CGSize(width: 40, height: 40)
@@ -91,7 +91,7 @@ extension MQHomeController {
 
 // MARK:-实现 MQPageTitleViewDelegate
 extension MQHomeController: MQPageTitleViewDelegate{
-    func pageTitleView(titleView: MQPageTitleView, currentSelIndex selIndex: Int) {
+    func pageTitleView(_ titleView: MQPageTitleView, currentSelIndex selIndex: Int) {
         pageContentViews.setCurrentIndex(selIndex)
     }
 }
@@ -99,6 +99,6 @@ extension MQHomeController: MQPageTitleViewDelegate{
 // MARK:-实现 MQPageContentViewDelegate(设置contentView滚动信息)
 extension MQHomeController: MQPageContentViewDelegate{
     func pageContentViewWithSetScroll(_ contentView: MQPageContentView, progress: CGFloat, startIndex: Int, endIndex: Int) {
-        pageTitleViews.setPageTitleViewWithScroll(progress: progress, startIndex: startIndex, endIndex: endIndex)
+        pageTitleViews.setPageTitleViewWithScroll(progress, startIndex: startIndex, endIndex: endIndex)
     }
 }
