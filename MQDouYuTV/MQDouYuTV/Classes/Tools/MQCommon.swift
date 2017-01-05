@@ -19,7 +19,7 @@ let kNaviagtionBarH: CGFloat = 44
 let kTabBarH: CGFloat = 49
 
 // 随即色
-let kRandomColor: UIColor = UIColor(displayP3Red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
+let kRandomColor: UIColor = UIColor(red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
 
 // 打印数据
 func MQLog<T>(_ object: T?, filename: String = #file, line: Int = #line, funcname: String = #function) {

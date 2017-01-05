@@ -93,7 +93,7 @@ extension MQPageTitleView {
             if #available(iOS 10.0, *) {
                 titleLabel.adjustsFontForContentSizeCategory = true
             }
-            titleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
+            titleLabel.textColor = UIColor(red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
             titleLabel.textAlignment = .center
             let titleLabelX: CGFloat = titleLabelW * CGFloat(index)
             
@@ -119,13 +119,12 @@ extension MQPageTitleView {
 
         // 添加 TitleLabelWithBottomLineView
         guard let currentLabel = titleLabelList.first else { return }
-        currentLabel.textColor = UIColor(displayP3Red: kTitleLabelWithSelectColor.0, green: kTitleLabelWithSelectColor.1, blue: kTitleLabelWithSelectColor.2)
+        currentLabel.textColor = UIColor(red: kTitleLabelWithSelectColor.0, green: kTitleLabelWithSelectColor.1, blue: kTitleLabelWithSelectColor.2)
 
         let currentLabelF = currentLabel.frame
         let titleLabelWithBottomLineViewY: CGFloat = currentLabelF.size.height - kTitleLabelWithBottomLineViewH
         titleLabelWithBottomLineViews.frame = CGRect(x: currentLabelF.origin.x, y: titleLabelWithBottomLineViewY, width: currentLabelF.size.width, height: kTitleLabelWithBottomLineViewH)
         titleScrollViews.addSubview(titleLabelWithBottomLineViews)
-
     }
 }
 
@@ -139,9 +138,9 @@ extension MQPageTitleView{
         if currentTitleLabel.tag == self.currentSelectLabelIndex {return}
         
         let beforeTitleLabel = titleLabelList[currentSelectLabelIndex]
-        beforeTitleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
+        beforeTitleLabel.textColor = UIColor(red: kTitleLabelWithNormalColor.0, green: kTitleLabelWithNormalColor.1, blue: kTitleLabelWithNormalColor.2)
 
-        currentTitleLabel.textColor = UIColor(displayP3Red: kTitleLabelWithSelectColor.0, green: kTitleLabelWithSelectColor.1, blue: kTitleLabelWithSelectColor.2)
+        currentTitleLabel.textColor = UIColor(red: kTitleLabelWithSelectColor.0, green: kTitleLabelWithSelectColor.1, blue: kTitleLabelWithSelectColor.2)
         
         currentSelectLabelIndex = currentTitleLabel.tag
         
@@ -169,8 +168,8 @@ extension MQPageTitleView{
         
         let colorDelta = (kTitleLabelWithSelectColor.0 - kTitleLabelWithNormalColor.0,kTitleLabelWithSelectColor.1 - kTitleLabelWithNormalColor.1,kTitleLabelWithSelectColor.2 - kTitleLabelWithNormalColor.2)
         
-        startLabel.textColor = UIColor(displayP3Red: kTitleLabelWithSelectColor.0-colorDelta.0 * progress, green: kTitleLabelWithSelectColor.1-colorDelta.1 * progress, blue: kTitleLabelWithSelectColor.2-colorDelta.2 * progress)
-        endLabel.textColor = UIColor(displayP3Red: kTitleLabelWithNormalColor.0+colorDelta.0 * progress, green: kTitleLabelWithNormalColor.1+colorDelta.1 * progress, blue: kTitleLabelWithNormalColor.2+colorDelta.2 * progress)
+        startLabel.textColor = UIColor(red: kTitleLabelWithSelectColor.0-colorDelta.0 * progress, green: kTitleLabelWithSelectColor.1-colorDelta.1 * progress, blue: kTitleLabelWithSelectColor.2-colorDelta.2 * progress)
+        endLabel.textColor = UIColor(red: kTitleLabelWithNormalColor.0+colorDelta.0 * progress, green: kTitleLabelWithNormalColor.1+colorDelta.1 * progress, blue: kTitleLabelWithNormalColor.2+colorDelta.2 * progress)
         
         // 记录最新的Index
         currentSelectLabelIndex = endIndex

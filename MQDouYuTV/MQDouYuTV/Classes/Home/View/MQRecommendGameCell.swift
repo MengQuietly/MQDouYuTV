@@ -16,12 +16,12 @@ class MQRecommendGameCell: UICollectionViewCell {
     @IBOutlet weak var groupName: UILabel!
     
     // MARK: 定义模型属性
-    var gameModel: MQAnchorGroupModel? {
+    var baseGameModel: MQBaseGameModel? {
         didSet {
-            guard let gameModel = gameModel else { return }
-            guard let bannerImgUrl = URL(string: gameModel.icon_url) else {return}
+            guard let baseGameModel = baseGameModel else { return }
+            guard let bannerImgUrl = URL(string: baseGameModel.icon_url) else {return}
             groupIcon.kf.setImage(with: bannerImgUrl, placeholder: Image(named:"home_more_btn"))
-            groupName.text = gameModel.tag_name
+            groupName.text = baseGameModel.tag_name
         }
     }
 }

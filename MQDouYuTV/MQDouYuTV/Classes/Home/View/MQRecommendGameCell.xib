@@ -3,13 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MQRecommendGameCell" customModule="MQDouYuTV" customModuleProvider="target">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MQRecommendGameCell" customModule="MQDouYuTV" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="108" height="93"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -17,16 +16,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-wm-BE2">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="tGI-ig-KjO"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_more_btn" translatesAutoresizingMaskIntoConstraints="NO" id="UtZ-dW-dAx">
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="UtZ-dW-dAx" secondAttribute="height" multiplier="1:1" id="FSC-JC-kpH"/>
+                            <constraint firstAttribute="width" constant="44" id="Gsm-pQ-w9q"/>
+                            <constraint firstAttribute="height" constant="44" id="fyn-47-dWD"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -35,15 +32,22 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzH-tv-8kF">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BQ5-7t-2j5"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="UtZ-dW-dAx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="09U-7a-myl"/>
-                <constraint firstItem="UtZ-dW-dAx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4c8-I0-OHP"/>
-                <constraint firstAttribute="bottom" secondItem="hLN-wm-BE2" secondAttribute="bottom" constant="5" id="6UC-dG-YUY"/>
-                <constraint firstItem="hLN-wm-BE2" firstAttribute="top" secondItem="UtZ-dW-dAx" secondAttribute="bottom" constant="5" id="AkX-EN-GSZ"/>
-                <constraint firstItem="hLN-wm-BE2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MC3-dp-bA1"/>
-                <constraint firstAttribute="trailing" secondItem="hLN-wm-BE2" secondAttribute="trailing" id="rCy-Fp-p1S"/>
+                <constraint firstItem="hLN-wm-BE2" firstAttribute="centerX" secondItem="UtZ-dW-dAx" secondAttribute="centerX" id="4xp-nv-EvX"/>
+                <constraint firstItem="lzH-tv-8kF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Dm-Z1-Qq2"/>
+                <constraint firstItem="UtZ-dW-dAx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OUk-iX-Oj7"/>
+                <constraint firstItem="hLN-wm-BE2" firstAttribute="top" secondItem="UtZ-dW-dAx" secondAttribute="bottom" constant="5" id="dpg-aq-vpu"/>
+                <constraint firstItem="UtZ-dW-dAx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="mlU-Dd-Cdy"/>
+                <constraint firstAttribute="trailing" secondItem="lzH-tv-8kF" secondAttribute="trailing" id="orn-wj-nZA"/>
+                <constraint firstAttribute="bottom" secondItem="lzH-tv-8kF" secondAttribute="bottom" constant="-1" id="tk5-j5-SO0"/>
             </constraints>
             <size key="customSize" width="108" height="93"/>
             <connections>

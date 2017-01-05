@@ -33,10 +33,12 @@ class MQHomeController: UIViewController {
         var pageContentWithVC = [UIViewController]()
         // 添加推荐界面
         pageContentWithVC.append(MQRecommendController())
+        // 添加游戏界面
+        pageContentWithVC.append(MQLiveCommonController())
         // 添加其它界面
-        for _ in 0..<3 {
+        for _ in 0..<2 {
             let vc = UIViewController()
-            vc.view.backgroundColor = UIColor(displayP3Red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
+            vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
             pageContentWithVC.append(vc)
         }
         

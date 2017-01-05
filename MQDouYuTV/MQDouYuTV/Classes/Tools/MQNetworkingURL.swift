@@ -29,8 +29,10 @@ let RECOMMEND_POST_HOT_ROMM_LIST = "api/v1/getHotCate"
 // http://capi.douyucdn.cn/api/v1/slide/6?version=2.421&client_sys=ios
 let RECOMMEND_GET_BANNER_LIST = "api/v1/slide/6"
 
+// （附加）游戏全部列表(api/v1/getColumnDetail?shortName=game)
+let GAME_GET_ALLGAME_LIST = "api/v1/getColumnDetail"
 
-// GET 常用列表
+// GET 常用直播列表
 // http://capi.douyucdn.cn/api/v1/getColumnDetail?client_sys=ios
 let LIVE_GET_COMMON_LIST = "api/v1/getColumnDetail"
 

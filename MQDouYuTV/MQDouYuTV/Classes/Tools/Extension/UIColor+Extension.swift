@@ -10,13 +10,17 @@ import UIKit
 
 extension UIColor {
     // MARK:-RGB值
-    convenience init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat) {
+    convenience init(red: CGFloat, green: CGFloat, blue: CGFloat) {
         
         if #available(iOS 10.0, *) {
-            self.init(displayP3Red: displayP3Red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+            self.init(displayP3Red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
         } else {
-            self.init(red: displayP3Red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+            self.init(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
         }
     }
     
+    // MARK:-随机色
+    class func randomColor() -> UIColor {
+        return UIColor(red: CGFloat(arc4random_uniform(256)), green: CGFloat(arc4random_uniform(256)), blue: CGFloat(arc4random_uniform(256)))
+    }
 }

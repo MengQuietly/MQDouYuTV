@@ -62,7 +62,7 @@ extension MQRecommendGameView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kMQRecommendGameCell, for: indexPath) as! MQRecommendGameCell
-        cell.gameModel = self.gameList?[indexPath.item]
+        cell.baseGameModel = self.gameList?[indexPath.item]
         
         return cell
     }
