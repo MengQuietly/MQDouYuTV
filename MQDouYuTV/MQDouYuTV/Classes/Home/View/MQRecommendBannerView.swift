@@ -55,8 +55,8 @@ class MQRecommendBannerView: UIView {
     }
 }
 
+// MARK: - 快速创建View
 extension MQRecommendBannerView {
-    // MARK: - 快速创建View
     class func recommendBannerView() -> MQRecommendBannerView {
         return Bundle.main.loadNibNamed("MQRecommendBannerView", owner: nil, options: nil)!.first as! MQRecommendBannerView
     }

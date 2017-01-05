@@ -22,3 +22,10 @@ class MQRecommendHeadView: UICollectionReusableView {
         }
     }
 }
+
+// MARK:- 快速创建View
+extension MQRecommendHeadView {
+    class func recommendHeadView() -> MQRecommendHeadView {
+        return Bundle.main.loadNibNamed("MQRecommendHeadView", owner: nil, options: nil)?.first as! MQRecommendHeadView
+    }
+}

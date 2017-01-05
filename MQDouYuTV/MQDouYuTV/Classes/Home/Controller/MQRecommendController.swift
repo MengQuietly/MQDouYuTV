@@ -136,7 +136,16 @@ extension MQRecommendController{
         // 获取热门房间列表数据
         recommentViewModel.getRoomGroupListData { [unowned self] in
             self.collectionViews.reloadData()
-            self.gameViews.gameList = self.recommentViewModel.anchorGroupList
+            
+            var gameList = self.recommentViewModel.anchorGroupList
+            gameList.removeFirst()
+            gameList.removeFirst()
+            let moreGame = MQAnchorGroupModel()
+            moreGame.tag_name = "更多"
+            moreGame.icon_url = "home_more_btn"
+            gameList.append(moreGame)
+            
+            self.gameViews.gameList = gameList
         }
     }
 }

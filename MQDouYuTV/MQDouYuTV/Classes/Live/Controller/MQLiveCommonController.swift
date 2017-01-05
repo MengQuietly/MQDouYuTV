@@ -10,24 +10,48 @@ import UIKit
 
 private let kItemW : CGFloat = kScreenW / 3
 private let kItemH : CGFloat = kItemW * 5 / 6
+private let kHeaderViewH : CGFloat = 50
+private let kTopHeaderGameViewH : CGFloat = 90
+private let kTopHeaderViewTotalY : CGFloat = kHeaderViewH + kTopHeaderGameViewH
 private let kLiveCommonCellID = "kLiveCommonCellID"
+private let kLiveCommonHeaderViewID = "kLiveCommonHeaderViewID"
 
 class MQLiveCommonController: UIViewController {
 
     // MARK： lazy
     
+    /// viewModel
     fileprivate lazy var commonViewModel = MQLiveCommonViewModel()
+    /// topHeadView
+    fileprivate lazy var topHeadViews: MQRecommendHeadView = {
+        let topHeadViews = MQRecommendHeadView.recommendHeadView()
+        topHeadViews.frame = CGRect(x: 0, y: -kTopHeaderViewTotalY, width: kScreenW, height: kHeaderViewH)
+        topHeadViews.groupHeadTitle.text = "常见"
+        topHeadViews.groupHeadIcon.image = UIImage(named: "Img_orange")
+        topHeadViews.groupHeadMore.isHidden = true
+        return topHeadViews
+    }()
+    /// topHeadGame
+    fileprivate lazy var topHeadGames: MQRecommendGameView = {
+        let topHeadGames = MQRecommendGameView.recommendGemeView()
+        topHeadGames.frame = CGRect(x: 0, y: -kTopHeaderGameViewH, width: kScreenW, height: kTopHeaderGameViewH)
+        
+        return topHeadGames
+    }()
     
-    fileprivate lazy var collectionViews:UICollectionView = { [unowned self] in
+    /// collectionView
+    fileprivate lazy var collectionViews: UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemW, height: kItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
         
         var collectionViews = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionViews.dataSource = self
         collectionViews.backgroundColor = UIColor.white
         collectionViews.register(UINib(nibName: "MQRecommendGameCell", bundle: nil), forCellWithReuseIdentifier: kLiveCommonCellID)
+        collectionViews.register(UINib(nibName: "MQRecommendHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kLiveCommonHeaderViewID)
         // 相对于父控件宽高不变
         collectionViews.autoresizingMask = [UIViewAutoresizing.flexibleHeight,UIViewAutoresizing.flexibleWidth]
         return collectionViews
@@ -36,6 +60,7 @@ class MQLiveCommonController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        getCommonListData()
     }
 }
 
@@ -43,7 +68,9 @@ class MQLiveCommonController: UIViewController {
 extension MQLiveCommonController {
     fileprivate func setupUI() {
         view.addSubview(collectionViews)
-        getCommonListData()
+        collectionViews.addSubview(topHeadViews)
+        collectionViews.addSubview(topHeadGames)
+        collectionViews.contentInset = UIEdgeInsets(top: kTopHeaderViewTotalY, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -59,6 +86,15 @@ extension MQLiveCommonController:UICollectionViewDataSource {
         cell.baseGameModel = commonViewModel.commonLists[indexPath.item]
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let headViews = collectionViews.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kLiveCommonHeaderViewID, for: indexPath) as! MQRecommendHeadView
+        headViews.groupHeadTitle.text = "全部"
+        headViews.groupHeadIcon.image = UIImage(named: "Img_orange")
+        headViews.groupHeadMore.isHidden = true
+        return headViews
+    }
 }
 
 //MARK:- 常用直播：网络请求
@@ -67,6 +103,8 @@ extension MQLiveCommonController{
     fileprivate func getCommonListData() {
         commonViewModel.getCommonWithLiveList { [unowned self] in
             self.collectionViews.reloadData()
+            // 获取前10条数据
+            self.topHeadGames.gameList = Array(self.commonViewModel.commonLists[0..<10])
         }
     }
 }

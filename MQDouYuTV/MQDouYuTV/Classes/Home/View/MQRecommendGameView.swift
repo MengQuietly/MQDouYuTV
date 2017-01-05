@@ -17,13 +17,8 @@ class MQRecommendGameView: UIView {
     @IBOutlet weak var gameCollectionViews: UICollectionView!
     
     // MARK:-定义模型数组属性
-    var gameList : [MQAnchorGroupModel]?{
+    var gameList : [MQBaseGameModel]?{
         didSet {
-            gameList?.removeFirst()
-            gameList?.removeFirst()
-            let moreGame = MQAnchorGroupModel()
-            moreGame.tag_name = "更多"
-            gameList?.append(moreGame)
             gameCollectionViews.reloadData()
         }
     }
