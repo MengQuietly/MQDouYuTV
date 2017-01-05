@@ -18,14 +18,14 @@ protocol MQPageContentViewDelegate: class {
 class MQPageContentView: UIView {
     
     // MARK:- 定义属性
-    var childVCList:[UIViewController] = [UIViewController]()
-    weak var parentVC: UIViewController? // weak 修饰可选链
-    var startContentOffSetX:CGFloat = 0 // 开始滑动的OffsetX]
-    var isForbidScrollDelegate: Bool = false // 禁止scrollView滚动
+    fileprivate var childVCList:[UIViewController] = [UIViewController]()
+    fileprivate weak var parentVC: UIViewController? // weak 修饰可选链
+    fileprivate var startContentOffSetX:CGFloat = 0 // 开始滑动的OffsetX]
+    fileprivate var isForbidScrollDelegate: Bool = false // 禁止scrollView滚动
     weak var pageContentViewDelegate : MQPageContentViewDelegate?
 
     // MARK:- 懒加载数据
-    lazy var contentCollectionViews: UICollectionView = {[weak self] in
+    fileprivate lazy var contentCollectionViews: UICollectionView = {[weak self] in
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
@@ -60,7 +60,7 @@ class MQPageContentView: UIView {
 // MARK: - 设置布局
 extension MQPageContentView {
     
-    func setupUI() {
+    fileprivate func setupUI() {
         for child in childVCList {
             child.view.frame = bounds
             parentVC?.addChildViewController(child)

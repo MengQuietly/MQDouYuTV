@@ -168,6 +168,13 @@
 			path = MQDouYuTVTests;
 			sourceTree = "<group>";
 		};
+		092C9F751E1DEB690071AF2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0936C4A31E0BD01C00E2B446 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +277,7 @@
 		09E96F8A1D93B66C00DD50ED /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				092C9F751E1DEB690071AF2D /* ViewModel */,
 				09E96F8B1D93B66C00DD50ED /* Controller */,
 				09E96F8D1D93B66C00DD50ED /* Model */,
 				09E96F8E1D93B66C00DD50ED /* View */,

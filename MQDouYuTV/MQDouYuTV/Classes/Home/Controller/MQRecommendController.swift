@@ -23,9 +23,9 @@ private let kPrettyScoreCellID = "kPrettyScoreCellID"
 
 class MQRecommendController: UIViewController {
 
-    lazy var recommentViewModel = MQRecommentViewModel()
+    fileprivate lazy var recommentViewModel = MQRecommentViewModel()
     // MARK: 懒加载 collectionView
-    lazy var collectionViews: UICollectionView = { [unowned self] in
+    fileprivate lazy var collectionViews: UICollectionView = { [unowned self] in
 
         var layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemW, height: kItemH)
@@ -53,13 +53,13 @@ class MQRecommendController: UIViewController {
     }()
     
     // banner
-    lazy var bannerViews: MQRecommendBannerView = {
+    fileprivate lazy var bannerViews: MQRecommendBannerView = {
         let bannerViews = MQRecommendBannerView.recommendBannerView()
         bannerViews.frame = CGRect(x: 0, y: (-kRecommendBannerViewY), width: kScreenW, height: kRecommendBannerViewH)
         return bannerViews
     }()
     
-    lazy var gameViews: MQRecommendGameView = {
+    fileprivate lazy var gameViews: MQRecommendGameView = {
         let gameViews = MQRecommendGameView.recommendGemeView()
         gameViews.frame = CGRect(x: 0, y: -kRecommendGameViewH, width: kScreenW, height: kRecommendGameViewH)
         return gameViews
@@ -74,7 +74,7 @@ class MQRecommendController: UIViewController {
 
 // MARK: - 设置UI界面
 extension MQRecommendController{
-    func setupUI(){
+    fileprivate func setupUI(){
         view.addSubview(collectionViews)
         collectionViews.addSubview(bannerViews)
         collectionViews.addSubview(gameViews)
@@ -126,7 +126,7 @@ extension MQRecommendController: UICollectionViewDataSource,UICollectionViewDele
 
 // MARK:- 推荐首页：网络请求
 extension MQRecommendController{
-    func getRecommentListData(){
+    fileprivate func getRecommentListData(){
         
         // 获取banner列表数据
         recommentViewModel.getBannerListData { [unowned self] in

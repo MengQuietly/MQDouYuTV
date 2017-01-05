@@ -31,7 +31,7 @@ class MQNetworkingTool {
             
 //            MQLog("请求时间＝\(response.timeline)\n请求URL＝\(response.request)")
 //            MQLog("返回值＝\(response.result.value)")
-            print("请求URL＝\(response.request)")
+            print("请求URL＝\(response.request!)")
             if response.result.isSuccess{
                 
                 if let dict = response.result.value as? [String: AnyObject]{

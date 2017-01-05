@@ -23,18 +23,18 @@ protocol MQPageTitleViewDelegate: class {
 class MQPageTitleView: UIView {
 
     // 当前label Index
-    var currentSelectLabelIndex : Int = 0
+    fileprivate var currentSelectLabelIndex : Int = 0
     
     /// 定义属性
-    var title = [String]()
+    fileprivate var title = [String]()
     // 定义代理
     var delegate:MQPageTitleViewDelegate?
     
     /// 懒加载属性
     // titleLabel Array
-    lazy var titleLabelList:[UILabel] = [UILabel]()
+    fileprivate lazy var titleLabelList:[UILabel] = [UILabel]()
     // title ScrollView
-    lazy var titleScrollViews: UIScrollView = {
+    fileprivate lazy var titleScrollViews: UIScrollView = {
         let titleScrollView = UIScrollView()
         titleScrollView.showsHorizontalScrollIndicator = false
         titleScrollView.scrollsToTop = false
@@ -42,7 +42,7 @@ class MQPageTitleView: UIView {
         return titleScrollView
     }()
     // titleLabel BottomLine
-    lazy var titleLabelWithBottomLineViews: UIView = {
+    fileprivate lazy var titleLabelWithBottomLineViews: UIView = {
         let titleLabelWithBottomLineView = UIView()
         titleLabelWithBottomLineView.backgroundColor = UIColor.orange
         return titleLabelWithBottomLineView
@@ -65,7 +65,7 @@ class MQPageTitleView: UIView {
 // MARK:- 设置 MQPageTitleView－UI
 extension MQPageTitleView {
     
-    func setupUI() {
+    fileprivate func setupUI() {
         
         // 添加 titleScrollView
         titleScrollViews.frame = bounds
@@ -79,7 +79,7 @@ extension MQPageTitleView {
     }
     
     // set title label Arr
-    func setTitleLabels() {
+    fileprivate func setTitleLabels() {
         
         let titleLabelY: CGFloat = 0
         let titleLabelW: CGFloat = frame.width / CGFloat(title.count)
@@ -109,7 +109,7 @@ extension MQPageTitleView {
     }
     
     // set title scrollView Bottom line
-    func setTitleScrollViewWithBottomLineView() {
+    fileprivate func setTitleScrollViewWithBottomLineView() {
         
         // 添加 TitleScrollViewWithBottomLineView
         let titleScrollViewWithBottomLineView = UIView()

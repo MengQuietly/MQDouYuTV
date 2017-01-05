@@ -15,7 +15,7 @@ private let kPageTitleViewH: CGFloat = 50
 class MQHomeController: UIViewController {
     
     // 懒加载属性
-    lazy var pageTitleViews: MQPageTitleView = {
+    fileprivate lazy var pageTitleViews: MQPageTitleView = {
 
         let pageTitleViewF = CGRect(x: 0, y: kStatusBarH + kNaviagtionBarH, width: kScreenW, height: kPageTitleViewH)
         let pageTitleViewWithTitle = ["推荐", "游戏", "娱乐", "趣玩"]
@@ -24,7 +24,7 @@ class MQHomeController: UIViewController {
         return pageTitleView
     }()
     
-    lazy var pageContentViews: MQPageContentView = {[weak self] in
+    fileprivate lazy var pageContentViews: MQPageContentView = {[weak self] in
         
         let pageContentViewY = kStatusBarH + kNaviagtionBarH + kPageTitleViewH
         let pageContentViewH = kScreenH - kStatusBarH - kNaviagtionBarH - kPageTitleViewH - kTabBarH
@@ -63,7 +63,7 @@ class MQHomeController: UIViewController {
 extension MQHomeController {
  
     // 设置 UI 界面
-    func setupUI() {
+    fileprivate func setupUI() {
         // 不需要调整 UIScrollView 的内边距
         self.automaticallyAdjustsScrollViewInsets = false
         // 设置导航栏

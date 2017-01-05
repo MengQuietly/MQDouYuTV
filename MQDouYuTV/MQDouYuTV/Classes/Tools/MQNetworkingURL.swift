@@ -30,7 +30,11 @@ let RECOMMEND_POST_HOT_ROMM_LIST = "api/v1/getHotCate"
 let RECOMMEND_GET_BANNER_LIST = "api/v1/slide/6"
 
 
-/// banner 图 第1、2张下载（posid ＝ 800002,800003,800015，roomid ＝ 0）
+// GET 常用列表
+// http://capi.douyucdn.cn/api/v1/getColumnDetail?client_sys=ios
+let LIVE_GET_COMMON_LIST = "api/v1/getColumnDetail"
+
+/// （未使用）banner 图 第1、2张下载（posid ＝ 800002,800003,800015，roomid ＝ 0）
 let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1482300540&token=93676757_11_9eed6478969f8f6e_2_80941920&auth=0e6a1681b5cba6e39854545c35205663"
 
 
@@ -49,6 +53,10 @@ let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sy
  getbigData
  */
 
+// POST
+// http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483582260&token=58329051_11_7832db991623594c_2_75461464&auth=b13a8d3d942147104d8b23471694bd17
+
+// GET
 // http://capi.douyucdn.cn/api/ios_app/check_update
 // http://capi.douyucdn.cn/api/v1/getExpRule/2?client_sys=ios
 // http://capi.douyucdn.cn/api/v1/getclientface?client_sys=ios
@@ -65,10 +73,16 @@ let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sy
 // http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483005840&token=58329051_11_c896fb45d9451c3b_2_75461464&auth=086ed96a32bcb3a4868e19d3e286421d
 
 
+// tabbar: 直播点击
 
-
-
-
+// GET
+// http://capi.douyucdn.cn/api/v1/getColumnList?client_sys=ios
+// POST
+// http://capi.douyucdn.cn/api/v1/live?limit=20&client_sys=ios&offset=0
+// POST: posid	800007,800008,800009 roomid	0
+// http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483582980&token=58329051_11_7832db991623594c_2_75461464&auth=dc4ffa5929684270f33f9315a417b1e1
+// GET 常用列表
+// http://capi.douyucdn.cn/api/v1/getColumnDetail?client_sys=ios
 
 //// 最热更多点击：
 //// 副标题获取（除第一和最后一个外）： GET
@@ -85,3 +99,5 @@ let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sy
 //http://capi.douyucdn.cn/api/v1/getColumnDetail?shortName=game&client_sys=ios
 //// 内容：GET
 
+
+//

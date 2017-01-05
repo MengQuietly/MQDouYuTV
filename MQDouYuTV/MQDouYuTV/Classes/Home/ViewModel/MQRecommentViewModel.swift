@@ -17,9 +17,9 @@ class MQRecommentViewModel {
     // MQAnchorGroupModel 数组(所有数据组)
     lazy var anchorGroupList: [MQAnchorGroupModel] = [MQAnchorGroupModel]()
     // 热门组
-    lazy var hotGroup:MQAnchorGroupModel = MQAnchorGroupModel()
+    fileprivate lazy var hotGroup:MQAnchorGroupModel = MQAnchorGroupModel()
     // 颜值组
-    lazy var perttyGroup:MQAnchorGroupModel = MQAnchorGroupModel()
+    fileprivate lazy var perttyGroup:MQAnchorGroupModel = MQAnchorGroupModel()
 }
 
 // MARK:- 网络请求

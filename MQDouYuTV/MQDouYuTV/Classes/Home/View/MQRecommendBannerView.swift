@@ -97,13 +97,13 @@ extension MQRecommendBannerView: UICollectionViewDelegate {
 
 // MARK:- 快速实现轮播图-对定时器进行操作
 extension MQRecommendBannerView {
-    func startTimer() {
+    fileprivate func startTimer() {
         timer = Timer(timeInterval: 3.0, target: self, selector: #selector(scrollToNext), userInfo: nil, repeats: true)
         // 添加到运行循环中
         RunLoop.main.add(timer!, forMode: RunLoopMode.commonModes)
     }
     
-    func stopTimer(){
+    fileprivate func stopTimer(){
         // 从运行循环中移除
         timer?.invalidate()
         timer = nil
