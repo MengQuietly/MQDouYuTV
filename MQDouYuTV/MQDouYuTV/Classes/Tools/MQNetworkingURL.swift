@@ -11,8 +11,12 @@ import UIKit
 // hostUrl
 let HOST_URL = "http://capi.douyucdn.cn/"
 
-// MARK：－ 推荐界面
+// MARK:- 首页
+// 获取首页副标题列表（无推荐）
+// http://capi.douyucdn.cn/api/homeCate/getCateList?client_sys=ios
+let HOME_GET_SUBTITLE_LIST = "api/homeCate/getCateList"
 
+// MARK：－ 推荐界面
 /// 最热列表（first）POST(token)
 // http://capi.douyucdn.cn/api/v1/getbigDataRoom?client_sys=ios
 let RECOMMEND_POST_HOTTEST_ROMM_LIST = "api/v1/getbigDataRoom"
@@ -59,8 +63,13 @@ let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sy
 // http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483582260&token=58329051_11_7832db991623594c_2_75461464&auth=b13a8d3d942147104d8b23471694bd17
 
 // GET
+// 检查更新
 // http://capi.douyucdn.cn/api/ios_app/check_update
+// 获取等级图标
 // http://capi.douyucdn.cn/api/v1/getExpRule/2?client_sys=ios
+// 获取荣耀图标
+// http://capi.douyucdn.cn/lapi/live/app/reward?aid=ios&client_sys=ios&time=1483685220&auth=1feccde54b99ad866edd2d6f8815f687
+
 // http://capi.douyucdn.cn/api/v1/getclientface?client_sys=ios
 // http://capi.douyucdn.cn/api/v1/gethonorimg?level=2&client_sys=ios
 // http://msg.douyu.com/user
@@ -69,7 +78,7 @@ let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sy
 // http://capi.douyucdn.cn/api/v1/followremindinfo?client_sys=ios
 // http://capi.douyucdn.cn/api/applivecompanion/getUploadSwitch?client_sys=ios
 // http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483005840&token=58329051_11_c896fb45d9451c3b_2_75461464&auth=f96e624ed1ecb671a57d9d8d8de78031
-// http://capi.douyucdn.cn/api/homeCate/getCateList?client_sys=ios
+
 // http://capi.douyucdn.cn/api/app_api/get_app_list?sign=e382b51f0b41840ce8b06cda02d927f2&client_sys=ios&devid=0310B283-98D1-44B4-AD25-FC0E4EEBCC4F&time=1483005840&type=ios
 // http://capi.douyucdn.cn/wb_share/config?client_sys=ios
 // http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483005840&token=58329051_11_c896fb45d9451c3b_2_75461464&auth=086ed96a32bcb3a4868e19d3e286421d
@@ -101,5 +110,25 @@ let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sy
 //http://capi.douyucdn.cn/api/v1/getColumnDetail?shortName=game&client_sys=ios
 //// 内容：GET
 
+/// 手游点击
+// POST posid	800004 roomid	0
+// http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483684560&token=58329051_11_7832db991623594c_2_75461464&auth=5f9e92560cdfbfa4c812903147b3145a
 
-//
+// GET
+// http://capi.douyucdn.cn/api/homeCate/getHotRoom?identification=3e760da75be261a588c74c4830632360&client_sys=ios
+/// 娱乐点击
+// POST posid	800005 roomid	0
+// http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483684620&token=58329051_11_7832db991623594c_2_75461464&auth=ab4655251a370d4197f6526c31c37adf
+// GET
+// http://capi.douyucdn.cn/api/homeCate/getHotRoom?identification=9acf9c6f117a4c2d02de30294ec29da9&client_sys=ios
+
+/// 游戏
+// POST posid	800006 roomid	0
+// http://capi.douyucdn.cn/lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1483684800&token=58329051_11_7832db991623594c_2_75461464&auth=e01ebe2f687ba0e01b5e74ba0d0ae7d2
+
+// GET
+// http://capi.douyucdn.cn/api/homeCate/getHotRoom?identification=ba08216f13dd1742157412386eee1225&client_sys=ios
+
+/// 趣玩
+// GET
+// http://capi.douyucdn.cn/api/homeCate/getHotRoom?identification=393b245e8046605f6f881d415949494c&client_sys=ios
