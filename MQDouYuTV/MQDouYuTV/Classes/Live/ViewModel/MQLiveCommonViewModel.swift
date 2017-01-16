@@ -20,7 +20,7 @@ extension MQLiveCommonViewModel{
     
     // MARK: 获取直播：常用列表
     func getCommonWithLiveList(finishCallBack: @escaping()->()) {
-        let commonUrl = HOST_URL.appending(GAME_GET_ALLGAME_LIST)
+        let commonUrl = HOST_URL.appending(LIVE_GET_COMMON_LIST)
 //        let commonDict = ["shortName":"game"] parameters:commonDict,
         MQNetworkingTool.sendRequest(url: commonUrl, succeed: { (responseObject, isBadNet) in
             

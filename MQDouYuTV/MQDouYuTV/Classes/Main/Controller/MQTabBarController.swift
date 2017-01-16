@@ -12,7 +12,6 @@ class MQTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addChildVC("Home")
         addChildVC("Live")
         addChildVC("Follow")

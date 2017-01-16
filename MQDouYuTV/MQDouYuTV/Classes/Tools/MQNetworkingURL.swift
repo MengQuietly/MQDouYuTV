@@ -33,12 +33,15 @@ let RECOMMEND_POST_HOT_ROMM_LIST = "api/v1/getHotCate"
 // http://capi.douyucdn.cn/api/v1/slide/6?version=2.421&client_sys=ios
 let RECOMMEND_GET_BANNER_LIST = "api/v1/slide/6"
 
-// （附加）游戏全部列表(api/v1/getColumnDetail?shortName=game)
-let GAME_GET_ALLGAME_LIST = "api/v1/getColumnDetail"
+//// （附加）游戏全部列表(api/v1/getColumnDetail?shortName=game)
+//let GAME_GET_ALLGAME_LIST = "api/v1/getColumnDetail"
 
 // GET 常用直播列表
 // http://capi.douyucdn.cn/api/v1/getColumnDetail?client_sys=ios
 let LIVE_GET_COMMON_LIST = "api/v1/getColumnDetail"
+
+/// 娱乐点击 GET (api/homeCate/getHotRoom?identification=9acf9c6f117a4c2d02de30294ec29da9&client_sys=ios)
+let AMUSE_GET_AMUSE_LIST = "api/homeCate/getHotRoom"
 
 /// （未使用）banner 图 第1、2张下载（posid ＝ 800002,800003,800015，roomid ＝ 0）
 let RECOMMEND_POST_ONE_BANNER_LIST = "lapi/sign/appapi/getinfo?aid=ios&client_sys=ios&time=1482300540&token=93676757_11_9eed6478969f8f6e_2_80941920&auth=0e6a1681b5cba6e39854545c35205663"

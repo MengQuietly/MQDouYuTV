@@ -27,6 +27,7 @@ class MQPageTitleView: UIView {
     
     /// 定义属性
     fileprivate var title = [String]()
+
     // 定义代理
     var delegate:MQPageTitleViewDelegate?
     
@@ -124,7 +125,9 @@ extension MQPageTitleView {
         let currentLabelF = currentLabel.frame
         let titleLabelWithBottomLineViewY: CGFloat = currentLabelF.size.height - kTitleLabelWithBottomLineViewH
         titleLabelWithBottomLineViews.frame = CGRect(x: currentLabelF.origin.x, y: titleLabelWithBottomLineViewY, width: currentLabelF.size.width, height: kTitleLabelWithBottomLineViewH)
-        titleScrollViews.addSubview(titleLabelWithBottomLineViews)
+        if title.count > 1{
+            titleScrollViews.addSubview(titleLabelWithBottomLineViews)
+        }
     }
 }
 

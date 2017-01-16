@@ -11,15 +11,19 @@ import UIKit
 // PageTitleView-height
 private let kPageTitleViewH: CGFloat = 50
 
-/** HomeController  */
+
 class MQHomeController: UIViewController {
+    
+    // MARK: Lazy
+    fileprivate lazy var homeViewModel = MQHomeViewModel()
+    
+    fileprivate var pageTitleViewWithTitle = [String]()
     
     // 懒加载属性
     fileprivate lazy var pageTitleViews: MQPageTitleView = {
 
         let pageTitleViewF = CGRect(x: 0, y: kStatusBarH + kNaviagtionBarH, width: kScreenW, height: kPageTitleViewH)
-        let pageTitleViewWithTitle = ["推荐", "游戏", "娱乐", "趣玩"]
-        let pageTitleView = MQPageTitleView(frame: pageTitleViewF, title: pageTitleViewWithTitle)
+        let pageTitleView = MQPageTitleView(frame: pageTitleViewF, title: self.pageTitleViewWithTitle)
         pageTitleView.delegate = self
         return pageTitleView
     }()
@@ -36,15 +40,27 @@ class MQHomeController: UIViewController {
         // 添加游戏界面
         pageContentWithVC.append(MQLiveCommonController())
         // 添加娱乐界面
-        pageContentWithVC.append(MQAmuseController())
+        let amuseIdentification = (self?.homeViewModel.subTitleList[2].identification)!
+        let amuseVC = MQAmuseController()
+        amuseVC.identifications = amuseIdentification
+        pageContentWithVC.append(amuseVC)
         // 添加其它界面
-        for _ in 0..<1 {
+        let titleCount = (self?.pageTitleViewWithTitle.count)!
+        let count = (titleCount - pageContentWithVC.count) > 0 ? (titleCount - pageContentWithVC.count) : 0
+        
+        for _ in 0..<count {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
             pageContentWithVC.append(vc)
         }
         
-        let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: pageContentWithVC, parentVC: self)
+        let vcList = Array(pageContentWithVC[0..<titleCount])
+        
+//        for (index,vc) in vcList.enumerated() {
+//            vc.identification = self.pageTitleViewWithTitle[index].identification
+//        }
+        
+        let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: vcList, parentVC: self)
         
         pageContentView.pageContentViewDelegate = self
         return pageContentView
@@ -52,15 +68,30 @@ class MQHomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // 设置 UI 界面
-        self.setupUI()
+        getHomeData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+}
+
+// MARK:- 数据请求
+extension MQHomeController {
+    fileprivate func getHomeData() {
+        homeViewModel.getHomeSubTitle { [unowned self] in
+            self.pageTitleViewWithTitle.append("推荐")
+            for model in self.homeViewModel.subTitleList {
+                self.pageTitleViewWithTitle.append(model.title)
+            }
+            
+            DispatchQueue.main.async(execute: {
+                // 设置 UI 界面
+                self.setupUI()
+            })
+        }
+    }
 }
 
 // MARK:- 设置 UI 界面

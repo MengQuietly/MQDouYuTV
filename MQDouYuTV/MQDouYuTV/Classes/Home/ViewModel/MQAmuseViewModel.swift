@@ -10,15 +10,32 @@ import UIKit
 
 class MQAmuseViewModel {
 
+    // MQAnchorGroupModel 数组(所有数据组)
+    lazy var anchorGroupList: [MQAnchorGroupModel] = [MQAnchorGroupModel]()
 }
 
 // MARK:- 数据请求
 extension MQAmuseViewModel {
     
-    func getAmuseListData(finishCalBack:@escaping()->()) {
+    func getAmuseListData(identifications:String,finishCallBack:@escaping ()->()){
+        let amuseUrl = HOST_URL.appending(AMUSE_GET_AMUSE_LIST)
+        let amuseDict = ["identification":identifications]
+        MQNetworkingTool.sendRequest(url: amuseUrl, parameters:amuseDict, succeed: {  [unowned self] (responseObject, isBadNet) in
+            
+//            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
+            
+            guard let resultDict = responseObject as? [String:NSObject] else  {return}
+            guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
+            for dict in dataArray {
+                self.anchorGroupList.append(MQAnchorGroupModel(dict: dict))
+            }
+            finishCallBack()
+            
+        }) { (error, isBadNet) in
+            MQLog("error=\(error),isBadNet=\(isBadNet)")
+        }
         
-//        let amuseUrl = HOST_URL.appending(<#T##aString: String##String#>)
-//        MQNetworkingTool.sendRequest(url: <#T##String#>, succeed: <#T##succeed##succeed##(Any?, Bool) -> ()#>, failure: <#T##failture##failture##(NSError?, Bool) -> ()#>)
+        
         
     }
 }

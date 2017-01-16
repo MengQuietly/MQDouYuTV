@@ -18,8 +18,11 @@ private let kAmuseHeaderViewCellID = "kAmuseHeaderViewCellID"
 
 class MQAmuseController: UIViewController {
     
-    // MARK:- lazy
+    var identifications:String = String()
+    // MARK: Lazy
+    fileprivate lazy var amuseViewModel = MQAmuseViewModel()
     
+    // MARK:- lazy
     fileprivate lazy var collectionViews: UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
@@ -41,9 +44,9 @@ class MQAmuseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        self.setupUI()
+        getListData()
     }
-
 }
 
 // MARK:- 设置界面
@@ -57,22 +60,46 @@ extension MQAmuseController {
 extension MQAmuseController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return amuseViewModel.anchorGroupList.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return amuseViewModel.anchorGroupList[section].anchorList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAmuseCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAmuseCellID, for: indexPath) as! MQRecommendNormalCell
+        cell.anchorModel = amuseViewModel.anchorGroupList[indexPath.section].anchorList[indexPath.item]
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kAmuseHeaderViewCellID, for: indexPath)
-        return header
+        let headerViews = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kAmuseHeaderViewCellID, for: indexPath) as! MQRecommendHeadView
+        headerViews.anchorGroupModel = amuseViewModel.anchorGroupList[indexPath.section]
+        
+        return headerViews
+    }
+}
+
+// MARK:- 网络请求
+extension MQAmuseController {
+
+    fileprivate func getListData(){
+        
+        amuseViewModel.getAmuseListData(identifications: identifications) { [unowned self] in
+            
+//            DispatchQueue.main.async(execute: {
+//                // 设置 UI 界面
+//                self.setupUI()
+//            })
+            
+            self.collectionViews.reloadData()
+            
+        }
+        
+
     }
 }
 
