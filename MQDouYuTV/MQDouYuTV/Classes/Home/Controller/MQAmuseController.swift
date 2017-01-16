@@ -44,7 +44,7 @@ class MQAmuseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupUI()
+        setupUI()
         getListData()
     }
 }
@@ -89,11 +89,6 @@ extension MQAmuseController {
     fileprivate func getListData(){
         
         amuseViewModel.getAmuseListData(identifications: identifications) { [unowned self] in
-            
-//            DispatchQueue.main.async(execute: {
-//                // 设置 UI 界面
-//                self.setupUI()
-//            })
             
             self.collectionViews.reloadData()
             

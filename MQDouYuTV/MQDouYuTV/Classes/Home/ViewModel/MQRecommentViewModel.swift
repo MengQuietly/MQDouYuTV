@@ -8,14 +8,12 @@
 
 import UIKit
 
-class MQRecommentViewModel {
+class MQRecommentViewModel : MQBaseAnchorViewModel{
     // MARK：－ 懒加载
     
     /// banners List
     lazy var bannerLists:[MQBannerModel] = [MQBannerModel]()
     
-    // MQAnchorGroupModel 数组(所有数据组)
-    lazy var anchorGroupList: [MQAnchorGroupModel] = [MQAnchorGroupModel]()
     // 热门组
     fileprivate lazy var hotGroup:MQAnchorGroupModel = MQAnchorGroupModel()
     // 颜值组
@@ -136,23 +134,9 @@ extension MQRecommentViewModel{
         let time = Date.getCurrentDateNumber()
         let otherHotDict = ["aid":"ios","time":"\(time)","auth":"ddc8cda0a77453f40bf3b26926a15aba"]
         
-        MQNetworkingTool.sendRequest(type: MQMethodType.post, url:otherHotUrl, parameters: otherHotDict, succeed: { [unowned self] (responseObject, isBadNet) in
-            
-//            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
-            
-            guard let resultDict = responseObject as? [String:NSObject] else {return}
-            guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
-            for dict in dataArray{
-                let groupModel = MQAnchorGroupModel(dict: dict)
-                guard (groupModel.anchorList.count > 0) else {continue}
-                self.anchorGroupList.append(groupModel)
-            }
-
+        getAnchorData(urlString: otherHotUrl, parameters: otherHotDict) {
             // 离开组
             netGroup.leave()
-            
-            }) { (error, isBadNet) in
-                MQLog("error=\(error),isBadNet=\(isBadNet)")
         }
         
         // 网络组完成后，执行

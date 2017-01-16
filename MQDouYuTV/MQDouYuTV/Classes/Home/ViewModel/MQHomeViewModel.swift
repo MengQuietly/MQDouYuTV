@@ -26,25 +26,6 @@ extension MQHomeViewModel {
                 
                 self.subTitleList.append(subTitleModel)
             }
-
-            
-//            let path = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first
-//            
-//            //向沙盒中写入文件
-//            //写入文件
-//            guard let paths = path else {return}
-//            let fileP = paths.appendingPathComponent("Preferences/text1.txt")
-//            let arr1: NSArray = ["code","change","world","OK"]
-//            arr1.write(toFile: "\(fileP.path)", atomically: true)
-//            
-//            print("path= \(fileP)")
-//            
-//            let cachesPaths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first
-//            guard let cachesPath = cachesPaths else {return}
-//            let fileP2 = cachesPath.appending("/text2.txt")
-//            arr1.write(toFile: "\(fileP2)", atomically: true)
-            
-            
             finishCallBack()
 
             }) { (error, isBadNet) in
