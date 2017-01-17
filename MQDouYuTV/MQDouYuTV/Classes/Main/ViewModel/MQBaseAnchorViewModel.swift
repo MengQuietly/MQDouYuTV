@@ -21,7 +21,9 @@ extension MQBaseAnchorViewModel{
             guard let resultDict = responseObject as? [String:NSObject] else  {return}
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
             for dict in dataArray {
-                self.anchorGroupList.append(MQAnchorGroupModel(dict: dict))
+                let groupModel = MQAnchorGroupModel(dict: dict)
+                guard (groupModel.anchorList.count > 0) else {continue}
+                self.anchorGroupList.append(groupModel)
             }
             finishCallBack()
             

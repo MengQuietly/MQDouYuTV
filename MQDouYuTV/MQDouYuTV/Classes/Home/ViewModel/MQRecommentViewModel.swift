@@ -134,7 +134,7 @@ extension MQRecommentViewModel{
         let time = Date.getCurrentDateNumber()
         let otherHotDict = ["aid":"ios","time":"\(time)","auth":"ddc8cda0a77453f40bf3b26926a15aba"]
         
-        getAnchorData(urlString: otherHotUrl, parameters: otherHotDict) {
+        getAnchorData(urlString: otherHotUrl, parameters: otherHotDict) { 
             // 离开组
             netGroup.leave()
         }
