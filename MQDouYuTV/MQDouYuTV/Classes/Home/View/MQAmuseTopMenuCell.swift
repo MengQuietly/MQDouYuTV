@@ -12,6 +12,11 @@ private let kAmuseTopMenuWithGameCellID = "kAmuseTopMenuWithGameCellID"
 
 class MQAmuseTopMenuCell: UICollectionViewCell {
 
+    var anchorGroupModelList: [MQAnchorGroupModel]? {
+        didSet {
+            amuseTopMenuCollection.reloadData()
+        }
+    }
     @IBOutlet weak var amuseTopMenuCollection: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,12 +40,13 @@ class MQAmuseTopMenuCell: UICollectionViewCell {
 
 extension MQAmuseTopMenuCell: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return anchorGroupModelList?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAmuseTopMenuWithGameCellID, for: indexPath) as! MQRecommendGameCell
-        cell.backgroundColor = UIColor.randomColor()
+        cell.clipsToBounds = true // cell 不展示 BottomLine
+        cell.baseGameModel = anchorGroupModelList![indexPath.item]
         return cell
     }
 }

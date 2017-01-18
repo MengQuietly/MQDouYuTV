@@ -12,6 +12,12 @@ import UIKit
 private let kAmuseTopMenuBGCellID = "kAmuseTopMenuBGCellID"
 
 class MQAmuseTopMenuView: UIView {
+    
+    var groupModelList: [MQAnchorGroupModel]? {
+        didSet {
+            amuseTopMenuBgCollectionView.reloadData()
+        }
+    }
 
     @IBOutlet weak var amuseTopMenuBgCollectionView: UICollectionView!
     @IBOutlet weak var amuseTopMenuPageControl: UIPageControl!
@@ -41,12 +47,36 @@ extension MQAmuseTopMenuView {
 // MARK:- 实现代理
 extension MQAmuseTopMenuView: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        if groupModelList == nil { return 0 }
+        let pageNum = (groupModelList!.count - 1) / 8 + 1
+        print("count = \(groupModelList!.count)")
+        amuseTopMenuPageControl.numberOfPages = pageNum
+        return pageNum
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAmuseTopMenuBGCellID, for: indexPath) as! MQAmuseTopMenuCell
-        cell.backgroundColor = UIColor.randomColor()
+        setupCellDataWithCell(cell: cell, indexPath: indexPath)
         return cell
     }
+    
+    // 设置cell 数据
+    private func setupCellDataWithCell(cell: MQAmuseTopMenuCell, indexPath: IndexPath) {
+        let startIndex = indexPath.item * 8
+        var endIndex = (indexPath.item + 1) * 8 - 1
+        // 判断越界
+        if endIndex > groupModelList!.count - 1 {
+            endIndex = groupModelList!.count - 1
+        }
+        cell.anchorGroupModelList = Array(groupModelList![startIndex ... endIndex])
+    }
 }
+
+// MARK: - UICollectionViewDelegate
+extension MQAmuseTopMenuView:UICollectionViewDelegate {
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        amuseTopMenuPageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.width)
+    }
+}
+

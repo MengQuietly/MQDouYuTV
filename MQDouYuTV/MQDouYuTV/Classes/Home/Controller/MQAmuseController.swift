@@ -19,7 +19,7 @@ class MQAmuseController: MQBaseAnchorController {
     fileprivate lazy var amuseTopMenuView: MQAmuseTopMenuView = {
         let amuseTopMenuView = MQAmuseTopMenuView.amuseTopMenuView()
         amuseTopMenuView.frame = CGRect(x: 0, y: -kAmuseTopMenuViewH, width: kScreenW, height: kAmuseTopMenuViewH)
-        amuseTopMenuView.backgroundColor = UIColor.red
+        amuseTopMenuView.backgroundColor = UIColor.white
         return amuseTopMenuView
     }()
 }
@@ -43,6 +43,7 @@ extension MQAmuseController {
         
         amuseViewModel.getAmuseListData(identifications: identifications) { [unowned self] in
             self.collectionViews.reloadData()
+            self.amuseTopMenuView.groupModelList = self.amuseViewModel.anchorGroupList
         }
     }
 }
