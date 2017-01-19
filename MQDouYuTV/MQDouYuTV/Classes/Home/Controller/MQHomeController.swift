@@ -48,7 +48,7 @@ class MQHomeController: UIViewController {
         pageContentWithVC.append(UIViewController())
         // 添加趣玩界面
         let funnyVC = MQFunnyController()
-        funnyVC.restorationIdentifier = self!.homeViewModel.subTitleList[3].identification
+        funnyVC.identifications = self!.homeViewModel.subTitleList[3].identification
         pageContentWithVC.append(funnyVC)
         
         

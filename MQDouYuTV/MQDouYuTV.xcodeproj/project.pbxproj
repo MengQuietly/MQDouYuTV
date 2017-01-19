@@ -45,6 +45,7 @@
 		09CEA2051E2E187A00D0A1F5 /* MQAmuseTopMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA2031E2E187A00D0A1F5 /* MQAmuseTopMenuCell.swift */; };
 		09CEA2061E2E187A00D0A1F5 /* MQAmuseTopMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CEA2041E2E187A00D0A1F5 /* MQAmuseTopMenuCell.xib */; };
 		09CEA2081E2F7DC800D0A1F5 /* MQFunnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA2071E2F7DC800D0A1F5 /* MQFunnyController.swift */; };
+		09CEA20A1E30513E00D0A1F5 /* MQFunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA2091E30513E00D0A1F5 /* MQFunnyViewModel.swift */; };
 		09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */; };
 		09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */; };
 		09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */; };
@@ -117,6 +118,7 @@
 		09CEA2031E2E187A00D0A1F5 /* MQAmuseTopMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAmuseTopMenuCell.swift; sourceTree = "<group>"; };
 		09CEA2041E2E187A00D0A1F5 /* MQAmuseTopMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQAmuseTopMenuCell.xib; sourceTree = "<group>"; };
 		09CEA2071E2F7DC800D0A1F5 /* MQFunnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQFunnyController.swift; sourceTree = "<group>"; };
+		09CEA2091E30513E00D0A1F5 /* MQFunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQFunnyViewModel.swift; sourceTree = "<group>"; };
 		09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendHeadView.swift; sourceTree = "<group>"; };
 		09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendHeadView.xib; sourceTree = "<group>"; };
 		09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendNormalCell.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */,
 				094186A51E1F7103008C83D9 /* MQAmuseViewModel.swift */,
 				094186A91E1F7D3B008C83D9 /* MQHomeViewModel.swift */,
+				09CEA2091E30513E00D0A1F5 /* MQFunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				09A011901E11264D00CD76CE /* MQAnchorGroupModel.swift in Sources */,
 				094186AA1E1F7D3B008C83D9 /* MQHomeViewModel.swift in Sources */,
 				092C9F7D1E1E273A0071AF2D /* MQLiveCommonModel.swift in Sources */,
+				09CEA20A1E30513E00D0A1F5 /* MQFunnyViewModel.swift in Sources */,
 				09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */,
 				09A2795F1E1E5A51000F7819 /* MQAmuseController.swift in Sources */,
 				09CEA2051E2E187A00D0A1F5 /* MQAmuseTopMenuCell.swift in Sources */,
