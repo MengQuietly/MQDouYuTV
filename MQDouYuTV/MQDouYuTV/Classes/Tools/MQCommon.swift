@@ -18,6 +18,13 @@ let kStatusBarH: CGFloat = 20
 let kNaviagtionBarH: CGFloat = 44
 let kTabBarH: CGFloat = 49
 
+let kFirstStartApp: Bool = UserDefaults.standard.bool(forKey: "firstLaunch")
+
+let kAmuseIdentification: String = UserDefaults.standard.object(forKey: "娱乐") as! String
+let kMobileGameIdentification: String = UserDefaults.standard.object(forKey: "手游") as! String
+let kGameIdentification: String = UserDefaults.standard.object(forKey: "游戏") as! String
+let kFunnyIdentification: String = UserDefaults.standard.object(forKey: "趣玩") as! String
+
 // 随即色
 let kRandomColor: UIColor = UIColor(red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
 

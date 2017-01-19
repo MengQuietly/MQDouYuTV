@@ -99,6 +99,9 @@ extension MQRecommendController{
             gameList.append(moreGame)
             
             self.gameViews.gameList = gameList
+            
+            // 数据请求完成，关闭动画
+            self.loadDataFinished()
         }
     }
 }

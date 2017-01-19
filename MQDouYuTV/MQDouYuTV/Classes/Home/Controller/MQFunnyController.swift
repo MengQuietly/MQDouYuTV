@@ -34,6 +34,9 @@ extension MQFunnyController {
         
         funnyViewModel.getFunnyListData(identifications: identifications) { [unowned self] in
             self.collectionViews.reloadData()
+            
+            // 数据请求完成，关闭动画
+            self.loadDataFinished()
         }
     }
 }

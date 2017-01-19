@@ -16,7 +16,6 @@ class MQTabBarController: UITabBarController {
         addChildVC("Live")
         addChildVC("Follow")
         addChildVC("Profile")
-        
     }
     
     /// 添加 StoryBoard 控制器

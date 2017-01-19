@@ -16,7 +16,7 @@ private let kTopHeaderViewTotalY : CGFloat = kHeaderViewH + kTopHeaderGameViewH
 private let kLiveCommonCellID = "kLiveCommonCellID"
 private let kLiveCommonHeaderViewID = "kLiveCommonHeaderViewID"
 
-class MQLiveCommonController: UIViewController {
+class MQLiveCommonController: MQBaseController {
 
     // MARK： lazy
     
@@ -66,11 +66,14 @@ class MQLiveCommonController: UIViewController {
 
 // MARK: - 设置UI界面
 extension MQLiveCommonController {
-    fileprivate func setupUI() {
+    override func setupUI() {
+        contentView = collectionViews
         view.addSubview(collectionViews)
         collectionViews.addSubview(topHeadViews)
         collectionViews.addSubview(topHeadGames)
         collectionViews.contentInset = UIEdgeInsets(top: kTopHeaderViewTotalY, left: 0, bottom: 0, right: 0)
+        
+        super.setupUI()
     }
 }
 
@@ -105,6 +108,9 @@ extension MQLiveCommonController{
             self.collectionViews.reloadData()
             // 获取前10条数据
             self.topHeadGames.gameList = Array(self.commonViewModel.commonLists[0..<10])
+            
+            // 数据请求完成，关闭动画
+            self.loadDataFinished()
         }
     }
 }

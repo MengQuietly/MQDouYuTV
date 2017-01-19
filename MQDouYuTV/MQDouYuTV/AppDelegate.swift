@@ -17,8 +17,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UITabBar.appearance().tintColor = UIColor.orange
         
+        let userDefault = UserDefaults.standard
+        
+        if userDefault.bool(forKey: "everLaunched") == false {
+            // 第一次启动
+            userDefault.set(true, forKey: "everLaunched")
+            userDefault.set(true, forKey: "firstLaunch")
+        }else{
+            userDefault.set(false, forKey: "firstLaunch")
+        }
+        userDefault.synchronize()
         return true
     }
+    
+//    // MARK: 获取首页 子标题
+//    func getHomeSubTitle(){
+//        let homeSubTitleUrl = HOST_URL.appending(HOME_GET_SUBTITLE_LIST)
+//        MQNetworkingTool.sendRequest(url: homeSubTitleUrl, succeed: { (responseObject, isBadNet) in
+//            //            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
+//            guard let resultDict = responseObject as? [String:NSObject] else  {return}
+//            guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
+//            let userDefault = UserDefaults.standard
+//            for dict in dataArray {
+//                let subTitleModel = MQHomeSubTitleModel(dict: dict)
+//                userDefault.set(subTitleModel.identification, forKey: subTitleModel.title)
+//            }
+//            
+//            userDefault.set(true, forKey: "firstLaunch")
+//            print("path = \(NSHomeDirectory())")
+//            userDefault.synchronize()
+//            
+//        }) { (error, isBadNet) in
+//            MQLog("error=\(error),isBadNet=\(isBadNet)")
+//        }
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

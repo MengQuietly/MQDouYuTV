@@ -44,6 +44,9 @@ extension MQAmuseController {
         amuseViewModel.getAmuseListData(identifications: identifications) { [unowned self] in
             self.collectionViews.reloadData()
             self.amuseTopMenuView.groupModelList = self.amuseViewModel.anchorGroupList
+            
+            // 数据请求完成，关闭动画
+            self.loadDataFinished()
         }
     }
 }

@@ -26,7 +26,6 @@
 		092C9F811E1E2A9A0071AF2D /* MQLiveCommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C9F801E1E2A9A0071AF2D /* MQLiveCommonViewModel.swift */; };
 		0936C4A51E0BD04200E2B446 /* MQRecommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */; };
 		094186A61E1F7103008C83D9 /* MQAmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094186A51E1F7103008C83D9 /* MQAmuseViewModel.swift */; };
-		094186AA1E1F7D3B008C83D9 /* MQHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094186A91E1F7D3B008C83D9 /* MQHomeViewModel.swift */; };
 		094186AC1E1F7F3F008C83D9 /* MQHomeSubTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094186AB1E1F7F3F008C83D9 /* MQHomeSubTitleModel.swift */; };
 		0945C6911E0BC85600A9BCFC /* MQNetworkingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */; };
 		0945C6931E0BC88100A9BCFC /* MQNetworkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */; };
@@ -46,6 +45,8 @@
 		09CEA2061E2E187A00D0A1F5 /* MQAmuseTopMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CEA2041E2E187A00D0A1F5 /* MQAmuseTopMenuCell.xib */; };
 		09CEA2081E2F7DC800D0A1F5 /* MQFunnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA2071E2F7DC800D0A1F5 /* MQFunnyController.swift */; };
 		09CEA20A1E30513E00D0A1F5 /* MQFunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA2091E30513E00D0A1F5 /* MQFunnyViewModel.swift */; };
+		09CEA20C1E306A9500D0A1F5 /* MQBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA20B1E306A9500D0A1F5 /* MQBaseController.swift */; };
+		09CEA20E1E309ECA00D0A1F5 /* MQHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA20D1E309ECA00D0A1F5 /* MQHomeViewModel.swift */; };
 		09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */; };
 		09D25C891E093C4800BE1402 /* MQRecommendHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */; };
 		09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */; };
@@ -99,7 +100,6 @@
 		092C9F801E1E2A9A0071AF2D /* MQLiveCommonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQLiveCommonViewModel.swift; sourceTree = "<group>"; };
 		0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommentViewModel.swift; sourceTree = "<group>"; };
 		094186A51E1F7103008C83D9 /* MQAmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQAmuseViewModel.swift; sourceTree = "<group>"; };
-		094186A91E1F7D3B008C83D9 /* MQHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeViewModel.swift; sourceTree = "<group>"; };
 		094186AB1E1F7F3F008C83D9 /* MQHomeSubTitleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeSubTitleModel.swift; sourceTree = "<group>"; };
 		0945C6901E0BC85600A9BCFC /* MQNetworkingURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingURL.swift; sourceTree = "<group>"; };
 		0945C6921E0BC88100A9BCFC /* MQNetworkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNetworkingTool.swift; sourceTree = "<group>"; };
@@ -119,6 +119,8 @@
 		09CEA2041E2E187A00D0A1F5 /* MQAmuseTopMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQAmuseTopMenuCell.xib; sourceTree = "<group>"; };
 		09CEA2071E2F7DC800D0A1F5 /* MQFunnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQFunnyController.swift; sourceTree = "<group>"; };
 		09CEA2091E30513E00D0A1F5 /* MQFunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQFunnyViewModel.swift; sourceTree = "<group>"; };
+		09CEA20B1E306A9500D0A1F5 /* MQBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQBaseController.swift; sourceTree = "<group>"; };
+		09CEA20D1E309ECA00D0A1F5 /* MQHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQHomeViewModel.swift; sourceTree = "<group>"; };
 		09D25C861E093C4800BE1402 /* MQRecommendHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendHeadView.swift; sourceTree = "<group>"; };
 		09D25C871E093C4800BE1402 /* MQRecommendHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQRecommendHeadView.xib; sourceTree = "<group>"; };
 		09D25C8A1E093CD500BE1402 /* MQRecommendNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRecommendNormalCell.swift; sourceTree = "<group>"; };
@@ -211,9 +213,9 @@
 		0936C4A31E0BD01C00E2B446 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				09CEA20D1E309ECA00D0A1F5 /* MQHomeViewModel.swift */,
 				0936C4A41E0BD04200E2B446 /* MQRecommentViewModel.swift */,
 				094186A51E1F7103008C83D9 /* MQAmuseViewModel.swift */,
-				094186A91E1F7D3B008C83D9 /* MQHomeViewModel.swift */,
 				09CEA2091E30513E00D0A1F5 /* MQFunnyViewModel.swift */,
 			);
 			path = ViewModel;
@@ -377,6 +379,7 @@
 				09E96F911D93B66C00DD50ED /* Main.storyboard */,
 				09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */,
 				09CEA1FD1E2CC8E800D0A1F5 /* MQBaseAnchorController.swift */,
+				09CEA20B1E306A9500D0A1F5 /* MQBaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -663,11 +666,12 @@
 				09D25C881E093C4800BE1402 /* MQRecommendHeadView.swift in Sources */,
 				09CEA1FC1E2CC11E00D0A1F5 /* MQBaseAnchorViewModel.swift in Sources */,
 				09A011901E11264D00CD76CE /* MQAnchorGroupModel.swift in Sources */,
-				094186AA1E1F7D3B008C83D9 /* MQHomeViewModel.swift in Sources */,
 				092C9F7D1E1E273A0071AF2D /* MQLiveCommonModel.swift in Sources */,
 				09CEA20A1E30513E00D0A1F5 /* MQFunnyViewModel.swift in Sources */,
 				09D25C8C1E093CD500BE1402 /* MQRecommendNormalCell.swift in Sources */,
+				09CEA20C1E306A9500D0A1F5 /* MQBaseController.swift in Sources */,
 				09A2795F1E1E5A51000F7819 /* MQAmuseController.swift in Sources */,
+				09CEA20E1E309ECA00D0A1F5 /* MQHomeViewModel.swift in Sources */,
 				09CEA2051E2E187A00D0A1F5 /* MQAmuseTopMenuCell.swift in Sources */,
 				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
 				09A0118E1E0BDAC400CD76CE /* NSDate+Extension.swift in Sources */,

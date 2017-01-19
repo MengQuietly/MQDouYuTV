@@ -23,7 +23,7 @@ let kBaseAnchorPrettyScoreCellID = "kBaseAnchorPrettyScoreCellID"
 /// HeaderView ID
 private let kBaseAnchorHeaderViewCellID = "kBaseAnchorHeaderViewCellID"
 
-class MQBaseAnchorController: UIViewController {
+class MQBaseAnchorController: MQBaseController {
 
     // MARK: viewModel
     var baseAnchorViewModel: MQBaseAnchorViewModel!
@@ -71,8 +71,10 @@ class MQBaseAnchorController: UIViewController {
 
 // MARK:- 设置界面
 extension MQBaseAnchorController {
-    func setupUI() {
+    override func setupUI() {
+        contentView = collectionViews
         view.addSubview(collectionViews)
+        super.setupUI()
     }
 }
 
@@ -92,9 +94,7 @@ extension MQBaseAnchorController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        
-        
+    
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kBaseAnchorNormalCellID, for: indexPath) as! MQRecommendNormalCell
         if baseAnchorViewModel == nil { return cell }
         

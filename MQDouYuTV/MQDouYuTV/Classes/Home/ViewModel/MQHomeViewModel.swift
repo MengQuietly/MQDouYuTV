@@ -9,7 +9,7 @@
 import UIKit
 
 class MQHomeViewModel {
-    lazy var subTitleList:[MQHomeSubTitleModel] = [MQHomeSubTitleModel]()
+    
 }
 
 // MARK:- 数据请求
@@ -21,10 +21,11 @@ extension MQHomeViewModel {
 //            MQLog("responseObject=\(responseObject),isBadNet=\(isBadNet)")
             guard let resultDict = responseObject as? [String:NSObject] else  {return}
             guard let dataArray = resultDict["data"] as? [[String:NSObject]] else {return}
+            let userDefault = UserDefaults.standard
             for dict in dataArray {
                 let subTitleModel = MQHomeSubTitleModel(dict: dict)
-                
-                self.subTitleList.append(subTitleModel)
+                userDefault.set(subTitleModel.identification, forKey: subTitleModel.title)
+                userDefault.synchronize()
             }
             finishCallBack()
 
