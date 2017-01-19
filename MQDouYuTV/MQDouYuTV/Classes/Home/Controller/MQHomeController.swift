@@ -44,23 +44,33 @@ class MQHomeController: UIViewController {
         let amuseVC = MQAmuseController()
         amuseVC.identifications = amuseIdentification
         pageContentWithVC.append(amuseVC)
-        // 添加其它界面
-        let titleCount = (self?.pageTitleViewWithTitle.count)!
-        let count = (titleCount - pageContentWithVC.count) > 0 ? (titleCount - pageContentWithVC.count) : 0
         
-        for _ in 0..<count {
-            let vc = UIViewController()
-            vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
-            pageContentWithVC.append(vc)
-        }
+        pageContentWithVC.append(UIViewController())
+        // 添加趣玩界面
+        let funnyVC = MQFunnyController()
+        funnyVC.restorationIdentifier = self!.homeViewModel.subTitleList[3].identification
+        pageContentWithVC.append(funnyVC)
         
-        let vcList = Array(pageContentWithVC[0..<titleCount])
+        
+//        // 添加其它界面
+//        let titleCount = (self?.pageTitleViewWithTitle.count)!
+//        let count = (titleCount - pageContentWithVC.count) > 0 ? (titleCount - pageContentWithVC.count) : 0
+//        
+//        for _ in 0..<count {
+//            let vc = UIViewController()
+//            vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)), green: CGFloat(arc4random_uniform(255)), blue: CGFloat(arc4random_uniform(255)))
+//            pageContentWithVC.append(vc)
+//        }
+        
+        
+        
+//        let vcList = Array(pageContentWithVC[0..<titleCount])
         
 //        for (index,vc) in vcList.enumerated() {
 //            vc.identification = self.pageTitleViewWithTitle[index].identification
 //        }
         
-        let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: vcList, parentVC: self)
+        let pageContentView = MQPageContentView(frame: pageContentViewF, childVCList: pageContentWithVC, parentVC: self)
         
         pageContentView.pageContentViewDelegate = self
         return pageContentView

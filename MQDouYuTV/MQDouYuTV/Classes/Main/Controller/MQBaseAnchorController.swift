@@ -80,20 +80,26 @@ extension MQBaseAnchorController {
 extension MQBaseAnchorController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if baseAnchorViewModel == nil { return 1 }
         return baseAnchorViewModel.anchorGroupList.count
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         let groupSection = baseAnchorViewModel.anchorGroupList[section]
         
+        if baseAnchorViewModel == nil { return 20 }
+        
+        let groupSection = baseAnchorViewModel.anchorGroupList[section]
         return groupSection.anchorList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let sectionNum = baseAnchorViewModel.anchorGroupList[indexPath.section]
-        let anchor = sectionNum.anchorList[indexPath.item]
+        
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kBaseAnchorNormalCellID, for: indexPath) as! MQRecommendNormalCell
+        if baseAnchorViewModel == nil { return cell }
+        
+        let sectionNum = baseAnchorViewModel.anchorGroupList[indexPath.section]
+        let anchor = sectionNum.anchorList[indexPath.item]
         cell.anchorModel = anchor
         
         return cell
@@ -102,6 +108,7 @@ extension MQBaseAnchorController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         let headerViews = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kBaseAnchorHeaderViewCellID, for: indexPath) as! MQRecommendHeadView
+        if baseAnchorViewModel == nil { return headerViews }
         headerViews.anchorGroupModel = baseAnchorViewModel.anchorGroupList[indexPath.section]
         
         return headerViews
