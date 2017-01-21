@@ -40,7 +40,6 @@ class MQRecommendController: MQBaseAnchorController {
 extension MQRecommendController{
     override func setupUI(){
         super.setupUI()
-        collectionViews.delegate = self
         collectionViews.addSubview(bannerViews)
         collectionViews.addSubview(gameViews)
         collectionViews.contentInset = UIEdgeInsets(top: kRecommendBannerViewY, left: 0, bottom: 0, right: 0)
@@ -50,7 +49,7 @@ extension MQRecommendController{
 // MARK: - 实现代理方法
 extension MQRecommendController: UICollectionViewDelegateFlowLayout{
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    internal override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let sectionNum = self.recommentViewModel.anchorGroupList[indexPath.section]
         let anchor = sectionNum.anchorList[indexPath.item]

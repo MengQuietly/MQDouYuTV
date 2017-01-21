@@ -45,7 +45,7 @@ class MQBaseAnchorController: MQBaseController {
         collectionViews.backgroundColor = UIColor.white
         
         collectionViews.dataSource = self
-//        collectionViews.delegate = self
+        collectionViews.delegate = self
        
         // 相对于父控件宽高不变
         collectionViews.autoresizingMask = [UIViewAutoresizing.flexibleHeight,UIViewAutoresizing.flexibleWidth]
@@ -113,6 +113,29 @@ extension MQBaseAnchorController: UICollectionViewDataSource {
         
         return headerViews
     }
+}
+
+// MARK:- UICollectionViewDelegate
+extension MQBaseAnchorController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let anchorModel = baseAnchorViewModel.anchorGroupList[indexPath.section].anchorList[indexPath.item]
+        // 0: （手机）秀场房间，1:（电脑）普通房间
+        anchorModel.isVertical == 0 ? presentShowRoomVC() : pushNormalShowRoomVC()
+    }
+    
+    /// present VC
+    fileprivate func presentShowRoomVC() {
+        let showRoomVC = MQRoomShowController()
+        present(showRoomVC, animated: true, completion: nil)
+    }
+    
+    /// push VC
+    fileprivate func pushNormalShowRoomVC() {
+        let pushNormalVC = MQRoomNormalController()
+        navigationController?.pushViewController(pushNormalVC, animated: true)
+    }
+    
 }
 
 // MARK:- 网络请求
