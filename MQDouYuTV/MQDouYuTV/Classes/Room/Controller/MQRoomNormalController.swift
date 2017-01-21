@@ -15,5 +15,21 @@ class MQRoomNormalController: UIViewController {
 
         view.backgroundColor = UIColor.red
     }
+    
+}
 
+extension MQRoomNormalController: UIGestureRecognizerDelegate {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 隐藏 navBar
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        // 依然保持手势
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }

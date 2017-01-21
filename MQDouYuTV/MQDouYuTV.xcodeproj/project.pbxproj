@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		090915F61E335380005F92AC /* MQRoomShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090915F51E335380005F92AC /* MQRoomShowController.swift */; };
 		090915F81E33539F005F92AC /* MQRoomNormalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090915F71E33539F005F92AC /* MQRoomNormalController.swift */; };
+		090915FB1E335790005F92AC /* MQNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090915FA1E335790005F92AC /* MQNavigationController.swift */; };
 		09250B501D92269E00D172EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250B4F1D92269E00D172EF /* AppDelegate.swift */; };
 		09250B571D92269E00D172EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09250B561D92269E00D172EF /* Assets.xcassets */; };
 		09250B5A1D92269E00D172EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09250B581D92269E00D172EF /* LaunchScreen.storyboard */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		090915F51E335380005F92AC /* MQRoomShowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRoomShowController.swift; sourceTree = "<group>"; };
 		090915F71E33539F005F92AC /* MQRoomNormalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRoomNormalController.swift; sourceTree = "<group>"; };
+		090915FA1E335790005F92AC /* MQNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQNavigationController.swift; sourceTree = "<group>"; };
 		09250B4C1D92269E00D172EF /* MQDouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQDouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09250B4F1D92269E00D172EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09250B561D92269E00D172EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 				09E96FA11D93B92A00DD50ED /* MQTabBarController.swift */,
 				09CEA1FD1E2CC8E800D0A1F5 /* MQBaseAnchorController.swift */,
 				09CEA20B1E306A9500D0A1F5 /* MQBaseController.swift */,
+				090915FA1E335790005F92AC /* MQNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 				09CEA20C1E306A9500D0A1F5 /* MQBaseController.swift in Sources */,
 				09A2795F1E1E5A51000F7819 /* MQAmuseController.swift in Sources */,
 				09CEA20E1E309ECA00D0A1F5 /* MQHomeViewModel.swift in Sources */,
+				090915FB1E335790005F92AC /* MQNavigationController.swift in Sources */,
 				09CEA2051E2E187A00D0A1F5 /* MQAmuseTopMenuCell.swift in Sources */,
 				09E96FA41D93BDBA00DD50ED /* MQHomeController.swift in Sources */,
 				09A0118E1E0BDAC400CD76CE /* NSDate+Extension.swift in Sources */,
