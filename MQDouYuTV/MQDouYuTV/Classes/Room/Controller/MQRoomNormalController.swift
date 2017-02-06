@@ -23,9 +23,9 @@ extension MQRoomNormalController: UIGestureRecognizerDelegate {
         super.viewWillAppear(animated)
         // 隐藏 navBar
         navigationController?.setNavigationBarHidden(true, animated: true)
-        // 依然保持手势
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+//        // 依然保持手势 (自动处理了手势替换系统手势后，此处就不需要了)
+//        navigationController?.interactivePopGestureRecognizer?.delegate = self
+//        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
