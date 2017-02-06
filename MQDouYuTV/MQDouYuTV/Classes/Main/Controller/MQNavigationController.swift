@@ -40,7 +40,7 @@ extension MQNavigationController {
 //            // 获取属性名
 //            let name = ivar_getName(ivar)!
 //            // 输出属性名
-//            let nameString = String(cString: name)
+//            let nameString = String(cString: namei)
 //            print("i = \(nameString)")
 //        }
         
